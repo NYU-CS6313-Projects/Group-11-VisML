@@ -3,6 +3,7 @@
 var MYLIBRARY = MYLIBRARY || (function(){
     var _args = {}; // private
     chart = {};
+    svg = {};
 
     return {
         init : function(Args) {
@@ -10,6 +11,8 @@ var MYLIBRARY = MYLIBRARY || (function(){
             // some other initialising
         },
         helloWorld : function(Args) {
+
+var padding = 30;
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
      w = 600 - margin.left - margin.right,
@@ -53,8 +56,6 @@ var yLabel = d3.scale.ordinal()
                 .domain(['Feature Name'])
                 .rangeRoundBands([0, h], 0.35);
 
-var svg = {};
-
 //Create SVG element
 svg[Args[0]] = d3.select(Args[0])
             .append("svg")
@@ -65,7 +66,8 @@ svg[Args[0]] = d3.select(Args[0])
 
 var xAxis = d3.svg.axis()
                   .scale(xLabel)
-                  .orient("bottom");
+                  .orient("bottom")
+                  .ticks(4);
 
 var yAxis = d3.svg.axis()
     .scale(yScale)
@@ -119,7 +121,7 @@ svg[Args[0]].selectAll("rect")
 //Create X axis
 svg[Args[0]].append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(0," + h + ")")
+    .attr("transform", "translate(0," + (h + 1) + ")")
     .call(xAxis);
 
 svg[Args[0]].append("text")
@@ -129,6 +131,13 @@ svg[Args[0]].append("text")
       .style("text-anchor", "end")
       .text("Feature Name");
 
+
+// Initialize size
+for (var i = 0; i < Object.keys(chart).length; i++){
+    var targetWidth = chart[Object.keys(chart)[i]].parent().width();
+    chart[Object.keys(chart)[i]].attr("width", targetWidth);
+    chart[Object.keys(chart)[i]].attr("height", targetWidth / aspect);
+}
 
 
         }
