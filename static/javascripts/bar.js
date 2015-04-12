@@ -91,32 +91,6 @@ svg[Args[0]].selectAll("rect")
    .attr("fill", function(d) {
         return "rgb(0, 200, " + (d * 10) + ")";
    });
-   // .on("mouseover", function(d) {
-
-   //      //Get this bar's x/y values, then augment for the tooltip
-   //      var xPosition = parseFloat(d3.select(this).attr("x")) + xScale.rangeBand() / 2;
-   //      var yPosition = parseFloat(d3.select(this).attr("y")) / 2 + h / 2;
-
-   //      //Update the tooltip position and value
-   //      d3.select(Args[1][0])
-   //          .style("left", xPosition + "px")
-   //          .style("top", yPosition + "px")
-   //          .select(Args[1][1])
-   //          .text(d);
-
-   //      //Show the tooltip
-   //      d3.select(Args[1][0]).classed("hidden", false);
-
-   // })
-   // .on("mouseout", function() {
-
-   //      //Hide the tooltip
-   //      d3.select(Args[1][0]).classed("hidden", true);
-
-   // });
-//    .on("click", function() {
-//            sortBars();
-//    });
 
 //Create X axis
 svg[Args[0]].append("g")
@@ -149,8 +123,6 @@ title: function() {
 }
 });
 
-
-
         }
     };
 }());
@@ -164,6 +136,33 @@ title: function() {
 //     .attr("class", "axis")
 //     .attr("transform", "translate(" ",0)")
 //     .call(yAxis);
+
+   // .on("mouseover", function(d) {
+
+   //      //Get this bar's x/y values, then augment for the tooltip
+   //      var xPosition = parseFloat(d3.select(this).attr("x")) + xScale.rangeBand() / 2;
+   //      var yPosition = parseFloat(d3.select(this).attr("y")) / 2 + h / 2;
+
+   //      //Update the tooltip position and value
+   //      d3.select(Args[1][0])
+   //          .style("left", xPosition + "px")
+   //          .style("top", yPosition + "px")
+   //          .select(Args[1][1])
+   //          .text(d);
+
+   //      //Show the tooltip
+   //      d3.select(Args[1][0]).classed("hidden", false);
+
+   // })
+   // .on("mouseout", function() {
+
+   //      //Hide the tooltip
+   //      d3.select(Args[1][0]).classed("hidden", true);
+
+   // });
+//    .on("click", function() {
+//            sortBars();
+//    });
 
 
 // //Define sort order flag
