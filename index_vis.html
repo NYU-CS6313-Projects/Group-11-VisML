@@ -10,9 +10,52 @@
         <link rel="stylesheet" type="text/css" href="static/stylesheets/stylesheet.css" media="screen">
         <script type="text/javascript" src="static/javascripts/d3.v3.js"></script>
         <style type="text/css">
+
             rect:hover {
-            fill: orange;
+                fill: orange;
             }
+
+            #tooltip {
+                position: absolute;
+                width: 200px;
+                height: auto;
+                padding: 10px;
+                background-color: white;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                pointer-events: none;
+            }
+
+            #tooltip.hidden {
+                display: none;
+            }
+
+            #tooltip p {
+                margin: 0;
+                font-family: sans-serif;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            .axis {
+              font: 10px sans-serif;
+            }
+
+            .axis path,
+            .axis line {
+              fill: none;
+              stroke: #000;
+              shape-rendering: crispEdges;
+            }
+
+            .x.axis path {
+              display: none;
+            }
+
         </style>
         <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,71 +73,19 @@
         <div id="content-wrapper">
             <div class="inner clearfix">
                 <section id="main-content">
-                    <script type="text/javascript">
-
-                        //Width and height
-                        var w = 600;
-                        var h = 250;
-
-                        var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
-                                        11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
-
-                        var xScale = d3.scale.ordinal()
-                                        .domain(d3.range(dataset.length))
-                                        .rangeRoundBands([0, w], 0.05);
-
-                        var yScale = d3.scale.linear()
-                                        .domain([0, d3.max(dataset)])
-                                        .range([0, h]);
-
-                        //Create SVG element
-                        var svg = d3.select("section")
-                                    .append("svg")
-                                    .attr("width", w)
-                                    .attr("height", h);
-
-                        //Create bars
-                        svg.selectAll("rect")
-                           .data(dataset)
-                           .enter()
-                           .append("rect")
-                           .attr("x", function(d, i) {
-                                   return xScale(i);
-                           })
-                           .attr("y", function(d) {
-                                   return h - yScale(d);
-                           })
-                           .attr("width", xScale.rangeBand())
-                           .attr("height", function(d) {
-                                   return yScale(d);
-                           })
-                           .attr("fill", function(d) {
-                                return "rgb(0, 0, " + (d * 10) + ")";
-                           });
-
-                        //Create labels
-                        svg.selectAll("text")
-                           .data(dataset)
-                           .enter()
-                           .append("text")
-                           .text(function(d) {
-                                   return d;
-                           })
-                           .attr("text-anchor", "middle")
-                           .attr("x", function(d, i) {
-                                   return xScale(i) + xScale.rangeBand() / 2;
-                           })
-                           .attr("y", function(d) {
-                                   return h - yScale(d) + 14;
-                           })
-                           .attr("font-family", "sans-serif")
-                           .attr("font-size", "11px")
-                           .attr("fill", "white");
-
-                    </script>
+                    <div id="tooltip" class="hidden">
+                        <p><strong>Important Label Heading</strong></p>
+                        <p><span id="value">100</span>%</p>
+                    </div>
+                    <script type="text/javascript" src="static/javascripts/bar.js"></script>
+                    <hr />
+                    <div id="tooltip" class="hidden">
+                        <p><strong>Important Label Heading</strong></p>
+                        <p><span id="value">100</span>%</p>
+                    </div>
+                    <script type="text/javascript" src="static/javascripts/bar.js"></script>
                     <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to VisML!</h3>
                     <p>Please interact with the app</p><pre><code>$ git clonehttps://github.com/NYU-CS6313-Projects/sp2015-group11.git <br>$ cd sp2015-group11<br>$ python -m SimpleHTTPServer 8888</code></pre>
-                    <h3><a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or §Contact</h3>
                 </section>
                 <aside id="sidebar">
                     <a href="https://github.com/NYU-CS6313-Projects/sp2015-group11/zipball/master" class="button">
