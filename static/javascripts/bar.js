@@ -1,11 +1,19 @@
 //Width and height
+
+var MYLIBRARY = MYLIBRARY || (function(){
+    var _args = {}; // private
+    chart = {};
+
+    return {
+        init : function(Args) {
+            _args = Args;
+            // some other initialising
+        },
+        helloWorld : function(Args) {
+
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
      w = 600 - margin.left - margin.right,
      h = 250 - margin.top - margin.bottom;
-
-// var w = 600;
-// var h = 250;
-// var padding = 30;
 
 dataset = []; //Initialize empty array
 for (var i = 0; i < 4; i++) {//Loop numValues times
@@ -13,15 +21,26 @@ var newNumber = Math.floor(Math.random() * 25); //New random integer (0-25)
 dataset.push(newNumber);                         //Add new number to array
 }
 
-var x = d3.scale.ordinal()
-    .rangeRoundBands([0, w], .1);
+// Resize chart
+var aspect = 600 / 250;
+    chart[Args[0]] = $(Args[0]);
 
-var y = d3.scale.linear()
-    .range([h, 0]);
+$(window).on("resize", function() {
+    for (var i = 0; i < Object.keys(chart).length; i++){
+        var targetWidth = chart[Object.keys(chart)[i]].parent().width();
+        chart[Object.keys(chart)[i]].attr("width", targetWidth);
+        chart[Object.keys(chart)[i]].attr("height", targetWidth / aspect);
+    }
+});
 
+// Scales and labels
 var xScale = d3.scale.ordinal()
                 .domain(d3.range(dataset.length))
                 .rangeRoundBands([0, w], 0.35);
+
+var yScale = d3.scale.linear()
+                .domain([0, d3.max(dataset)])
+                .range([0, h-30]);
 
 var xLabel = d3.scale.ordinal()
                 .domain(['True Positives',
@@ -30,16 +49,14 @@ var xLabel = d3.scale.ordinal()
                         'False Negatives'])
                 .rangeRoundBands([0, w], 0.35);
 
-var yScale = d3.scale.linear()
-                .domain([0, d3.max(dataset)])
-                .range([0, h-30]);
-
 var yLabel = d3.scale.ordinal()
                 .domain(['Feature Name'])
                 .rangeRoundBands([0, h], 0.35);
 
+var svg = {};
+
 //Create SVG element
-var svg = d3.select("section")
+svg[Args[0]] = d3.select(Args[0])
             .append("svg")
             .attr("width", w + margin.left + margin.right)
             .attr("height", h + margin.top + margin.bottom)
@@ -53,10 +70,9 @@ var xAxis = d3.svg.axis()
 var yAxis = d3.svg.axis()
     .scale(yScale)
     .orient("left");
-    // .ticks(10, "%");
 
 //Create bars
-svg.selectAll("rect")
+svg[Args[0]].selectAll("rect")
    .data(dataset)
    .enter()
    .append("rect")
@@ -101,25 +117,27 @@ svg.selectAll("rect")
 //    });
 
 //Create X axis
-svg.append("g")
+svg[Args[0]].append("g")
     .attr("class", "axis")
     .attr("transform", "translate(0," + h + ")")
     .call(xAxis);
 
-  svg.append("text")
+svg[Args[0]].append("text")
       .attr("transform", "rotate(0)")
       .attr("y", 10)
       .attr("dy", "1em")
       .style("text-anchor", "end")
       .text("Feature Name");
 
-function updateWindow(){
-    x = w.innerWidth || e.clientWidth || g.clientWidth;
-    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
-    svg.attr("width", x).attr("height", y);
-}
-window.onresize = updateWindow;
+
+        }
+    };
+}());
+
+
+
+
 
 // //Create Y axis
 // svg.append("g")

@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="static/stylesheets/print.css" media="print">
         <link rel="stylesheet" type="text/css" href="static/stylesheets/stylesheet.css" media="screen">
         <script type="text/javascript" src="static/javascripts/d3.v3.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <style type="text/css">
 
             rect:hover {
@@ -60,7 +61,7 @@
         <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <title>Info Vis Group 11</title>
+        <title>InfoVis_11</title>
     </head>
     <body>
         <header>
@@ -77,13 +78,31 @@
                         <p><strong>Important Label Heading</strong></p>
                         <p><span id="value">100</span>%</p>
                     </div>
-                    <script type="text/javascript" src="static/javascripts/bar.js"></script>
+  <!--                   <script type="text/javascript" src="static/javascripts/bar.js"></script>
                     <hr />
                     <div id="tooltip" class="hidden">
                         <p><strong>Important Label Heading</strong></p>
                         <p><span id="value">100</span>%</p>
-                    </div>
-                    <script type="text/javascript" src="static/javascripts/bar.js"></script>
+                    </div> -->
+
+                    <svg id="svg1" width="600" height="250"
+                      viewBox="0 0 600 250"
+                      preserveAspectRatio="xMidYMid">
+                    </svg>
+
+                    <svg id="svg2" width="600" height="250"
+                      viewBox="0 0 600 250"
+                      preserveAspectRatio="xMidYMid">
+                    </svg>
+
+                    <script src="static/javascripts/bar.js" ></script>
+
+                    <script type="text/javascript">
+                       MYLIBRARY.init(["svg1", 1, "controlId"]);
+                       MYLIBRARY.helloWorld(["#svg1"]);
+                       MYLIBRARY.helloWorld(["#svg2"]);
+                    </script>
+
                     <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to VisML!</h3>
                     <p>Please interact with the app</p><pre><code>$ git clonehttps://github.com/NYU-CS6313-Projects/sp2015-group11.git <br>$ cd sp2015-group11<br>$ python -m SimpleHTTPServer 8888</code></pre>
                 </section>
