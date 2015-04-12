@@ -113,6 +113,14 @@ svg.append("g")
       .style("text-anchor", "end")
       .text("Feature Name");
 
+function updateWindow(){
+    x = w.innerWidth || e.clientWidth || g.clientWidth;
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+
+    svg.attr("width", x).attr("height", y);
+}
+window.onresize = updateWindow;
+
 // //Create Y axis
 // svg.append("g")
 //     .attr("class", "axis")
