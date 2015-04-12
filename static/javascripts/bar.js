@@ -90,30 +90,30 @@ svg[Args[0]].selectAll("rect")
    })
    .attr("fill", function(d) {
         return "rgb(0, 200, " + (d * 10) + ")";
-   })
-   .on("mouseover", function(d) {
-
-        //Get this bar's x/y values, then augment for the tooltip
-        var xPosition = parseFloat(d3.select(this).attr("x")) + xScale.rangeBand() / 2;
-        var yPosition = parseFloat(d3.select(this).attr("y")) / 2 + h / 2;
-
-        //Update the tooltip position and value
-        d3.select("#tooltip")
-            .style("left", xPosition + "px")
-            .style("top", yPosition + "px")
-            .select("#value")
-            .text(d);
-
-        //Show the tooltip
-        d3.select("#tooltip").classed("hidden", false);
-
-   })
-   .on("mouseout", function() {
-
-        //Hide the tooltip
-        d3.select("#tooltip").classed("hidden", true);
-
    });
+   // .on("mouseover", function(d) {
+
+   //      //Get this bar's x/y values, then augment for the tooltip
+   //      var xPosition = parseFloat(d3.select(this).attr("x")) + xScale.rangeBand() / 2;
+   //      var yPosition = parseFloat(d3.select(this).attr("y")) / 2 + h / 2;
+
+   //      //Update the tooltip position and value
+   //      d3.select(Args[1][0])
+   //          .style("left", xPosition + "px")
+   //          .style("top", yPosition + "px")
+   //          .select(Args[1][1])
+   //          .text(d);
+
+   //      //Show the tooltip
+   //      d3.select(Args[1][0]).classed("hidden", false);
+
+   // })
+   // .on("mouseout", function() {
+
+   //      //Hide the tooltip
+   //      d3.select(Args[1][0]).classed("hidden", true);
+
+   // });
 //    .on("click", function() {
 //            sortBars();
 //    });
@@ -121,7 +121,7 @@ svg[Args[0]].selectAll("rect")
 //Create X axis
 svg[Args[0]].append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(0," + (h + 1) + ")")
+    .attr("transform", "translate(0," + (h + 0) + ")")
     .call(xAxis);
 
 svg[Args[0]].append("text")
@@ -138,6 +138,17 @@ for (var i = 0; i < Object.keys(chart).length; i++){
     chart[Object.keys(chart)[i]].attr("width", targetWidth);
     chart[Object.keys(chart)[i]].attr("height", targetWidth / aspect);
 }
+
+
+$('svg rect').tipsy({
+gravity: 'w',
+html: true,
+title: function() {
+  var d = this.__data__;
+  return 'Hi there! My count is <span style="color: "black">' + d + '</span>';
+}
+});
+
 
 
         }
