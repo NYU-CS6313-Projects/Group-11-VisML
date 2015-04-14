@@ -16,10 +16,17 @@ var margin = {top: 20, right: 20, bottom: 30, left: 40},
      h = 250 - margin.top - margin.bottom;
 
 dataset = []; //Initialize empty array
-for (var i = 0; i < 4; i++) {//Loop numValues times
-var newNumber = Math.floor(Math.random() * 25); //New random integer (0-25)
-dataset.push(newNumber);                         //Add new number to array
-}
+
+//for (var i = 0; i < 4; i++) {//Loop numValues times
+//var newNumber = Math.floor(Math.random() * 25); //New random integer (0-25)
+//dataset.push(newNumber);                         //Add new number to array
+//}
+d3.csv("DummyErrorMatrix.csv", function(data) {
+  dataset=data
+  console.log(data);
+  });
+
+
 
 // Resize chart
 var aspect = 600 / 250;
