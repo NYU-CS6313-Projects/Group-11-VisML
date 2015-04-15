@@ -102,12 +102,21 @@ svg[svg_name].append("g")
     .attr("transform", "translate(0," + (h + 0) + ")")
     .call(xAxis);
 
+// svg[svg_name].append("text")
+//       .attr("transform", "rotate(0)")
+//       .attr("y", 10)
+//       .attr("dy", "1em")
+//       .style("text-anchor", "end")
+//       .text("Feature Name");
+
 svg[svg_name].append("text")
-      .attr("transform", "rotate(0)")
-      .attr("y", 10)
-      .attr("dy", "1em")
-      .style("text-anchor", "end")
-      .text("Feature Name");
+        .attr("transform", "rotate(0)")
+        .attr("x",0)
+        .attr("y", -5)
+        .attr("dy", "1em")
+        .style("text-anchor", "start")
+        .style("font-size","14px")
+        .text(dataset[keys[0]]);
 
 
 // Initialize size
