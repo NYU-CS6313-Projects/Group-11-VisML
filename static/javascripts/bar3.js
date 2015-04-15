@@ -1,5 +1,3 @@
-//Width and height
-
 var MYLIBRARY = MYLIBRARY || (function(){
     var _args = {}; // private
     chart = {};
@@ -18,46 +16,50 @@ var margin = {top: 20, right: 20, bottom: 30, left: 40},
      w = 600 - margin.left - margin.right,
      h = 250 - margin.top - margin.bottom;
 
-dataset = []; //Initialize empty array
-for (var i = 0; i < 4; i++) {//Loop numValues times
-var newNumber = Math.floor(Math.random() * 25); //New random integer (0-25)
-dataset.push(newNumber);                         //Add new number to array
+var dataset = Args[1]; //Initialize empty array
+var keys = Object.keys(dataset);
+var values = []
+var svg_name = "#svg" + Args[0]
+
+for (var i = 1; i < keys.length; i++){
+    values.push(dataset[keys[i]])
 }
 
 // Resize chart
 var aspect = 600 / 250;
-    chart[Args[0]] = $(Args[0]);
+    chart[svg_name] = $(svg_name);
 
 $(window).on("resize", function() {
     for (var i = 0; i < Object.keys(chart).length; i++){
-        var targetWidth = chart[Object.keys(chart)[i]].parent().width();
+        var targetWidth = chart[Object.keys(chart)[i]]
+                            .parent()
+                            .width();
         chart[Object.keys(chart)[i]].attr("width", targetWidth);
         chart[Object.keys(chart)[i]].attr("height", targetWidth / aspect);
     }
 });
 
+
+console.log(keys)
 // Scales and labels
 var xScale = d3.scale.ordinal()
-                .domain(d3.range(dataset.length))
+                .domain(d3.range(keys.length - 1))
                 .rangeRoundBands([0, w], 0.35);
 
 var yScale = d3.scale.linear()
-                .domain([0, d3.max(dataset)])
+                .domain([0, d3.max(values)])
                 .range([0, h-30]);
 
 var xLabel = d3.scale.ordinal()
-                .domain(['True Positives',
-                        'False Positives',
-                        'True Negatives',
-                        'False Negatives'])
+                .domain(keys.slice(1, keys.length))
                 .rangeRoundBands([0, w], 0.35);
 
 var yLabel = d3.scale.ordinal()
-                .domain(['Feature Name'])
+                .domain(dataset[keys[0]])
                 .rangeRoundBands([0, h], 0.35);
 
 //Create SVG element
-svg[Args[0]] = d3.select(Args[0])
+svg[svg_name] = d3.select(svg_name)
             .append("svg")
             .attr("width", w + margin.left + margin.right)
             .attr("height", h + margin.top + margin.bottom)
@@ -74,8 +76,8 @@ var yAxis = d3.svg.axis()
     .orient("left");
 
 //Create bars
-svg[Args[0]].selectAll("rect")
-   .data(dataset)
+svg[svg_name].selectAll("rect")
+   .data(values)
    .enter()
    .append("rect")
    .attr("x", function(d, i) {
@@ -88,17 +90,19 @@ svg[Args[0]].selectAll("rect")
    .attr("height", function(d) {
            return yScale(d);
    })
-   .attr("fill", function(d) {
-        return "rgb(0, 200, " + (d * 10) + ")";
+   .attr("fill", function(d, i) {
+        console.log(i)
+        if (i % 2 == 0) {return "rgb(0, 200, " + (d * 10) + ")";}
+        else {return "rgb(0, " + (d * 10) + ", 200)";}
    });
 
 //Create X axis
-svg[Args[0]].append("g")
+svg[svg_name].append("g")
     .attr("class", "axis")
     .attr("transform", "translate(0," + (h + 0) + ")")
     .call(xAxis);
 
-svg[Args[0]].append("text")
+svg[svg_name].append("text")
       .attr("transform", "rotate(0)")
       .attr("y", 10)
       .attr("dy", "1em")
@@ -113,7 +117,6 @@ for (var i = 0; i < Object.keys(chart).length; i++){
     chart[Object.keys(chart)[i]].attr("height", targetWidth / aspect);
 }
 
-
 $('svg rect').tipsy({
 gravity: 'w',
 html: true,
@@ -122,7 +125,6 @@ title: function() {
   return 'Hi there! My count is <span style="color: "black">' + d + '</span>';
 }
 });
-
         }
     };
 }());

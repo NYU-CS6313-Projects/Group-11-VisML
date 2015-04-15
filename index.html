@@ -107,32 +107,41 @@
             <div class="inner clearfix">
                 <section id="main-content">
 
-                    <div id="tooltip1" class="hidden">
-                        <p><strong>Important Label Heading</strong></p>
-                        <p><span id="value1">100</span>%</p>
-                    </div>
+                    <svg id="svg0" width="600" height="250"
+                      viewBox="0 0 600 250"
+                      preserveAspectRatio="xMidYMid">
+                    </svg>
 
                     <svg id="svg1" width="600" height="250"
                       viewBox="0 0 600 250"
                       preserveAspectRatio="xMidYMid">
                     </svg>
 
-                    <div id="tooltip2" class="hidden">
-                        <p><strong>Important Label Heading</strong></p>
-                        <p><span id="value2">100</span>%</p>
-                    </div>
-
                     <svg id="svg2" width="600" height="250"
                       viewBox="0 0 600 250"
                       preserveAspectRatio="xMidYMid">
                     </svg>
 
-                    <script src="static/javascripts/bar.js" ></script>
+                    <svg id="svg3" width="600" height="250"
+                      viewBox="0 0 600 250"
+                      preserveAspectRatio="xMidYMid">
+                    </svg>
 
+                    <svg id="svg4" width="600" height="250"
+                      viewBox="0 0 600 250"
+                      preserveAspectRatio="xMidYMid">
+                    </svg>
+
+                    <script src="static/javascripts/bar3.js" ></script>
                     <script type="text/javascript">
-                       MYLIBRARY.init(["svg1", 1, "controlId"]);
-                       MYLIBRARY.helloWorld(["#svg1", ["#tooltip1", "#value1"]]);
-                       MYLIBRARY.helloWorld(["#svg2", ["#tooltip2", "#value2"]]);
+                        var dataset = []
+                        MYLIBRARY.init(["svg1", 1, "controlId"]);
+                        d3.csv("DummyErrorMatrix.csv", function(data) {
+                            dataset = data;//Once loaded, copy to dataset.
+                            for (var i = 0; i < dataset.length; i++){
+                                MYLIBRARY.helloWorld([i, dataset[i]]);
+                            }
+                        });
                     </script>
 
                     <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to VisML!</h3>
