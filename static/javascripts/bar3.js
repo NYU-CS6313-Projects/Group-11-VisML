@@ -110,6 +110,18 @@ svg[svg_name].append("g")
 //       .style("text-anchor", "end")
 //       .text("Feature Name");
 
+//Title bar chart with feature name.
+//First, decode column header using dictionary.
+var group_id = dataset[keys[0]].split('__')[0];
+var type_id = dataset[keys[0]].split('__')[1];
+
+d3.json("data/ColumnDictionary_v2.json", function(dictionary) {
+  console.log(dictionary[group_id][type_id]["name"]);
+  label = dictionary[group_id][type_id]["name"];
+  title(label);
+});
+
+function title(text) {
 svg[svg_name].append("text")
         .attr("transform", "rotate(0)")
         .attr("x",0)
@@ -117,7 +129,8 @@ svg[svg_name].append("text")
         .attr("dy", "1em")
         .style("text-anchor", "start")
         .style("font-size","14px")
-        .text(dataset[keys[0]]);
+        .text(text);
+}
 
 
 // Initialize size
