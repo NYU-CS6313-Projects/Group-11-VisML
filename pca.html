@@ -15,6 +15,7 @@
         <script type="text/javascript" src="static/javascripts/jquery.tipsy.js"></script>
         <link href="static/stylesheets/tipsy.css" rel="stylesheet" type="text/css" />
 <!--         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+        <script> src="http://underscorejs.org/#without"</script>
         <style type="text/css">
 
             rect:hover {
@@ -60,19 +61,44 @@
                     </svg>
 
                     <hr />
-
+                    <script src="static/javascripts/mdsjs.js" ></script>
                     <script src="static/javascripts/scatter.js" ></script>
                     <script type="text/javascript">
-                        d3.csv("data/PCA_Transformed_Data.csv", function(error, data) {
-                          // change string (from CSV) into number format
+                        d3.csv("data/Sample02_n1000.csv", function(error, data) {
+                            var matArr = [];
+                            var patients = new Array();
+                            var cols = null;
+                            var i = 0;
+                          
                           data.forEach(function(d) {
-                            d["PC1"] = +d["PC1"];
-                            d["PC2"] = +d["PC2"];
-                        //    console.log(d);
-                          });
+                            cols = Object.keys(d).filter(function(c) {
+                                if (c != "id" && c !="outcome" && c != "test") {
+                                    return c}
+                                })
+                            
+                            var skip = !!(+d["test"]);
+                            if(skip) return;
+                            var id = d["id"];
+                            var vec = cols.map(function(c) {
+                                return +d[c];
+                            });
+                            var outcome = !!(+d["outcome"]);
+                            patients.push([id, i++, outcome]);
+                            matArr.push(vec);
 
-                          MYLIBRARY.helloWorld(data)
-                      })
+                            });
+                            var mat = mdsjs.convertToMatrix(matArr);
+                            console.log(mat);
+                            mdsjs.pcaAsync(mat, function(pcs) {
+                                var points = mat.mul(pcs);
+                                assignPos(pcs);
+                              });
+                            console.log(points);
+                        })  
+                        
+                         
+
+                         
                     </script>
 
                     <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to VisML!</h3>
