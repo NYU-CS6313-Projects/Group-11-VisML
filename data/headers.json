@@ -1,0 +1,3434 @@
+{
+  "info": {
+    "": {
+      "desc": "info", 
+      "id": "", 
+      "parent": "", 
+      "name": "info"
+    }, 
+    "age_80_90": {
+      "unmapped": true, 
+      "desc": "info age_80_90", 
+      "id": "age_80_90", 
+      "parent": "", 
+      "name": "age_80_90"
+    }, 
+    "age_40_50": {
+      "unmapped": true, 
+      "desc": "info age_40_50", 
+      "id": "age_40_50", 
+      "parent": "", 
+      "name": "age_40_50"
+    }, 
+    "age_50_60": {
+      "unmapped": true, 
+      "desc": "info age_50_60", 
+      "id": "age_50_60", 
+      "parent": "", 
+      "name": "age_50_60"
+    }, 
+    "dead": {
+      "unmapped": true, 
+      "desc": "info dead", 
+      "id": "dead", 
+      "parent": "", 
+      "name": "dead"
+    }, 
+    "age_100_110": {
+      "unmapped": true, 
+      "desc": "info age_100_110", 
+      "id": "age_100_110", 
+      "parent": "", 
+      "name": "age_100_110"
+    }, 
+    "age_60_70": {
+      "unmapped": true, 
+      "desc": "info age_60_70", 
+      "id": "age_60_70", 
+      "parent": "", 
+      "name": "age_60_70"
+    }, 
+    "age_90_100": {
+      "unmapped": true, 
+      "desc": "info age_90_100", 
+      "id": "age_90_100", 
+      "parent": "", 
+      "name": "age_90_100"
+    }, 
+    "age_30_40": {
+      "unmapped": true, 
+      "desc": "info age_30_40", 
+      "id": "age_30_40", 
+      "parent": "", 
+      "name": "age_30_40"
+    }
+  }, 
+  "procedure": {
+    "": {
+      "color": "#ff7f00", 
+      "desc": "Procedure", 
+      "id": "", 
+      "parent": "", 
+      "name": "Procedure"
+    }
+  }, 
+  "diagnosis": {
+    "": {
+      "color": "#4daf4a", 
+      "desc": "Condition", 
+      "id": "", 
+      "parent": "", 
+      "name": "Condition"
+    }, 
+    "HIERARCHY.2.16.2.2": {
+      "alias": "HIERARCHY21622", 
+      "desc": "Benign neoplasm of colon                                                                                -", 
+      "id": "HIERARCHY.2.16.2.2", 
+      "parent": "HIERARCHY.2.16.2", 
+      "name": "Benign neoplasm of colon                                                                                -"
+    }, 
+    "HIERARCHY.2.16.2.5": {
+      "alias": "HIERARCHY21625", 
+      "desc": "Other and unspecified benign neoplasms                                                                  -", 
+      "id": "HIERARCHY.2.16.2.5", 
+      "parent": "HIERARCHY.2.16.2", 
+      "name": "Other and unspecified benign neoplasms                                                                  -"
+    }, 
+    "V5391": {
+      "unmapped": true, 
+      "desc": "diagnosis V5391", 
+      "id": "V5391", 
+      "parent": "HIERARCHY.17.2.4", 
+      "name": "V5391"
+    }, 
+    "73390": {
+      "desc": "Other and unspecified", 
+      "id": "73390", 
+      "parent": "HIERARCHY.13.9", 
+      "name": "Other and unspecified"
+    }, 
+    "HIERARCHY.10.1.6.2": {
+      "alias": "HIERARCHY10162", 
+      "desc": "Other and unspecified diseases of kidney and ureters                                                    -", 
+      "id": "HIERARCHY.10.1.6.2", 
+      "parent": "HIERARCHY.10.1.6", 
+      "name": "Other and unspecified diseases of kidney and ureters                                                    -"
+    }, 
+    "78720": {
+      "desc": "Dysphagia", 
+      "id": "78720", 
+      "parent": "HIERARCHY.9.12.2", 
+      "name": "Dysphagia"
+    }, 
+    "HIERARCHY.2.16.2": {
+      "alias": "HIERARCHY2162", 
+      "desc": "Other and unspecified benign neoplasm [47.]", 
+      "id": "HIERARCHY.2.16.2", 
+      "parent": "HIERARCHY.2.16", 
+      "name": "Other and unspecified benign neoplasm [47.]"
+    }, 
+    "56400": {
+      "desc": "Constipation", 
+      "id": "56400", 
+      "parent": "HIERARCHY.9.12.1", 
+      "name": "Constipation"
+    }, 
+    "4149": {
+      "desc": "Unspecified", 
+      "id": "4149", 
+      "parent": "HIERARCHY.7.2.4.5", 
+      "name": "Unspecified"
+    }, 
+    "4148": {
+      "desc": "Other", 
+      "id": "4148", 
+      "parent": "HIERARCHY.7.2.4.5", 
+      "name": "Other"
+    }, 
+    "HIERARCHY.9.12.3": {
+      "alias": "HIERARCHY9123", 
+      "desc": "Other and unspecified gastrointestinal disorders                                                        -", 
+      "id": "HIERARCHY.9.12.3", 
+      "parent": "HIERARCHY.9.12", 
+      "name": "Other and unspecified gastrointestinal disorders                                                        -"
+    }, 
+    "HIERARCHY.9.12.2": {
+      "alias": "HIERARCHY9122", 
+      "desc": "Dysphagia                                                                                               -", 
+      "id": "HIERARCHY.9.12.2", 
+      "parent": "HIERARCHY.9.12", 
+      "name": "Dysphagia                                                                                               -"
+    }, 
+    "HIERARCHY.9.12.1": {
+      "alias": "HIERARCHY9121", 
+      "desc": "Constipation                                                                                            -", 
+      "id": "HIERARCHY.9.12.1", 
+      "parent": "HIERARCHY.9.12", 
+      "name": "Constipation                                                                                            -"
+    }, 
+    "53011": {
+      "desc": "Esophagitis", 
+      "id": "53011", 
+      "parent": "HIERARCHY.9.4.1.1", 
+      "name": "Esophagitis"
+    }, 
+    "70211": {
+      "desc": "Other dermatoses", 
+      "id": "70211", 
+      "parent": "HIERARCHY.12.4", 
+      "name": "Other dermatoses"
+    }, 
+    "HIERARCHY.7.2.11": {
+      "alias": "HIERARCHY7211", 
+      "desc": "Congestive heart failure; nonhypertensive [108.]", 
+      "id": "HIERARCHY.7.2.11", 
+      "parent": "HIERARCHY.7.2", 
+      "name": "Congestive heart failure; nonhypertensive [108.]"
+    }, 
+    "70219": {
+      "desc": "Other dermatoses", 
+      "id": "70219", 
+      "parent": "HIERARCHY.12.4", 
+      "name": "Other dermatoses"
+    }, 
+    "2859": {
+      "desc": "Anemia, unspecified", 
+      "id": "2859", 
+      "parent": "HIERARCHY.4.1.3.7", 
+      "name": "Anemia, unspecified"
+    }, 
+    "73300": {
+      "desc": "Osteoporosis", 
+      "id": "73300", 
+      "parent": "HIERARCHY.13.4", 
+      "name": "Osteoporosis"
+    }, 
+    "72885": {
+      "desc": "Other disorders of muscle, ligament, and fascia", 
+      "id": "72885", 
+      "parent": "HIERARCHY.13.8", 
+      "name": "Other disorders of muscle, ligament, and fascia"
+    }, 
+    "72887": {
+      "desc": "Other disorders of muscle, ligament, and fascia", 
+      "id": "72887", 
+      "parent": "HIERARCHY.13.8", 
+      "name": "Other disorders of muscle, ligament, and fascia"
+    }, 
+    "HIERARCHY.3.11": {
+      "alias": "HIERARCHY311", 
+      "desc": "Other nutritional; endocrine; and metabolic disorders [58.]", 
+      "id": "HIERARCHY.3.11", 
+      "parent": "HIERARCHY.3", 
+      "name": "Other nutritional; endocrine; and metabolic disorders [58.]"
+    }, 
+    "78039": {
+      "desc": "Convulsions", 
+      "id": "78039", 
+      "parent": "HIERARCHY.6.4.2", 
+      "name": "Convulsions"
+    }, 
+    "5856": {
+      "desc": "Chronic renal failure", 
+      "id": "5856", 
+      "parent": "HIERARCHY.10.1.3", 
+      "name": "Chronic renal failure"
+    }, 
+    "36616": {
+      "desc": "Senile cataract", 
+      "id": "36616", 
+      "parent": "HIERARCHY.6.7.1", 
+      "name": "Senile cataract"
+    }, 
+    "5849": {
+      "desc": "Unspecified", 
+      "id": "5849", 
+      "parent": "HIERARCHY.10.1.2.1", 
+      "name": "Unspecified"
+    }, 
+    "5853": {
+      "desc": "Chronic renal failure", 
+      "id": "5853", 
+      "parent": "HIERARCHY.10.1.3", 
+      "name": "Chronic renal failure"
+    }, 
+    "71509": {
+      "desc": "Generalized", 
+      "id": "71509", 
+      "parent": "HIERARCHY.13.2.2.2", 
+      "name": "Generalized"
+    }, 
+    "HIERARCHY.7.3.1": {
+      "alias": "HIERARCHY731", 
+      "desc": "Acute cerebrovascular disease [109.]", 
+      "id": "HIERARCHY.7.3.1", 
+      "parent": "HIERARCHY.7.3", 
+      "name": "Acute cerebrovascular disease [109.]"
+    }, 
+    "HIERARCHY.7.3.2": {
+      "alias": "HIERARCHY732", 
+      "desc": "Occlusion or stenosis of precerebral arteries [110.]", 
+      "id": "HIERARCHY.7.3.2", 
+      "parent": "HIERARCHY.7.3", 
+      "name": "Occlusion or stenosis of precerebral arteries [110.]"
+    }, 
+    "HIERARCHY.7.3.3": {
+      "alias": "HIERARCHY733", 
+      "desc": "Other and ill-defined cerebrovascular disease [111.]", 
+      "id": "HIERARCHY.7.3.3", 
+      "parent": "HIERARCHY.7.3", 
+      "name": "Other and ill-defined cerebrovascular disease [111.]"
+    }, 
+    "HIERARCHY.7.3.4": {
+      "alias": "HIERARCHY734", 
+      "desc": "Transient cerebral ischemia [112.]", 
+      "id": "HIERARCHY.7.3.4", 
+      "parent": "HIERARCHY.7.3", 
+      "name": "Transient cerebral ischemia [112.]"
+    }, 
+    "HIERARCHY.7.3.5": {
+      "alias": "HIERARCHY735", 
+      "desc": "Late effects of cerebrovascular disease [113.]", 
+      "id": "HIERARCHY.7.3.5", 
+      "parent": "HIERARCHY.7.3", 
+      "name": "Late effects of cerebrovascular disease [113.]"
+    }, 
+    "4550": {
+      "desc": "Internal hemorrhoids without mention of complication", 
+      "id": "4550", 
+      "parent": "HIERARCHY.7.5.3", 
+      "name": "Internal hemorrhoids without mention of complication"
+    }, 
+    "HIERARCHY.4.1.3.2": {
+      "alias": "HIERARCHY4132", 
+      "desc": "Other deficiency anemia                                                                                 -", 
+      "id": "HIERARCHY.4.1.3.2", 
+      "parent": "HIERARCHY.4.1.3", 
+      "name": "Other deficiency anemia                                                                                 -"
+    }, 
+    "HIERARCHY.4.1.3.3": {
+      "alias": "HIERARCHY4133", 
+      "desc": "Aplastic anemia                                                                                         -", 
+      "id": "HIERARCHY.4.1.3.3", 
+      "parent": "HIERARCHY.4.1.3", 
+      "name": "Aplastic anemia                                                                                         -"
+    }, 
+    "HIERARCHY.7.2.11.2": {
+      "alias": "HIERARCHY72112", 
+      "desc": "Heart failure                                                                                           -", 
+      "id": "HIERARCHY.7.2.11.2", 
+      "parent": "HIERARCHY.7.2.11", 
+      "name": "Heart failure                                                                                           -"
+    }, 
+    "HIERARCHY.4.1.3.1": {
+      "alias": "HIERARCHY4131", 
+      "desc": "Iron deficiency anemia                                                                                  -", 
+      "id": "HIERARCHY.4.1.3.1", 
+      "parent": "HIERARCHY.4.1.3", 
+      "name": "Iron deficiency anemia                                                                                  -"
+    }, 
+    "HIERARCHY.4.1.3.6": {
+      "alias": "HIERARCHY4136", 
+      "desc": "Other specified anemia                                                                                  -", 
+      "id": "HIERARCHY.4.1.3.6", 
+      "parent": "HIERARCHY.4.1.3", 
+      "name": "Other specified anemia                                                                                  -"
+    }, 
+    "HIERARCHY.4.1.3.7": {
+      "alias": "HIERARCHY4137", 
+      "desc": "Anemia; unspecified                                                                                     -", 
+      "id": "HIERARCHY.4.1.3.7", 
+      "parent": "HIERARCHY.4.1.3", 
+      "name": "Anemia; unspecified                                                                                     -"
+    }, 
+    "V0481": {
+      "unmapped": true, 
+      "desc": "diagnosis V0481", 
+      "id": "V0481", 
+      "parent": "HIERARCHY.1.5", 
+      "name": "V0481"
+    }, 
+    "24900": {
+      "unmapped": true, 
+      "desc": "diagnosis 24900", 
+      "id": "24900", 
+      "parent": "HIERARCHY.3.2", 
+      "name": "24900"
+    }, 
+    "2382": {
+      "desc": "Skin", 
+      "id": "2382", 
+      "parent": "HIERARCHY.2.14", 
+      "name": "Skin"
+    }, 
+    "HIERARCHY.7.2.1.3": {
+      "alias": "HIERARCHY7213", 
+      "desc": "Nonrheumatic aortic valve disorders                                                                     -", 
+      "id": "HIERARCHY.7.2.1.3", 
+      "parent": "HIERARCHY.7.2.1", 
+      "name": "Nonrheumatic aortic valve disorders                                                                     -"
+    }, 
+    "2768": {
+      "desc": "Hypopotassemia", 
+      "id": "2768", 
+      "parent": "HIERARCHY.3.8.4", 
+      "name": "Hypopotassemia"
+    }, 
+    "HIERARCHY.2.1.1": {
+      "alias": "HIERARCHY211", 
+      "desc": "Cancer of colon [14.]", 
+      "id": "HIERARCHY.2.1.1", 
+      "parent": "HIERARCHY.2.1", 
+      "name": "Cancer of colon [14.]"
+    }, 
+    "2761": {
+      "desc": "Hyposmolality and/or hyponatremia", 
+      "id": "2761", 
+      "parent": "HIERARCHY.3.8.1", 
+      "name": "Hyposmolality and/or hyponatremia"
+    }, 
+    "2449": {
+      "desc": "Unspecified hypothyroidism", 
+      "id": "2449", 
+      "parent": "HIERARCHY.3.1.2", 
+      "name": "Unspecified hypothyroidism"
+    }, 
+    "60001": {
+      "desc": "Hyperplasia of prostate", 
+      "id": "60001", 
+      "parent": "HIERARCHY.10.2.1", 
+      "name": "Hyperplasia of prostate"
+    }, 
+    "60000": {
+      "desc": "Hyperplasia of prostate", 
+      "id": "60000", 
+      "parent": "HIERARCHY.10.2.1", 
+      "name": "Hyperplasia of prostate"
+    }, 
+    "7862": {
+      "desc": "Cough", 
+      "id": "7862", 
+      "parent": "HIERARCHY.8.8.3", 
+      "name": "Cough"
+    }, 
+    "7902": {
+      "desc": "Abnormal glucose tolerance test", 
+      "id": "7902", 
+      "parent": "HIERARCHY.3.2", 
+      "name": "Abnormal glucose tolerance test"
+    }, 
+    "7906": {
+      "desc": "Other abnormal blood chemistry", 
+      "id": "7906", 
+      "parent": "HIERARCHY.18", 
+      "name": "Other abnormal blood chemistry"
+    }, 
+    "27651": {
+      "desc": "Volume depletion", 
+      "id": "27651", 
+      "parent": "HIERARCHY.3.8.2", 
+      "name": "Volume depletion"
+    }, 
+    "42731": {
+      "desc": "Atrial fibrillation and flutter", 
+      "id": "42731", 
+      "parent": "HIERARCHY.7.2.9.3", 
+      "name": "Atrial fibrillation and flutter"
+    }, 
+    "42732": {
+      "desc": "Atrial fibrillation and flutter", 
+      "id": "42732", 
+      "parent": "HIERARCHY.7.2.9.4", 
+      "name": "Atrial fibrillation and flutter"
+    }, 
+    "3804": {
+      "desc": "Impacted cerumen", 
+      "id": "3804", 
+      "parent": "HIERARCHY.6.8.3", 
+      "name": "Impacted cerumen"
+    }, 
+    "HIERARCHY.6.7.2.3": {
+      "alias": "HIERARCHY6723", 
+      "desc": "Other retinal disorders                                                                                 -", 
+      "id": "HIERARCHY.6.7.2.3", 
+      "parent": "HIERARCHY.6.7.2", 
+      "name": "Other retinal disorders                                                                                 -"
+    }, 
+    "V1046": {
+      "unmapped": true, 
+      "desc": "diagnosis V1046", 
+      "id": "V1046", 
+      "parent": "HIERARCHY.2.8.1", 
+      "name": "V1046"
+    }, 
+    "HIERARCHY.6.4.2": {
+      "alias": "HIERARCHY642", 
+      "desc": "Convulsions                                                                                             -", 
+      "id": "HIERARCHY.6.4.2", 
+      "parent": "HIERARCHY.6.4", 
+      "name": "Convulsions                                                                                             -"
+    }, 
+    "HIERARCHY.6.4.1": {
+      "alias": "HIERARCHY641", 
+      "desc": "Epilepsy                                                                                                -", 
+      "id": "HIERARCHY.6.4.1", 
+      "parent": "HIERARCHY.6.4", 
+      "name": "Epilepsy                                                                                                -"
+    }, 
+    "HIERARCHY.3.8.2": {
+      "alias": "HIERARCHY382", 
+      "desc": "Hypovolemia                                                                                             -", 
+      "id": "HIERARCHY.3.8.2", 
+      "parent": "HIERARCHY.3.8", 
+      "name": "Hypovolemia                                                                                             -"
+    }, 
+    "HIERARCHY.3.8.1": {
+      "alias": "HIERARCHY381", 
+      "desc": "Hyposmolality                                                                                           -", 
+      "id": "HIERARCHY.3.8.1", 
+      "parent": "HIERARCHY.3.8", 
+      "name": "Hyposmolality                                                                                           -"
+    }, 
+    "2689": {
+      "desc": "Unspecified", 
+      "id": "2689", 
+      "parent": "HIERARCHY.3.5.2", 
+      "name": "Unspecified"
+    }, 
+    "HIERARCHY.3.8.5": {
+      "alias": "HIERARCHY385", 
+      "desc": "Other fluid and electrolyte disorders                                                                   -", 
+      "id": "HIERARCHY.3.8.5", 
+      "parent": "HIERARCHY.3.8", 
+      "name": "Other fluid and electrolyte disorders                                                                   -"
+    }, 
+    "HIERARCHY.3.8.4": {
+      "alias": "HIERARCHY384", 
+      "desc": "Hypopotassemia                                                                                          -", 
+      "id": "HIERARCHY.3.8.4", 
+      "parent": "HIERARCHY.3.8", 
+      "name": "Hypopotassemia                                                                                          -"
+    }, 
+    "HIERARCHY.6.2.1": {
+      "alias": "HIERARCHY621", 
+      "desc": "Parkinsons disease [79.]", 
+      "id": "HIERARCHY.6.2.1", 
+      "parent": "HIERARCHY.6.2", 
+      "name": "Parkinsons disease [79.]"
+    }, 
+    "HIERARCHY.6.2.3": {
+      "alias": "HIERARCHY623", 
+      "desc": "Other hereditary and degenerative nervous system conditions [81.]", 
+      "id": "HIERARCHY.6.2.3", 
+      "parent": "HIERARCHY.6.2", 
+      "name": "Other hereditary and degenerative nervous system conditions [81.]"
+    }, 
+    "HIERARCHY.8.1.5.1": {
+      "alias": "HIERARCHY8151", 
+      "desc": "Acute upper respiratory infections of multiple or unspecified sites                                     -", 
+      "id": "HIERARCHY.8.1.5.1", 
+      "parent": "HIERARCHY.8.1.5", 
+      "name": "Acute upper respiratory infections of multiple or unspecified sites                                     -"
+    }, 
+    "71946": {
+      "desc": "Pain in joint", 
+      "id": "71946", 
+      "parent": "HIERARCHY.13.2.3", 
+      "name": "Pain in joint"
+    }, 
+    "HIERARCHY.8.1.5.4": {
+      "alias": "HIERARCHY8154", 
+      "desc": "Other and unspecified upper respiratory infections                                                      -", 
+      "id": "HIERARCHY.8.1.5.4", 
+      "parent": "HIERARCHY.8.1.5", 
+      "name": "Other and unspecified upper respiratory infections                                                      -"
+    }, 
+    "71941": {
+      "desc": "Pain in joint", 
+      "id": "71941", 
+      "parent": "HIERARCHY.13.2.3", 
+      "name": "Pain in joint"
+    }, 
+    "HIERARCHY.3.7": {
+      "alias": "HIERARCHY37", 
+      "desc": "Gout and other crystal arthropathies [54.]", 
+      "id": "HIERARCHY.3.7", 
+      "parent": "HIERARCHY.3", 
+      "name": "Gout and other crystal arthropathies [54.]"
+    }, 
+    "HIERARCHY.12.1.1": {
+      "alias": "HIERARCHY1211", 
+      "desc": "Skin and subcutaneous tissue infections [197.]", 
+      "id": "HIERARCHY.12.1.1", 
+      "parent": "HIERARCHY.12", 
+      "name": "Skin and subcutaneous tissue infections [197.]"
+    }, 
+    "HIERARCHY.3.6": {
+      "alias": "HIERARCHY36", 
+      "desc": "Disorders of lipid metabolism [53.]", 
+      "id": "HIERARCHY.3.6", 
+      "parent": "HIERARCHY.3", 
+      "name": "Disorders of lipid metabolism [53.]"
+    }, 
+    "HIERARCHY.8.3.2.1": {
+      "alias": "HIERARCHY8321", 
+      "desc": "Other asthma without status asthmaticus or exacerbation                                                 -", 
+      "id": "HIERARCHY.8.3.2.1", 
+      "parent": "HIERARCHY.8.3.2", 
+      "name": "Other asthma without status asthmaticus or exacerbation                                                 -"
+    }, 
+    "4779": {
+      "desc": "Cause unspecified", 
+      "id": "4779", 
+      "parent": "HIERARCHY.8.9", 
+      "name": "Cause unspecified"
+    }, 
+    "HIERARCHY.13.3.3.1": {
+      "alias": "HIERARCHY13331", 
+      "desc": "Cervical radiculitis                                                                                    -", 
+      "id": "HIERARCHY.13.3.3.1", 
+      "parent": "HIERARCHY.13.3.3", 
+      "name": "Cervical radiculitis                                                                                    -"
+    }, 
+    "HIERARCHY.6.9.2": {
+      "alias": "HIERARCHY692", 
+      "desc": "Other central nervous system disorders                                                                  -", 
+      "id": "HIERARCHY.6.9.2", 
+      "parent": "HIERARCHY.6.9", 
+      "name": "Other central nervous system disorders                                                                  -"
+    }, 
+    "HIERARCHY.6.9.1": {
+      "alias": "HIERARCHY691", 
+      "desc": "Disorders of the peripheral nervous system                                                              -", 
+      "id": "HIERARCHY.6.9.1", 
+      "parent": "HIERARCHY.6.9", 
+      "name": "Disorders of the peripheral nervous system                                                              -"
+    }, 
+    "HIERARCHY.7.2.9.2": {
+      "alias": "HIERARCHY7292", 
+      "desc": "Paroxysmal ventricular tachycardia                                                                      -", 
+      "id": "HIERARCHY.7.2.9.2", 
+      "parent": "HIERARCHY.7.2.9", 
+      "name": "Paroxysmal ventricular tachycardia                                                                      -"
+    }, 
+    "78791": {
+      "desc": "Other", 
+      "id": "78791", 
+      "parent": "HIERARCHY.9.12.3", 
+      "name": "Other"
+    }, 
+    "V4582": {
+      "unmapped": true, 
+      "desc": "diagnosis V4582", 
+      "id": "V4582", 
+      "parent": "HIERARCHY.7.2.4.4", 
+      "name": "V4582"
+    }, 
+    "HIERARCHY.9.5.2": {
+      "alias": "HIERARCHY952", 
+      "desc": "Diaphragmatic hernia                                                                                    -", 
+      "id": "HIERARCHY.9.5.2", 
+      "parent": "HIERARCHY.9.5", 
+      "name": "Diaphragmatic hernia                                                                                    -"
+    }, 
+    "HIERARCHY.9.5.3": {
+      "alias": "HIERARCHY953", 
+      "desc": "Abdominal hernia [143.]", 
+      "id": "HIERARCHY.9.5.3", 
+      "parent": "HIERARCHY.9", 
+      "name": "Abdominal hernia [143.]"
+    }, 
+    "HIERARCHY.10.1.2.1": {
+      "alias": "HIERARCHY10121", 
+      "desc": "Acute renal failure                                                                                     -", 
+      "id": "HIERARCHY.10.1.2.1", 
+      "parent": "HIERARCHY.10.1.2", 
+      "name": "Acute renal failure                                                                                     -"
+    }, 
+    "HIERARCHY.7.5.1": {
+      "alias": "HIERARCHY751", 
+      "desc": "Phlebitis; thrombophlebitis and thromboembolism [118.]", 
+      "id": "HIERARCHY.7.5.1", 
+      "parent": "HIERARCHY.7.5", 
+      "name": "Phlebitis; thrombophlebitis and thromboembolism [118.]"
+    }, 
+    "42789": {
+      "desc": "Other", 
+      "id": "42789", 
+      "parent": "HIERARCHY.7.2.9.7", 
+      "name": "Other"
+    }, 
+    "HIERARCHY.7.5.4": {
+      "alias": "HIERARCHY754", 
+      "desc": "Other diseases of veins and lymphatics [121.]", 
+      "id": "HIERARCHY.7.5.4", 
+      "parent": "HIERARCHY.7.5", 
+      "name": "Other diseases of veins and lymphatics [121.]"
+    }, 
+    "HIERARCHY.7.5.2": {
+      "alias": "HIERARCHY752", 
+      "desc": "Varicose veins of lower extremity [119.]", 
+      "id": "HIERARCHY.7.5.2", 
+      "parent": "HIERARCHY.7.5", 
+      "name": "Varicose veins of lower extremity [119.]"
+    }, 
+    "HIERARCHY.7.5.3": {
+      "alias": "HIERARCHY753", 
+      "desc": "Hemorrhoids [120.]", 
+      "id": "HIERARCHY.7.5.3", 
+      "parent": "HIERARCHY.7.5", 
+      "name": "Hemorrhoids [120.]"
+    }, 
+    "2948": {
+      "desc": "Other", 
+      "id": "2948", 
+      "parent": "HIERARCHY.5.4", 
+      "name": "Other"
+    }, 
+    "42781": {
+      "desc": "Other", 
+      "id": "42781", 
+      "parent": "HIERARCHY.7.2.9.6", 
+      "name": "Other"
+    }, 
+    "HIERARCHY.10.1.4.3": {
+      "alias": "HIERARCHY10143", 
+      "desc": "Urinary tract infection; site not specified                                                             -", 
+      "id": "HIERARCHY.10.1.4.3", 
+      "parent": "HIERARCHY.10.1.4", 
+      "name": "Urinary tract infection; site not specified                                                             -"
+    }, 
+    "HIERARCHY.10.1.4.2": {
+      "alias": "HIERARCHY10142", 
+      "desc": "Cystitis and urethritis                                                                                 -", 
+      "id": "HIERARCHY.10.1.4.2", 
+      "parent": "HIERARCHY.10.1.4", 
+      "name": "Cystitis and urethritis                                                                                 -"
+    }, 
+    "HIERARCHY.10.1.4.1": {
+      "alias": "HIERARCHY10141", 
+      "desc": "Infections of kidney                                                                                    -", 
+      "id": "HIERARCHY.10.1.4.1", 
+      "parent": "HIERARCHY.10.1.4", 
+      "name": "Infections of kidney                                                                                    -"
+    }, 
+    "HIERARCHY.10.1.8.3": {
+      "alias": "HIERARCHY10183", 
+      "desc": "Other and unspecified genitourinary symptoms                                                            -", 
+      "id": "HIERARCHY.10.1.8.3", 
+      "parent": "HIERARCHY.10.1.8", 
+      "name": "Other and unspecified genitourinary symptoms                                                            -"
+    }, 
+    "HIERARCHY.10.1.8.2": {
+      "alias": "HIERARCHY10182", 
+      "desc": "Retention of urine                                                                                      -", 
+      "id": "HIERARCHY.10.1.8.2", 
+      "parent": "HIERARCHY.10.1.8", 
+      "name": "Retention of urine                                                                                      -"
+    }, 
+    "HIERARCHY.10.1.8.1": {
+      "alias": "HIERARCHY10181", 
+      "desc": "Hematuria                                                                                               -", 
+      "id": "HIERARCHY.10.1.8.1", 
+      "parent": "HIERARCHY.10.1.8", 
+      "name": "Hematuria                                                                                               -"
+    }, 
+    "7393": {
+      "desc": "Lumbar region", 
+      "id": "7393", 
+      "parent": "HIERARCHY.13.9", 
+      "name": "Lumbar region"
+    }, 
+    "V7644": {
+      "unmapped": true, 
+      "desc": "diagnosis V7644", 
+      "id": "V7644", 
+      "parent": "HIERARCHY.17.2.5", 
+      "name": "V7644"
+    }, 
+    "V4585": {
+      "unmapped": true, 
+      "desc": "diagnosis V4585", 
+      "id": "V4585", 
+      "parent": "HIERARCHY.3.2", 
+      "name": "V4585"
+    }, 
+    "V5883": {
+      "unmapped": true, 
+      "desc": "diagnosis V5883", 
+      "id": "V5883", 
+      "parent": "HIERARCHY.17.2.4", 
+      "name": "V5883"
+    }, 
+    "78060": {
+      "desc": "Pyrexia of unknown origin", 
+      "id": "78060", 
+      "parent": "HIERARCHY.17.1.2", 
+      "name": "Pyrexia of unknown origin"
+    }, 
+    "HIERARCHY.8.1.1.4": {
+      "alias": "HIERARCHY8114", 
+      "desc": "Other pneumonia                                                                                         -", 
+      "id": "HIERARCHY.8.1.1.4", 
+      "parent": "HIERARCHY.8.1.1", 
+      "name": "Other pneumonia                                                                                         -"
+    }, 
+    "HIERARCHY.8.1.1.2": {
+      "alias": "HIERARCHY8112", 
+      "desc": "Other bacterial pneumonia                                                                               -", 
+      "id": "HIERARCHY.8.1.1.2", 
+      "parent": "HIERARCHY.8.1.1", 
+      "name": "Other bacterial pneumonia                                                                               -"
+    }, 
+    "HIERARCHY.8.1.1.3": {
+      "alias": "HIERARCHY8113", 
+      "desc": "Pneumonia; organism unspecified                                                                         -", 
+      "id": "HIERARCHY.8.1.1.3", 
+      "parent": "HIERARCHY.8.1.1", 
+      "name": "Pneumonia; organism unspecified                                                                         -"
+    }, 
+    "HIERARCHY.16.12": {
+      "alias": "HIERARCHY1612", 
+      "desc": "Other injuries and conditions due to external causes [244.]", 
+      "id": "HIERARCHY.16.12", 
+      "parent": "HIERARCHY.16", 
+      "name": "Other injuries and conditions due to external causes [244.]"
+    }, 
+    "HIERARCHY.16.10": {
+      "alias": "HIERARCHY1610", 
+      "desc": "Complications", 
+      "id": "HIERARCHY.16.10", 
+      "parent": "HIERARCHY.16", 
+      "name": "Complications"
+    }, 
+    "HIERARCHY.16.11": {
+      "alias": "HIERARCHY1611", 
+      "desc": "Poisoning", 
+      "id": "HIERARCHY.16.11", 
+      "parent": "HIERARCHY.16", 
+      "name": "Poisoning"
+    }, 
+    "4254": {
+      "desc": "Other primary cardiomyopathies", 
+      "id": "4254", 
+      "parent": "HIERARCHY.7.2.2.1", 
+      "name": "Other primary cardiomyopathies"
+    }, 
+    "5533": {
+      "desc": "Diaphragmatic", 
+      "id": "5533", 
+      "parent": "HIERARCHY.9.5.2", 
+      "name": "Diaphragmatic"
+    }, 
+    "V5861": {
+      "unmapped": true, 
+      "desc": "diagnosis V5861", 
+      "id": "V5861", 
+      "parent": "HIERARCHY.17.2.4", 
+      "name": "V5861"
+    }, 
+    "7823": {
+      "desc": "Edema", 
+      "id": "7823", 
+      "parent": "HIERARCHY.18", 
+      "name": "Edema"
+    }, 
+    "V5869": {
+      "unmapped": true, 
+      "desc": "diagnosis V5869", 
+      "id": "V5869", 
+      "parent": "HIERARCHY.17.2.4", 
+      "name": "V5869"
+    }, 
+    "4660": {
+      "desc": "Acute bronchitis", 
+      "id": "4660", 
+      "parent": "HIERARCHY.8.1.4", 
+      "name": "Acute bronchitis"
+    }, 
+    "HIERARCHY.7.1.2": {
+      "alias": "HIERARCHY712", 
+      "desc": "Hypertension with complications and secondary hypertension [99.]", 
+      "id": "HIERARCHY.7.1.2", 
+      "parent": "HIERARCHY.7.1", 
+      "name": "Hypertension with complications and secondary hypertension [99.]"
+    }, 
+    "HIERARCHY.7.1.1": {
+      "alias": "HIERARCHY711", 
+      "desc": "Essential hypertension [98.]", 
+      "id": "HIERARCHY.7.1.1", 
+      "parent": "HIERARCHY.7.1", 
+      "name": "Essential hypertension [98.]"
+    }, 
+    "HIERARCHY.18": {
+      "alias": "HIERARCHY18", 
+      "desc": "Residual codes; unclassified; all E codes [259. and 260.]                                               -", 
+      "id": "HIERARCHY.18", 
+      "parent": "", 
+      "name": "Residual codes; unclassified; all E codes [259. and 260.]                                               -"
+    }, 
+    "HIERARCHY.12.3.2": {
+      "alias": "HIERARCHY1232", 
+      "desc": "Chronic ulcer of leg or foot                                                                            -", 
+      "id": "HIERARCHY.12.3.2", 
+      "parent": "HIERARCHY.12.3", 
+      "name": "Chronic ulcer of leg or foot                                                                            -"
+    }, 
+    "HIERARCHY.12.3.1": {
+      "alias": "HIERARCHY1231", 
+      "desc": "Decubitus ulcer                                                                                         -", 
+      "id": "HIERARCHY.12.3.1", 
+      "parent": "HIERARCHY.12.3", 
+      "name": "Decubitus ulcer                                                                                         -"
+    }, 
+    "HIERARCHY.13.2.3": {
+      "alias": "HIERARCHY1323", 
+      "desc": "Other non-traumatic joint disorders [204.]", 
+      "id": "HIERARCHY.13.2.3", 
+      "parent": "HIERARCHY.13.2", 
+      "name": "Other non-traumatic joint disorders [204.]"
+    }, 
+    "HIERARCHY.13.2.2": {
+      "alias": "HIERARCHY1322", 
+      "desc": "Osteoarthritis [203.]", 
+      "id": "HIERARCHY.13.2.2", 
+      "parent": "HIERARCHY.13.2", 
+      "name": "Osteoarthritis [203.]"
+    }, 
+    "HIERARCHY.13.2.1": {
+      "alias": "HIERARCHY1321", 
+      "desc": "Rheumatoid arthritis and related disease [202.]", 
+      "id": "HIERARCHY.13.2.1", 
+      "parent": "HIERARCHY.13.2", 
+      "name": "Rheumatoid arthritis and related disease [202.]"
+    }, 
+    "72251": {
+      "desc": "Degeneration of thoracic or lumbar intervertebral disc", 
+      "id": "72251", 
+      "parent": "HIERARCHY.13.3.2", 
+      "name": "Degeneration of thoracic or lumbar intervertebral disc"
+    }, 
+    "HIERARCHY.2.8": {
+      "alias": "HIERARCHY28", 
+      "desc": "Cancer of male genital organs", 
+      "id": "HIERARCHY.2.8", 
+      "parent": "HIERARCHY.2", 
+      "name": "Cancer of male genital organs"
+    }, 
+    "HIERARCHY.2.9": {
+      "alias": "HIERARCHY29", 
+      "desc": "Cancer of urinary organs", 
+      "id": "HIERARCHY.2.9", 
+      "parent": "HIERARCHY.2", 
+      "name": "Cancer of urinary organs"
+    }, 
+    "HIERARCHY.2.4": {
+      "alias": "HIERARCHY24", 
+      "desc": "Cancer of skin", 
+      "id": "HIERARCHY.2.4", 
+      "parent": "HIERARCHY.2", 
+      "name": "Cancer of skin"
+    }, 
+    "HIERARCHY.2.5": {
+      "alias": "HIERARCHY25", 
+      "desc": "Cancer of breast [24.]", 
+      "id": "HIERARCHY.2.5", 
+      "parent": "HIERARCHY.2", 
+      "name": "Cancer of breast [24.]"
+    }, 
+    "HIERARCHY.2.2": {
+      "alias": "HIERARCHY22", 
+      "desc": "Other gastrointestinal cancer", 
+      "id": "HIERARCHY.2.2", 
+      "parent": "HIERARCHY.2", 
+      "name": "Other gastrointestinal cancer"
+    }, 
+    "HIERARCHY.2.3": {
+      "alias": "HIERARCHY23", 
+      "desc": "Cancer of bronchus; lung [19.]", 
+      "id": "HIERARCHY.2.3", 
+      "parent": "HIERARCHY.2", 
+      "name": "Cancer of bronchus; lung [19.]"
+    }, 
+    "HIERARCHY.2.1": {
+      "alias": "HIERARCHY21", 
+      "desc": "Colorectal cancer", 
+      "id": "HIERARCHY.2.1", 
+      "parent": "HIERARCHY.2", 
+      "name": "Colorectal cancer"
+    }, 
+    "HIERARCHY.5.14": {
+      "alias": "HIERARCHY514", 
+      "desc": "Screening and history of mental health and substance abuse codes [663.]", 
+      "id": "HIERARCHY.5.14", 
+      "parent": "HIERARCHY.5", 
+      "name": "Screening and history of mental health and substance abuse codes [663.]"
+    }, 
+    "HIERARCHY.5.11": {
+      "alias": "HIERARCHY511", 
+      "desc": "Alcohol-related disorders [660.]", 
+      "id": "HIERARCHY.5.11", 
+      "parent": "HIERARCHY.5", 
+      "name": "Alcohol-related disorders [660.]"
+    }, 
+    "HIERARCHY.5.10": {
+      "alias": "HIERARCHY510", 
+      "desc": "Schizophrenia and other psychotic disorders [659.]", 
+      "id": "HIERARCHY.5.10", 
+      "parent": "HIERARCHY.5", 
+      "name": "Schizophrenia and other psychotic disorders [659.]"
+    }, 
+    "HIERARCHY.6.8.1": {
+      "alias": "HIERARCHY681", 
+      "desc": "Otitis media and related conditions [92.]", 
+      "id": "HIERARCHY.6.8.1", 
+      "parent": "HIERARCHY.6.8", 
+      "name": "Otitis media and related conditions [92.]"
+    }, 
+    "53081": {
+      "desc": "Other disorders of esophagus", 
+      "id": "53081", 
+      "parent": "HIERARCHY.9.4.1.2", 
+      "name": "Other disorders of esophagus"
+    }, 
+    "496": {
+      "desc": "Chronic airway obstruction, not elsewhere classified", 
+      "id": "496", 
+      "parent": "HIERARCHY.8.2.2", 
+      "name": "Chronic airway obstruction, not elsewhere classified"
+    }, 
+    "HIERARCHY.8.8.3": {
+      "alias": "HIERARCHY883", 
+      "desc": "Other and unspecified lower respiratory disease                                                         -", 
+      "id": "HIERARCHY.8.8.3", 
+      "parent": "HIERARCHY.8.8", 
+      "name": "Other and unspecified lower respiratory disease                                                         -"
+    }, 
+    "HIERARCHY.7.4.1.1": {
+      "alias": "HIERARCHY7411", 
+      "desc": "Atherosclerosis of arteries of extremities                                                              -", 
+      "id": "HIERARCHY.7.4.1.1", 
+      "parent": "HIERARCHY.7.4.1", 
+      "name": "Atherosclerosis of arteries of extremities                                                              -"
+    }, 
+    "HIERARCHY.2.9.1": {
+      "alias": "HIERARCHY291", 
+      "desc": "Cancer of bladder [32.]", 
+      "id": "HIERARCHY.2.9.1", 
+      "parent": "HIERARCHY.2.9", 
+      "name": "Cancer of bladder [32.]"
+    }, 
+    "73301": {
+      "desc": "Osteoporosis", 
+      "id": "73301", 
+      "parent": "HIERARCHY.13.4", 
+      "name": "Osteoporosis"
+    }, 
+    "42760": {
+      "desc": "Premature beats", 
+      "id": "42760", 
+      "parent": "HIERARCHY.7.2.9.5", 
+      "name": "Premature beats"
+    }, 
+    "42761": {
+      "desc": "Premature beats", 
+      "id": "42761", 
+      "parent": "HIERARCHY.7.2.9.5", 
+      "name": "Premature beats"
+    }, 
+    "HIERARCHY.9.11": {
+      "alias": "HIERARCHY911", 
+      "desc": "Noninfectious gastroenteritis [154.]", 
+      "id": "HIERARCHY.9.11", 
+      "parent": "HIERARCHY.9", 
+      "name": "Noninfectious gastroenteritis [154.]"
+    }, 
+    "HIERARCHY.9.10": {
+      "alias": "HIERARCHY910", 
+      "desc": "Gastrointestinal hemorrhage [153.]", 
+      "id": "HIERARCHY.9.10", 
+      "parent": "HIERARCHY.9", 
+      "name": "Gastrointestinal hemorrhage [153.]"
+    }, 
+    "HIERARCHY.9.12": {
+      "alias": "HIERARCHY912", 
+      "desc": "Other gastrointestinal disorders [155.]", 
+      "id": "HIERARCHY.9.12", 
+      "parent": "HIERARCHY.9", 
+      "name": "Other gastrointestinal disorders [155.]"
+    }, 
+    "42769": {
+      "desc": "Premature beats", 
+      "id": "42769", 
+      "parent": "HIERARCHY.7.2.9.5", 
+      "name": "Premature beats"
+    }, 
+    "HIERARCHY.16.6.2": {
+      "alias": "HIERARCHY1662", 
+      "desc": "Open wounds of extremities [236.]", 
+      "id": "HIERARCHY.16.6.2", 
+      "parent": "HIERARCHY.16.6", 
+      "name": "Open wounds of extremities [236.]"
+    }, 
+    "HIERARCHY.10.1.8": {
+      "alias": "HIERARCHY1018", 
+      "desc": "Genitourinary symptoms and ill-defined conditions [163.]", 
+      "id": "HIERARCHY.10.1.8", 
+      "parent": "HIERARCHY.10.1", 
+      "name": "Genitourinary symptoms and ill-defined conditions [163.]"
+    }, 
+    "HIERARCHY.10.1.7": {
+      "alias": "HIERARCHY1017", 
+      "desc": "Other diseases of bladder and urethra [162.]", 
+      "id": "HIERARCHY.10.1.7", 
+      "parent": "HIERARCHY.10.1", 
+      "name": "Other diseases of bladder and urethra [162.]"
+    }, 
+    "HIERARCHY.7.4.1.3": {
+      "alias": "HIERARCHY7413", 
+      "desc": "Other peripheral and visceral atherosclerosis                                                           -", 
+      "id": "HIERARCHY.7.4.1.3", 
+      "parent": "HIERARCHY.7.4.1", 
+      "name": "Other peripheral and visceral atherosclerosis                                                           -"
+    }, 
+    "HIERARCHY.10.1.5": {
+      "alias": "HIERARCHY1015", 
+      "desc": "Calculus of urinary tract [160.]", 
+      "id": "HIERARCHY.10.1.5", 
+      "parent": "HIERARCHY.10.1", 
+      "name": "Calculus of urinary tract [160.]"
+    }, 
+    "HIERARCHY.10.1.4": {
+      "alias": "HIERARCHY1014", 
+      "desc": "Urinary tract infections [159.]", 
+      "id": "HIERARCHY.10.1.4", 
+      "parent": "HIERARCHY.10.1", 
+      "name": "Urinary tract infections [159.]"
+    }, 
+    "HIERARCHY.10.1.3": {
+      "alias": "HIERARCHY1013", 
+      "desc": "Chronic kidney disease [158.]", 
+      "id": "HIERARCHY.10.1.3", 
+      "parent": "HIERARCHY.10.1", 
+      "name": "Chronic kidney disease [158.]"
+    }, 
+    "HIERARCHY.10.1.2": {
+      "alias": "HIERARCHY1012", 
+      "desc": "Acute and unspecified renal failure [157.]", 
+      "id": "HIERARCHY.10.1.2", 
+      "parent": "HIERARCHY.10.1", 
+      "name": "Acute and unspecified renal failure [157.]"
+    }, 
+    "5990": {
+      "desc": "Urinary tract infection, site not specified", 
+      "id": "5990", 
+      "parent": "HIERARCHY.10.1.4.3", 
+      "name": "Urinary tract infection, site not specified"
+    }, 
+    "HIERARCHY.1.3.2": {
+      "alias": "HIERARCHY132", 
+      "desc": "Hepatitis [6.]", 
+      "id": "HIERARCHY.1.3.2", 
+      "parent": "HIERARCHY.1.3", 
+      "name": "Hepatitis [6.]"
+    }, 
+    "HIERARCHY.1.3.3": {
+      "alias": "HIERARCHY133", 
+      "desc": "Other viral infections [7.]", 
+      "id": "HIERARCHY.1.3.3", 
+      "parent": "HIERARCHY.1.3", 
+      "name": "Other viral infections [7.]"
+    }, 
+    "78841": {
+      "desc": "Frequency of urination and polyuria", 
+      "id": "78841", 
+      "parent": "HIERARCHY.10.1.8.3", 
+      "name": "Frequency of urination and polyuria"
+    }, 
+    "4139": {
+      "desc": "Angina pectoris", 
+      "id": "4139", 
+      "parent": "HIERARCHY.7.2.4.1", 
+      "name": "Angina pectoris"
+    }, 
+    "HIERARCHY.6.8": {
+      "alias": "HIERARCHY68", 
+      "desc": "Ear conditions", 
+      "id": "HIERARCHY.6.8", 
+      "parent": "HIERARCHY.6", 
+      "name": "Ear conditions"
+    }, 
+    "HIERARCHY.6.9": {
+      "alias": "HIERARCHY69", 
+      "desc": "Other nervous system disorders [95.]", 
+      "id": "HIERARCHY.6.9", 
+      "parent": "HIERARCHY.6", 
+      "name": "Other nervous system disorders [95.]"
+    }, 
+    "HIERARCHY.13.6.2": {
+      "alias": "HIERARCHY1362", 
+      "desc": "Other acquired deformities [209.]", 
+      "id": "HIERARCHY.13.6.2", 
+      "parent": "HIERARCHY.13.6", 
+      "name": "Other acquired deformities [209.]"
+    }, 
+    "HIERARCHY.13.6.1": {
+      "alias": "HIERARCHY1361", 
+      "desc": "Acquired foot deformities [208.]", 
+      "id": "HIERARCHY.13.6.1", 
+      "parent": "HIERARCHY.13.6", 
+      "name": "Acquired foot deformities [208.]"
+    }, 
+    "HIERARCHY.6.2": {
+      "alias": "HIERARCHY62", 
+      "desc": "Hereditary and degenerative nervous system conditions", 
+      "id": "HIERARCHY.6.2", 
+      "parent": "HIERARCHY.6", 
+      "name": "Hereditary and degenerative nervous system conditions"
+    }, 
+    "HIERARCHY.6.3": {
+      "alias": "HIERARCHY63", 
+      "desc": "Paralysis [82.]", 
+      "id": "HIERARCHY.6.3", 
+      "parent": "HIERARCHY.6", 
+      "name": "Paralysis [82.]"
+    }, 
+    "V4501": {
+      "unmapped": true, 
+      "desc": "diagnosis V4501", 
+      "id": "V4501", 
+      "parent": "HIERARCHY.7.2.8.4", 
+      "name": "V4501"
+    }, 
+    "HIERARCHY.6.6": {
+      "alias": "HIERARCHY66", 
+      "desc": "Coma; stupor; and brain damage [85.]", 
+      "id": "HIERARCHY.6.6", 
+      "parent": "HIERARCHY.6", 
+      "name": "Coma; stupor; and brain damage [85.]"
+    }, 
+    "HIERARCHY.6.7": {
+      "alias": "HIERARCHY67", 
+      "desc": "Eye disorders", 
+      "id": "HIERARCHY.6.7", 
+      "parent": "HIERARCHY.6", 
+      "name": "Eye disorders"
+    }, 
+    "78321": {
+      "desc": "Abnormal loss of weight", 
+      "id": "78321", 
+      "parent": "HIERARCHY.3.11.3", 
+      "name": "Abnormal loss of weight"
+    }, 
+    "HIERARCHY.6.5": {
+      "alias": "HIERARCHY65", 
+      "desc": "Headache; including migraine [84.]", 
+      "id": "HIERARCHY.6.5", 
+      "parent": "HIERARCHY.6", 
+      "name": "Headache; including migraine [84.]"
+    }, 
+    "HIERARCHY.4.1": {
+      "alias": "HIERARCHY41", 
+      "desc": "Anemia", 
+      "id": "HIERARCHY.4.1", 
+      "parent": "HIERARCHY.4", 
+      "name": "Anemia"
+    }, 
+    "HIERARCHY.4.2": {
+      "alias": "HIERARCHY42", 
+      "desc": "Coagulation and hemorrhagic disorders [62.]", 
+      "id": "HIERARCHY.4.2", 
+      "parent": "HIERARCHY.4", 
+      "name": "Coagulation and hemorrhagic disorders [62.]"
+    }, 
+    "HIERARCHY.4.3": {
+      "alias": "HIERARCHY43", 
+      "desc": "Diseases of white blood cells [63.]", 
+      "id": "HIERARCHY.4.3", 
+      "parent": "HIERARCHY.4", 
+      "name": "Diseases of white blood cells [63.]"
+    }, 
+    "HIERARCHY.17.2.5": {
+      "alias": "HIERARCHY1725", 
+      "desc": "Other screening for suspected conditions (not mental disorders or infectious disease) [258.]", 
+      "id": "HIERARCHY.17.2.5", 
+      "parent": "HIERARCHY.17.2", 
+      "name": "Other screening for suspected conditions (not mental disorders or infectious disease) [258.]"
+    }, 
+    "HIERARCHY.17.2.4": {
+      "alias": "HIERARCHY1724", 
+      "desc": "Other aftercare [257.]", 
+      "id": "HIERARCHY.17.2.4", 
+      "parent": "HIERARCHY.17.2", 
+      "name": "Other aftercare [257.]"
+    }, 
+    "HIERARCHY.17.2.3": {
+      "alias": "HIERARCHY1723", 
+      "desc": "Medical examination/evaluation [256.]", 
+      "id": "HIERARCHY.17.2.3", 
+      "parent": "HIERARCHY.17.2", 
+      "name": "Medical examination/evaluation [256.]"
+    }, 
+    "HIERARCHY.17.2.2": {
+      "alias": "HIERARCHY1722", 
+      "desc": "Administrative/social admission [255.]", 
+      "id": "HIERARCHY.17.2.2", 
+      "parent": "HIERARCHY.17.2", 
+      "name": "Administrative/social admission [255.]"
+    }, 
+    "HIERARCHY.17.2.1": {
+      "alias": "HIERARCHY1721", 
+      "desc": "Rehabilitation care; fitting of prostheses; and adjustment of devices [254.]", 
+      "id": "HIERARCHY.17.2.1", 
+      "parent": "HIERARCHY.17.2", 
+      "name": "Rehabilitation care; fitting of prostheses; and adjustment of devices [254.]"
+    }, 
+    "HIERARCHY.6.8.1.2": {
+      "alias": "HIERARCHY6812", 
+      "desc": "Other otitis media and related conditions                                                               -", 
+      "id": "HIERARCHY.6.8.1.2", 
+      "parent": "HIERARCHY.6.8.1", 
+      "name": "Other otitis media and related conditions                                                               -"
+    }, 
+    "HIERARCHY.10.3.9": {
+      "alias": "HIERARCHY1039", 
+      "desc": "Other female genital disorders [175.]", 
+      "id": "HIERARCHY.10.3.9", 
+      "parent": "HIERARCHY.10.3", 
+      "name": "Other female genital disorders [175.]"
+    }, 
+    "HIERARCHY.6.2.3.2": {
+      "alias": "HIERARCHY6232", 
+      "desc": "\"Other and unspecified hereditary and degenera                                                          -", 
+      "id": "HIERARCHY.6.2.3.2", 
+      "parent": "HIERARCHY.6.2.3", 
+      "name": "\"Other and unspecified hereditary and degenera                                                          -"
+    }, 
+    "HIERARCHY.10.3.7": {
+      "alias": "HIERARCHY1037", 
+      "desc": "Menopausal disorders [173.]", 
+      "id": "HIERARCHY.10.3.7", 
+      "parent": "HIERARCHY.10.3", 
+      "name": "Menopausal disorders [173.]"
+    }, 
+    "HIERARCHY.10.3.1": {
+      "alias": "HIERARCHY1031", 
+      "desc": "Nonmalignant breast conditions [167.]", 
+      "id": "HIERARCHY.10.3.1", 
+      "parent": "HIERARCHY.10.3", 
+      "name": "Nonmalignant breast conditions [167.]"
+    }, 
+    "HIERARCHY.3.11.2": {
+      "alias": "HIERARCHY3112", 
+      "desc": "Obesity                                                                                                 -", 
+      "id": "HIERARCHY.3.11.2", 
+      "parent": "HIERARCHY.3.11", 
+      "name": "Obesity                                                                                                 -"
+    }, 
+    "HIERARCHY.3.11.3": {
+      "alias": "HIERARCHY3113", 
+      "desc": "Other and unspecified metabolic; nutritional; and endocrine disorders                                   -", 
+      "id": "HIERARCHY.3.11.3", 
+      "parent": "HIERARCHY.3.11", 
+      "name": "Other and unspecified metabolic; nutritional; and endocrine disorders                                   -"
+    }, 
+    "HIERARCHY.3.11.1": {
+      "alias": "HIERARCHY3111", 
+      "desc": "Disorders of mineral metabolism                                                                         -", 
+      "id": "HIERARCHY.3.11.1", 
+      "parent": "HIERARCHY.3.11", 
+      "name": "Disorders of mineral metabolism                                                                         -"
+    }, 
+    "71945": {
+      "desc": "Pain in joint", 
+      "id": "71945", 
+      "parent": "HIERARCHY.13.2.3", 
+      "name": "Pain in joint"
+    }, 
+    "HIERARCHY.2.10": {
+      "alias": "HIERARCHY210", 
+      "desc": "Cancer of lymphatic and hematopoietic tissue", 
+      "id": "HIERARCHY.2.10", 
+      "parent": "HIERARCHY.2", 
+      "name": "Cancer of lymphatic and hematopoietic tissue"
+    }, 
+    "HIERARCHY.2.11": {
+      "alias": "HIERARCHY211", 
+      "desc": "Cancer; other primary", 
+      "id": "HIERARCHY.2.11", 
+      "parent": "HIERARCHY.2", 
+      "name": "Cancer; other primary"
+    }, 
+    "HIERARCHY.2.12": {
+      "alias": "HIERARCHY212", 
+      "desc": "Secondary malignancies [42.]", 
+      "id": "HIERARCHY.2.12", 
+      "parent": "HIERARCHY.2", 
+      "name": "Secondary malignancies [42.]"
+    }, 
+    "HIERARCHY.2.14": {
+      "alias": "HIERARCHY214", 
+      "desc": "Neoplasms of unspecified nature or uncertain behavior [44.]", 
+      "id": "HIERARCHY.2.14", 
+      "parent": "HIERARCHY.2", 
+      "name": "Neoplasms of unspecified nature or uncertain behavior [44.]"
+    }, 
+    "HIERARCHY.2.15": {
+      "alias": "HIERARCHY215", 
+      "desc": "Maintenance chemotherapy; radiotherapy [45.]", 
+      "id": "HIERARCHY.2.15", 
+      "parent": "HIERARCHY.2", 
+      "name": "Maintenance chemotherapy; radiotherapy [45.]"
+    }, 
+    "HIERARCHY.2.16": {
+      "alias": "HIERARCHY216", 
+      "desc": "Benign neoplasms", 
+      "id": "HIERARCHY.2.16", 
+      "parent": "HIERARCHY.2", 
+      "name": "Benign neoplasms"
+    }, 
+    "40210": {
+      "desc": "Hypertensive heart disease", 
+      "id": "40210", 
+      "parent": "HIERARCHY.7.1.2.1", 
+      "name": "Hypertensive heart disease"
+    }, 
+    "72981": {
+      "desc": "Other symptoms referable to limbs", 
+      "id": "72981", 
+      "parent": "HIERARCHY.13.8", 
+      "name": "Other symptoms referable to limbs"
+    }, 
+    "HIERARCHY.14.5": {
+      "alias": "HIERARCHY145", 
+      "desc": "Other congenital anomalies [217.]", 
+      "id": "HIERARCHY.14.5", 
+      "parent": "HIERARCHY.14", 
+      "name": "Other congenital anomalies [217.]"
+    }, 
+    "HIERARCHY.1.1.4": {
+      "alias": "HIERARCHY114", 
+      "desc": "Other bacterial infections [3.]", 
+      "id": "HIERARCHY.1.1.4", 
+      "parent": "HIERARCHY.1.1", 
+      "name": "Other bacterial infections [3.]"
+    }, 
+    "7140": {
+      "desc": "Rheumatoid arthritis", 
+      "id": "7140", 
+      "parent": "HIERARCHY.13.2.1", 
+      "name": "Rheumatoid arthritis"
+    }, 
+    "HIERARCHY.1.1.2": {
+      "alias": "HIERARCHY112", 
+      "desc": "Septicemia (except in labor) [2.]", 
+      "id": "HIERARCHY.1.1.2", 
+      "parent": "HIERARCHY.1.1", 
+      "name": "Septicemia (except in labor) [2.]"
+    }, 
+    "5859": {
+      "desc": "Chronic renal failure", 
+      "id": "5859", 
+      "parent": "HIERARCHY.10.1.3", 
+      "name": "Chronic renal failure"
+    }, 
+    "37515": {
+      "desc": "Other disorders of lacrimal gland", 
+      "id": "37515", 
+      "parent": "HIERARCHY.6.7.6", 
+      "name": "Other disorders of lacrimal gland"
+    }, 
+    "78052": {
+      "desc": "Sleep disturbances", 
+      "id": "78052", 
+      "parent": "HIERARCHY.18", 
+      "name": "Sleep disturbances"
+    }, 
+    "HIERARCHY.7.2.2": {
+      "alias": "HIERARCHY722", 
+      "desc": "Peri-; endo-; and myocarditis; cardiomyopathy (except that caused by TB or STD) [97.]", 
+      "id": "HIERARCHY.7.2.2", 
+      "parent": "HIERARCHY.7.2", 
+      "name": "Peri-; endo-; and myocarditis; cardiomyopathy (except that caused by TB or STD) [97.]"
+    }, 
+    "72210": {
+      "desc": "Displacement of thoracic or lumbar intervertebral disc without myelopathy", 
+      "id": "72210", 
+      "parent": "HIERARCHY.13.3.2", 
+      "name": "Displacement of thoracic or lumbar intervertebral disc without myelopathy"
+    }, 
+    "7850": {
+      "desc": "Tachycardia, unspecified", 
+      "id": "7850", 
+      "parent": "HIERARCHY.7.2.9.7", 
+      "name": "Tachycardia, unspecified"
+    }, 
+    "7851": {
+      "desc": "Palpitations", 
+      "id": "7851", 
+      "parent": "HIERARCHY.7.2.9.7", 
+      "name": "Palpitations"
+    }, 
+    "HIERARCHY.8.6.2": {
+      "alias": "HIERARCHY862", 
+      "desc": "Other respiratory insufficiency                                                                         -", 
+      "id": "HIERARCHY.8.6.2", 
+      "parent": "HIERARCHY.8.6", 
+      "name": "Other respiratory insufficiency                                                                         -"
+    }, 
+    "HIERARCHY.8.6.1": {
+      "alias": "HIERARCHY861", 
+      "desc": "Respiratory failure                                                                                     -", 
+      "id": "HIERARCHY.8.6.1", 
+      "parent": "HIERARCHY.8.6", 
+      "name": "Respiratory failure                                                                                     -"
+    }, 
+    "4439": {
+      "desc": "Unspecified", 
+      "id": "4439", 
+      "parent": "HIERARCHY.7.4.1.2", 
+      "name": "Unspecified"
+    }, 
+    "7916": {
+      "desc": "Acetonuria", 
+      "id": "7916", 
+      "parent": "HIERARCHY.3.2", 
+      "name": "Acetonuria"
+    }, 
+    "7915": {
+      "desc": "Glycosuria", 
+      "id": "7915", 
+      "parent": "HIERARCHY.3.2", 
+      "name": "Glycosuria"
+    }, 
+    "185": {
+      "desc": "Malignant neoplasm of prostate", 
+      "id": "185", 
+      "parent": "HIERARCHY.2.8.1", 
+      "name": "Malignant neoplasm of prostate"
+    }, 
+    "V700": {
+      "unmapped": true, 
+      "desc": "diagnosis V700", 
+      "id": "V700", 
+      "parent": "HIERARCHY.17.2.3", 
+      "name": "V700"
+    }, 
+    "2113": {
+      "desc": "Colon", 
+      "id": "2113", 
+      "parent": "HIERARCHY.2.16.2.2", 
+      "name": "Colon"
+    }, 
+    "HIERARCHY.12.4": {
+      "alias": "HIERARCHY124", 
+      "desc": "Other skin disorders [200.]", 
+      "id": "HIERARCHY.12.4", 
+      "parent": "HIERARCHY.12", 
+      "name": "Other skin disorders [200.]"
+    }, 
+    "HIERARCHY.12.1": {
+      "alias": "HIERARCHY121", 
+      "desc": "Skin and subcutaneous tissue infections [197.]", 
+      "id": "HIERARCHY.12.1", 
+      "parent": "HIERARCHY.12", 
+      "name": "Skin and subcutaneous tissue infections [197.]"
+    }, 
+    "HIERARCHY.12.2": {
+      "alias": "HIERARCHY122", 
+      "desc": "Other inflammatory condition of skin [198.]", 
+      "id": "HIERARCHY.12.2", 
+      "parent": "HIERARCHY.12", 
+      "name": "Other inflammatory condition of skin [198.]"
+    }, 
+    "HIERARCHY.12.3": {
+      "alias": "HIERARCHY123", 
+      "desc": "Chronic ulcer of skin [199.]", 
+      "id": "HIERARCHY.12.3", 
+      "parent": "HIERARCHY.12", 
+      "name": "Chronic ulcer of skin [199.]"
+    }, 
+    "4019": {
+      "desc": "Essential hypertension", 
+      "id": "4019", 
+      "parent": "HIERARCHY.7.1.1", 
+      "name": "Essential hypertension"
+    }, 
+    "HIERARCHY.10.2": {
+      "alias": "HIERARCHY102", 
+      "desc": "Diseases of male genital organs", 
+      "id": "HIERARCHY.10.2", 
+      "parent": "HIERARCHY.10", 
+      "name": "Diseases of male genital organs"
+    }, 
+    "HIERARCHY.10.3": {
+      "alias": "HIERARCHY103", 
+      "desc": "Diseases of female genital organs", 
+      "id": "HIERARCHY.10.3", 
+      "parent": "HIERARCHY.10", 
+      "name": "Diseases of female genital organs"
+    }, 
+    "HIERARCHY.10.1": {
+      "alias": "HIERARCHY101", 
+      "desc": "Diseases of the urinary system", 
+      "id": "HIERARCHY.10.1", 
+      "parent": "HIERARCHY.10", 
+      "name": "Diseases of the urinary system"
+    }, 
+    "8470": {
+      "unmapped": true, 
+      "desc": "diagnosis 8470", 
+      "id": "8470", 
+      "parent": "HIERARCHY.16.7", 
+      "name": "8470"
+    }, 
+    "8472": {
+      "unmapped": true, 
+      "desc": "diagnosis 8472", 
+      "id": "8472", 
+      "parent": "HIERARCHY.16.7", 
+      "name": "8472"
+    }, 
+    "HIERARCHY.16.8": {
+      "alias": "HIERARCHY168", 
+      "desc": "Superficial injury; contusion [239.]", 
+      "id": "HIERARCHY.16.8", 
+      "parent": "HIERARCHY.16", 
+      "name": "Superficial injury; contusion [239.]"
+    }, 
+    "HIERARCHY.8.5": {
+      "alias": "HIERARCHY85", 
+      "desc": "Pleurisy; pneumothorax; pulmonary collapse [130.]", 
+      "id": "HIERARCHY.8.5", 
+      "parent": "HIERARCHY.8", 
+      "name": "Pleurisy; pneumothorax; pulmonary collapse [130.]"
+    }, 
+    "HIERARCHY.8.6": {
+      "alias": "HIERARCHY86", 
+      "desc": "Respiratory failure; insufficiency; arrest (adult) [131.]", 
+      "id": "HIERARCHY.8.6", 
+      "parent": "HIERARCHY.8", 
+      "name": "Respiratory failure; insufficiency; arrest (adult) [131.]"
+    }, 
+    "HIERARCHY.8.1": {
+      "alias": "HIERARCHY81", 
+      "desc": "Respiratory infections", 
+      "id": "HIERARCHY.8.1", 
+      "parent": "HIERARCHY.8", 
+      "name": "Respiratory infections"
+    }, 
+    "HIERARCHY.8.2": {
+      "alias": "HIERARCHY82", 
+      "desc": "Chronic obstructive pulmonary disease and bronchiectasis [127.]", 
+      "id": "HIERARCHY.8.2", 
+      "parent": "HIERARCHY.8", 
+      "name": "Chronic obstructive pulmonary disease and bronchiectasis [127.]"
+    }, 
+    "7210": {
+      "desc": "Cervical spondylosis without myelopathy", 
+      "id": "7210", 
+      "parent": "HIERARCHY.13.3.1", 
+      "name": "Cervical spondylosis without myelopathy"
+    }, 
+    "HIERARCHY.16.1": {
+      "alias": "HIERARCHY161", 
+      "desc": "Joint disorders and dislocations; trauma-related [225.]", 
+      "id": "HIERARCHY.16.1", 
+      "parent": "HIERARCHY.16", 
+      "name": "Joint disorders and dislocations; trauma-related [225.]"
+    }, 
+    "HIERARCHY.16.2": {
+      "alias": "HIERARCHY162", 
+      "desc": "Fractures", 
+      "id": "HIERARCHY.16.2", 
+      "parent": "HIERARCHY.16", 
+      "name": "Fractures"
+    }, 
+    "7213": {
+      "desc": "Lumbosacral spondylosis without myelopathy", 
+      "id": "7213", 
+      "parent": "HIERARCHY.13.3.1", 
+      "name": "Lumbosacral spondylosis without myelopathy"
+    }, 
+    "HIERARCHY.8.8": {
+      "alias": "HIERARCHY88", 
+      "desc": "Other lower respiratory disease [133.]", 
+      "id": "HIERARCHY.8.8", 
+      "parent": "HIERARCHY.8", 
+      "name": "Other lower respiratory disease [133.]"
+    }, 
+    "HIERARCHY.8.9": {
+      "alias": "HIERARCHY89", 
+      "desc": "Other upper respiratory disease [134.]", 
+      "id": "HIERARCHY.8.9", 
+      "parent": "HIERARCHY.8", 
+      "name": "Other upper respiratory disease [134.]"
+    }, 
+    "HIERARCHY.16.6": {
+      "alias": "HIERARCHY166", 
+      "desc": "Open wounds", 
+      "id": "HIERARCHY.16.6", 
+      "parent": "HIERARCHY.16", 
+      "name": "Open wounds"
+    }, 
+    "HIERARCHY.16.7": {
+      "alias": "HIERARCHY167", 
+      "desc": "Sprains and strains [232.]", 
+      "id": "HIERARCHY.16.7", 
+      "parent": "HIERARCHY.16", 
+      "name": "Sprains and strains [232.]"
+    }, 
+    "HIERARCHY.8.2.2": {
+      "alias": "HIERARCHY822", 
+      "desc": "Chronic airway obstruction; not otherwise specified                                                     -", 
+      "id": "HIERARCHY.8.2.2", 
+      "parent": "HIERARCHY.8.2", 
+      "name": "Chronic airway obstruction; not otherwise specified                                                     -"
+    }, 
+    "HIERARCHY.8.2.3": {
+      "alias": "HIERARCHY823", 
+      "desc": "Obstructive chronic bronchitis                                                                          -", 
+      "id": "HIERARCHY.8.2.3", 
+      "parent": "HIERARCHY.8.2", 
+      "name": "Obstructive chronic bronchitis                                                                          -"
+    }, 
+    "HIERARCHY.8.2.1": {
+      "alias": "HIERARCHY821", 
+      "desc": "Emphysema                                                                                               -", 
+      "id": "HIERARCHY.8.2.1", 
+      "parent": "HIERARCHY.8.2", 
+      "name": "Emphysema                                                                                               -"
+    }, 
+    "HIERARCHY.8.2.4": {
+      "alias": "HIERARCHY824", 
+      "desc": "Other chronic pulmonary disease                                                                         -", 
+      "id": "HIERARCHY.8.2.4", 
+      "parent": "HIERARCHY.8.2", 
+      "name": "Other chronic pulmonary disease                                                                         -"
+    }, 
+    "4011": {
+      "desc": "Essential hypertension", 
+      "id": "4011", 
+      "parent": "HIERARCHY.7.1.1", 
+      "name": "Essential hypertension"
+    }, 
+    "HIERARCHY.10.3.4": {
+      "alias": "HIERARCHY1034", 
+      "desc": "Prolapse of female genital organs [170.]", 
+      "id": "HIERARCHY.10.3.4", 
+      "parent": "HIERARCHY.10.3", 
+      "name": "Prolapse of female genital organs [170.]"
+    }, 
+    "44020": {
+      "desc": "Of arteries of the extremities", 
+      "id": "44020", 
+      "parent": "HIERARCHY.7.4.1.1", 
+      "name": "Of arteries of the extremities"
+    }, 
+    "HIERARCHY.7.4.4.1": {
+      "alias": "HIERARCHY7441", 
+      "desc": "Hypotension                                                                                             -", 
+      "id": "HIERARCHY.7.4.4.1", 
+      "parent": "HIERARCHY.7.4.4", 
+      "name": "Hypotension                                                                                             -"
+    }, 
+    "43310": {
+      "desc": "Carotid artery", 
+      "id": "43310", 
+      "parent": "HIERARCHY.7.3.2", 
+      "name": "Carotid artery"
+    }, 
+    "HIERARCHY.7.2.11.1": {
+      "alias": "HIERARCHY72111", 
+      "desc": "Congestive heart failure                                                                                -", 
+      "id": "HIERARCHY.7.2.11.1", 
+      "parent": "HIERARCHY.7.2.11", 
+      "name": "Congestive heart failure                                                                                -"
+    }, 
+    "7245": {
+      "desc": "Backache, unspecified", 
+      "id": "7245", 
+      "parent": "HIERARCHY.13.3.3.6", 
+      "name": "Backache, unspecified"
+    }, 
+    "71590": {
+      "desc": "Unspecified whether generalized or localized", 
+      "id": "71590", 
+      "parent": "HIERARCHY.13.2.2.2", 
+      "name": "Unspecified whether generalized or localized"
+    }, 
+    "71596": {
+      "desc": "Unspecified whether generalized or localized", 
+      "id": "71596", 
+      "parent": "HIERARCHY.13.2.2.2", 
+      "name": "Unspecified whether generalized or localized"
+    }, 
+    "7242": {
+      "desc": "Lumbago", 
+      "id": "7242", 
+      "parent": "HIERARCHY.13.3.3.3", 
+      "name": "Lumbago"
+    }, 
+    "2334": {
+      "desc": "Prostate", 
+      "id": "2334", 
+      "parent": "HIERARCHY.2.8.1", 
+      "name": "Prostate"
+    }, 
+    "HIERARCHY.6.5.1": {
+      "alias": "HIERARCHY651", 
+      "desc": "Migraine                                                                                                -", 
+      "id": "HIERARCHY.6.5.1", 
+      "parent": "HIERARCHY.6.5", 
+      "name": "Migraine                                                                                                -"
+    }, 
+    "HIERARCHY.4.1.3.5": {
+      "alias": "HIERARCHY4135", 
+      "desc": "Acquired hemolytic anemia                                                                               -", 
+      "id": "HIERARCHY.4.1.3.5", 
+      "parent": "HIERARCHY.4.1.3", 
+      "name": "Acquired hemolytic anemia                                                                               -"
+    }, 
+    "51889": {
+      "desc": "Other diseases of lung, not elsewhere classified", 
+      "id": "51889", 
+      "parent": "HIERARCHY.8.8.3", 
+      "name": "Other diseases of lung, not elsewhere classified"
+    }, 
+    "HIERARCHY.16": {
+      "alias": "HIERARCHY16", 
+      "desc": "Injury and poisoning", 
+      "id": "HIERARCHY.16", 
+      "parent": "", 
+      "name": "Injury and poisoning"
+    }, 
+    "HIERARCHY.17": {
+      "alias": "HIERARCHY17", 
+      "desc": "Symptoms; signs; and ill-defined conditions and factors influencing health status", 
+      "id": "HIERARCHY.17", 
+      "parent": "", 
+      "name": "Symptoms; signs; and ill-defined conditions and factors influencing health status"
+    }, 
+    "HIERARCHY.14": {
+      "alias": "HIERARCHY14", 
+      "desc": "Congenital anomalies", 
+      "id": "HIERARCHY.14", 
+      "parent": "", 
+      "name": "Congenital anomalies"
+    }, 
+    "HIERARCHY.12": {
+      "alias": "HIERARCHY12", 
+      "desc": "Diseases of the skin and subcutaneous tissue", 
+      "id": "HIERARCHY.12", 
+      "parent": "", 
+      "name": "Diseases of the skin and subcutaneous tissue"
+    }, 
+    "HIERARCHY.13": {
+      "alias": "HIERARCHY13", 
+      "desc": "Diseases of the musculoskeletal system and connective tissue", 
+      "id": "HIERARCHY.13", 
+      "parent": "", 
+      "name": "Diseases of the musculoskeletal system and connective tissue"
+    }, 
+    "HIERARCHY.10": {
+      "alias": "HIERARCHY10", 
+      "desc": "Diseases of the genitourinary system", 
+      "id": "HIERARCHY.10", 
+      "parent": "", 
+      "name": "Diseases of the genitourinary system"
+    }, 
+    "HIERARCHY.11": {
+      "alias": "HIERARCHY11", 
+      "desc": "Complications of pregnancy; childbirth; and the puerperium", 
+      "id": "HIERARCHY.11", 
+      "parent": "", 
+      "name": "Complications of pregnancy; childbirth; and the puerperium"
+    }, 
+    "HIERARCHY.16.10.2": {
+      "alias": "HIERARCHY16102", 
+      "desc": "Complications of surgical procedures or medical care [238.]", 
+      "id": "HIERARCHY.16.10.2", 
+      "parent": "HIERARCHY.16.10", 
+      "name": "Complications of surgical procedures or medical care [238.]"
+    }, 
+    "HIERARCHY.16.10.1": {
+      "alias": "HIERARCHY16101", 
+      "desc": "Complication of device; implant or graft [237.]", 
+      "id": "HIERARCHY.16.10.1", 
+      "parent": "HIERARCHY.16.10", 
+      "name": "Complication of device; implant or graft [237.]"
+    }, 
+    "7812": {
+      "desc": "Abnormality of gait", 
+      "id": "7812", 
+      "parent": "HIERARCHY.6.9.3", 
+      "name": "Abnormality of gait"
+    }, 
+    "HIERARCHY.1.3.3.3": {
+      "alias": "HIERARCHY1333", 
+      "desc": "Other and unspecified viral infection                                                                   -", 
+      "id": "HIERARCHY.1.3.3.3", 
+      "parent": "HIERARCHY.1.3.3", 
+      "name": "Other and unspecified viral infection                                                                   -"
+    }, 
+    "72252": {
+      "desc": "Degeneration of thoracic or lumbar intervertebral disc", 
+      "id": "72252", 
+      "parent": "HIERARCHY.13.3.2", 
+      "name": "Degeneration of thoracic or lumbar intervertebral disc"
+    }, 
+    "HIERARCHY.7.3.1.3": {
+      "alias": "HIERARCHY7313", 
+      "desc": "Acute but ill-defined cerebrovascular accident                                                          -", 
+      "id": "HIERARCHY.7.3.1.3", 
+      "parent": "HIERARCHY.7.3.1", 
+      "name": "Acute but ill-defined cerebrovascular accident                                                          -"
+    }, 
+    "HIERARCHY.7.3.1.2": {
+      "alias": "HIERARCHY7312", 
+      "desc": "Occlusion of cerebral arteries                                                                          -", 
+      "id": "HIERARCHY.7.3.1.2", 
+      "parent": "HIERARCHY.7.3.1", 
+      "name": "Occlusion of cerebral arteries                                                                          -"
+    }, 
+    "V0382": {
+      "unmapped": true, 
+      "desc": "diagnosis V0382", 
+      "id": "V0382", 
+      "parent": "HIERARCHY.1.5", 
+      "name": "V0382"
+    }, 
+    "78651": {
+      "desc": "Chest pain", 
+      "id": "78651", 
+      "parent": "HIERARCHY.7.2.5", 
+      "name": "Chest pain"
+    }, 
+    "78650": {
+      "desc": "Chest pain", 
+      "id": "78650", 
+      "parent": "HIERARCHY.7.2.5", 
+      "name": "Chest pain"
+    }, 
+    "HIERARCHY.7.2.9.4": {
+      "alias": "HIERARCHY7294", 
+      "desc": "Atrial flutter                                                                                          -", 
+      "id": "HIERARCHY.7.2.9.4", 
+      "parent": "HIERARCHY.7.2.9", 
+      "name": "Atrial flutter                                                                                          -"
+    }, 
+    "HIERARCHY.7.2.9.5": {
+      "alias": "HIERARCHY7295", 
+      "desc": "Premature beats                                                                                         -", 
+      "id": "HIERARCHY.7.2.9.5", 
+      "parent": "HIERARCHY.7.2.9", 
+      "name": "Premature beats                                                                                         -"
+    }, 
+    "HIERARCHY.7.2.9.6": {
+      "alias": "HIERARCHY7296", 
+      "desc": "Sinoatrial node dysfunction                                                                             -", 
+      "id": "HIERARCHY.7.2.9.6", 
+      "parent": "HIERARCHY.7.2.9", 
+      "name": "Sinoatrial node dysfunction                                                                             -"
+    }, 
+    "HIERARCHY.7.2.9.7": {
+      "alias": "HIERARCHY7297", 
+      "desc": "Other cardiac dysrhythmias                                                                              -", 
+      "id": "HIERARCHY.7.2.9.7", 
+      "parent": "HIERARCHY.7.2.9", 
+      "name": "Other cardiac dysrhythmias                                                                              -"
+    }, 
+    "7197": {
+      "desc": "Difficulty in walking", 
+      "id": "7197", 
+      "parent": "HIERARCHY.13.2.3", 
+      "name": "Difficulty in walking"
+    }, 
+    "HIERARCHY.7.2.9.1": {
+      "alias": "HIERARCHY7291", 
+      "desc": "Paroxysmal supraventricular tachycardia                                                                 -", 
+      "id": "HIERARCHY.7.2.9.1", 
+      "parent": "HIERARCHY.7.2.9", 
+      "name": "Paroxysmal supraventricular tachycardia                                                                 -"
+    }, 
+    "78659": {
+      "desc": "Chest pain", 
+      "id": "78659", 
+      "parent": "HIERARCHY.7.2.5", 
+      "name": "Chest pain"
+    }, 
+    "HIERARCHY.7.2.9.3": {
+      "alias": "HIERARCHY7293", 
+      "desc": "Atrial fibrillation                                                                                     -", 
+      "id": "HIERARCHY.7.2.9.3", 
+      "parent": "HIERARCHY.7.2.9", 
+      "name": "Atrial fibrillation                                                                                     -"
+    }, 
+    "7395": {
+      "desc": "Pelvic region", 
+      "id": "7395", 
+      "parent": "HIERARCHY.13.9", 
+      "name": "Pelvic region"
+    }, 
+    "7394": {
+      "desc": "Sacral region", 
+      "id": "7394", 
+      "parent": "HIERARCHY.13.9", 
+      "name": "Sacral region"
+    }, 
+    "V4581": {
+      "unmapped": true, 
+      "desc": "diagnosis V4581", 
+      "id": "V4581", 
+      "parent": "HIERARCHY.7.2.4.5", 
+      "name": "V4581"
+    }, 
+    "7391": {
+      "desc": "Cervical region", 
+      "id": "7391", 
+      "parent": "HIERARCHY.13.9", 
+      "name": "Cervical region"
+    }, 
+    "HIERARCHY.7.2.1.1": {
+      "alias": "HIERARCHY7211", 
+      "desc": "Chronic rheumatic disease of the heart valves                                                           -", 
+      "id": "HIERARCHY.7.2.1.1", 
+      "parent": "HIERARCHY.7.2.1", 
+      "name": "Chronic rheumatic disease of the heart valves                                                           -"
+    }, 
+    "HIERARCHY.7.2.1.2": {
+      "alias": "HIERARCHY7212", 
+      "desc": "Nonrheumatic mitral valve disorders                                                                     -", 
+      "id": "HIERARCHY.7.2.1.2", 
+      "parent": "HIERARCHY.7.2.1", 
+      "name": "Nonrheumatic mitral valve disorders                                                                     -"
+    }, 
+    "7392": {
+      "desc": "Thoracic region", 
+      "id": "7392", 
+      "parent": "HIERARCHY.13.9", 
+      "name": "Thoracic region"
+    }, 
+    "79431": {
+      "desc": "Cardiovascular", 
+      "id": "79431", 
+      "parent": "HIERARCHY.7.4.4.2", 
+      "name": "Cardiovascular"
+    }, 
+    "HIERARCHY.7.2.9": {
+      "alias": "HIERARCHY729", 
+      "desc": "Cardiac dysrhythmias [106.]", 
+      "id": "HIERARCHY.7.2.9", 
+      "parent": "HIERARCHY.7.2", 
+      "name": "Cardiac dysrhythmias [106.]"
+    }, 
+    "HIERARCHY.7.2.8": {
+      "alias": "HIERARCHY728", 
+      "desc": "Conduction disorders [105.]", 
+      "id": "HIERARCHY.7.2.8", 
+      "parent": "HIERARCHY.7.2", 
+      "name": "Conduction disorders [105.]"
+    }, 
+    "412": {
+      "desc": "Old myocardial infarction", 
+      "id": "412", 
+      "parent": "HIERARCHY.7.2.4.5", 
+      "name": "Old myocardial infarction"
+    }, 
+    "HIERARCHY.7.2.5": {
+      "alias": "HIERARCHY725", 
+      "desc": "Nonspecific chest pain [102.]", 
+      "id": "HIERARCHY.7.2.5", 
+      "parent": "HIERARCHY.7.2", 
+      "name": "Nonspecific chest pain [102.]"
+    }, 
+    "HIERARCHY.7.2.4": {
+      "alias": "HIERARCHY724", 
+      "desc": "Coronary atherosclerosis and other heart disease [101.]", 
+      "id": "HIERARCHY.7.2.4", 
+      "parent": "HIERARCHY.7.2", 
+      "name": "Coronary atherosclerosis and other heart disease [101.]"
+    }, 
+    "HIERARCHY.7.2.7": {
+      "alias": "HIERARCHY727", 
+      "desc": "Other and ill-defined heart disease [104.]", 
+      "id": "HIERARCHY.7.2.7", 
+      "parent": "HIERARCHY.7.2", 
+      "name": "Other and ill-defined heart disease [104.]"
+    }, 
+    "HIERARCHY.7.2.6": {
+      "alias": "HIERARCHY726", 
+      "desc": "Pulmonary heart disease [103.]", 
+      "id": "HIERARCHY.7.2.6", 
+      "parent": "HIERARCHY.7.2", 
+      "name": "Pulmonary heart disease [103.]"
+    }, 
+    "HIERARCHY.7.2.1": {
+      "alias": "HIERARCHY721", 
+      "desc": "Heart valve disorders [96.]", 
+      "id": "HIERARCHY.7.2.1", 
+      "parent": "HIERARCHY.7.2", 
+      "name": "Heart valve disorders [96.]"
+    }, 
+    "HIERARCHY.7.2.3": {
+      "alias": "HIERARCHY723", 
+      "desc": "Acute myocardial infarction [100.]", 
+      "id": "HIERARCHY.7.2.3", 
+      "parent": "HIERARCHY.7.2", 
+      "name": "Acute myocardial infarction [100.]"
+    }, 
+    "7224": {
+      "desc": "Degeneration of cervical intervertebral disc", 
+      "id": "7224", 
+      "parent": "HIERARCHY.13.3.2", 
+      "name": "Degeneration of cervical intervertebral disc"
+    }, 
+    "HIERARCHY.2.15.2": {
+      "alias": "HIERARCHY2152", 
+      "desc": "Chemotherapy                                                                                            -", 
+      "id": "HIERARCHY.2.15.2", 
+      "parent": "HIERARCHY.2.15", 
+      "name": "Chemotherapy                                                                                            -"
+    }, 
+    "311": {
+      "desc": "Depressive disorder, not elsewhere classified", 
+      "id": "311", 
+      "parent": "HIERARCHY.5.8.2", 
+      "name": "Depressive disorder, not elsewhere classified"
+    }, 
+    "41400": {
+      "desc": "Coronary atherosclerosis", 
+      "id": "41400", 
+      "parent": "HIERARCHY.7.2.4.4", 
+      "name": "Coronary atherosclerosis"
+    }, 
+    "41401": {
+      "desc": "Coronary atherosclerosis", 
+      "id": "41401", 
+      "parent": "HIERARCHY.7.2.4.4", 
+      "name": "Coronary atherosclerosis"
+    }, 
+    "HIERARCHY.6.7.5": {
+      "alias": "HIERARCHY675", 
+      "desc": "Inflammation; infection of eye (except that caused by TB or STD) [90.]", 
+      "id": "HIERARCHY.6.7.5", 
+      "parent": "HIERARCHY.6.7", 
+      "name": "Inflammation; infection of eye (except that caused by TB or STD) [90.]"
+    }, 
+    "HIERARCHY.6.7.4": {
+      "alias": "HIERARCHY674", 
+      "desc": "Blindness and vision defects [89.]", 
+      "id": "HIERARCHY.6.7.4", 
+      "parent": "HIERARCHY.6.7", 
+      "name": "Blindness and vision defects [89.]"
+    }, 
+    "HIERARCHY.6.7.6": {
+      "alias": "HIERARCHY676", 
+      "desc": "Other eye disorders [91.]", 
+      "id": "HIERARCHY.6.7.6", 
+      "parent": "HIERARCHY.6.7", 
+      "name": "Other eye disorders [91.]"
+    }, 
+    "HIERARCHY.6.7.1": {
+      "alias": "HIERARCHY671", 
+      "desc": "Cataract [86.]", 
+      "id": "HIERARCHY.6.7.1", 
+      "parent": "HIERARCHY.6.7", 
+      "name": "Cataract [86.]"
+    }, 
+    "HIERARCHY.6.7.3": {
+      "alias": "HIERARCHY673", 
+      "desc": "Glaucoma [88.]", 
+      "id": "HIERARCHY.6.7.3", 
+      "parent": "HIERARCHY.6.7", 
+      "name": "Glaucoma [88.]"
+    }, 
+    "HIERARCHY.6.7.2": {
+      "alias": "HIERARCHY672", 
+      "desc": "Retinal detachments; defects; vascular occlusion; and retinopathy [87.]", 
+      "id": "HIERARCHY.6.7.2", 
+      "parent": "HIERARCHY.6.7", 
+      "name": "Retinal detachments; defects; vascular occlusion; and retinopathy [87.]"
+    }, 
+    "72402": {
+      "desc": "Spinal stenosis, other than cervical", 
+      "id": "72402", 
+      "parent": "HIERARCHY.13.3.3.2", 
+      "name": "Spinal stenosis, other than cervical"
+    }, 
+    "4280": {
+      "desc": "Congestive heart failure", 
+      "id": "4280", 
+      "parent": "HIERARCHY.7.2.11.1", 
+      "name": "Congestive heart failure"
+    }, 
+    "7244": {
+      "desc": "Thoracic or lumbosacral neuritis or radiculitis NOS", 
+      "id": "7244", 
+      "parent": "HIERARCHY.13.3.3.5", 
+      "name": "Thoracic or lumbosacral neuritis or radiculitis NOS"
+    }, 
+    "7243": {
+      "desc": "Sciatica", 
+      "id": "7243", 
+      "parent": "HIERARCHY.13.3.3.4", 
+      "name": "Sciatica"
+    }, 
+    "HIERARCHY.6.5.2": {
+      "alias": "HIERARCHY652", 
+      "desc": "Other headache                                                                                          -", 
+      "id": "HIERARCHY.6.5.2", 
+      "parent": "HIERARCHY.6.5", 
+      "name": "Other headache                                                                                          -"
+    }, 
+    "7241": {
+      "desc": "Pain in thoracic spine", 
+      "id": "7241", 
+      "parent": "HIERARCHY.13.3.3.7", 
+      "name": "Pain in thoracic spine"
+    }, 
+    "51881": {
+      "desc": "Other diseases of lung, not elsewhere classified", 
+      "id": "51881", 
+      "parent": "HIERARCHY.8.6.1", 
+      "name": "Other diseases of lung, not elsewhere classified"
+    }, 
+    "V4365": {
+      "unmapped": true, 
+      "desc": "diagnosis V4365", 
+      "id": "V4365", 
+      "parent": "HIERARCHY.13.8", 
+      "name": "V4365"
+    }, 
+    "HIERARCHY.10.1.5.3": {
+      "alias": "HIERARCHY10153", 
+      "desc": "Other and unspecified urinary calculus                                                                  -", 
+      "id": "HIERARCHY.10.1.5.3", 
+      "parent": "HIERARCHY.10.1.5", 
+      "name": "Other and unspecified urinary calculus                                                                  -"
+    }, 
+    "HIERARCHY.9.6.4.2": {
+      "alias": "HIERARCHY9642", 
+      "desc": "Diverticulitis                                                                                          -", 
+      "id": "HIERARCHY.9.6.4.2", 
+      "parent": "HIERARCHY.9.6.4", 
+      "name": "Diverticulitis                                                                                          -"
+    }, 
+    "HIERARCHY.9.6.4.1": {
+      "alias": "HIERARCHY9641", 
+      "desc": "Diverticulosis                                                                                          -", 
+      "id": "HIERARCHY.9.6.4.1", 
+      "parent": "HIERARCHY.9.6.4", 
+      "name": "Diverticulosis                                                                                          -"
+    }, 
+    "56210": {
+      "desc": "Colon", 
+      "id": "56210", 
+      "parent": "HIERARCHY.9.6.4.1", 
+      "name": "Colon"
+    }, 
+    "HIERARCHY.10.1.7.2": {
+      "alias": "HIERARCHY10172", 
+      "desc": "Other and unspecified diseases of bladder and urethra                                                   -", 
+      "id": "HIERARCHY.10.1.7.2", 
+      "parent": "HIERARCHY.10.1.7", 
+      "name": "Other and unspecified diseases of bladder and urethra                                                   -"
+    }, 
+    "7020": {
+      "desc": "Other dermatoses", 
+      "id": "7020", 
+      "parent": "HIERARCHY.12.4", 
+      "name": "Other dermatoses"
+    }, 
+    "3310": {
+      "desc": "Alzheimer's disease", 
+      "id": "3310", 
+      "parent": "HIERARCHY.5.4", 
+      "name": "Alzheimer's disease"
+    }, 
+    "7931": {
+      "desc": "Lung field", 
+      "id": "7931", 
+      "parent": "HIERARCHY.8.8.3", 
+      "name": "Lung field"
+    }, 
+    "78609": {
+      "desc": "Dyspnea and respiratory abnormalities", 
+      "id": "78609", 
+      "parent": "HIERARCHY.8.8.3", 
+      "name": "Dyspnea and respiratory abnormalities"
+    }, 
+    "V5811": {
+      "unmapped": true, 
+      "desc": "diagnosis V5811", 
+      "id": "V5811", 
+      "parent": "HIERARCHY.2.15.2", 
+      "name": "V5811"
+    }, 
+    "78605": {
+      "desc": "Dyspnea and respiratory abnormalities", 
+      "id": "78605", 
+      "parent": "HIERARCHY.8.8.3", 
+      "name": "Dyspnea and respiratory abnormalities"
+    }, 
+    "HIERARCHY.9.6.4": {
+      "alias": "HIERARCHY964", 
+      "desc": "Diverticulosis and diverticulitis [146.]", 
+      "id": "HIERARCHY.9.6.4", 
+      "parent": "HIERARCHY.9.6", 
+      "name": "Diverticulosis and diverticulitis [146.]"
+    }, 
+    "HIERARCHY.9.6.3": {
+      "alias": "HIERARCHY963", 
+      "desc": "Intestinal obstruction without hernia [145.]", 
+      "id": "HIERARCHY.9.6.3", 
+      "parent": "HIERARCHY.9.6", 
+      "name": "Intestinal obstruction without hernia [145.]"
+    }, 
+    "HIERARCHY.7.4.2": {
+      "alias": "HIERARCHY742", 
+      "desc": "Aortic; peripheral; and visceral artery aneurysms [115.]", 
+      "id": "HIERARCHY.7.4.2", 
+      "parent": "HIERARCHY.7.4", 
+      "name": "Aortic; peripheral; and visceral artery aneurysms [115.]"
+    }, 
+    "HIERARCHY.7.4.1": {
+      "alias": "HIERARCHY741", 
+      "desc": "Peripheral and visceral atherosclerosis [114.]", 
+      "id": "HIERARCHY.7.4.1", 
+      "parent": "HIERARCHY.7.4", 
+      "name": "Peripheral and visceral atherosclerosis [114.]"
+    }, 
+    "2809": {
+      "desc": "Iron deficiency anemias", 
+      "id": "2809", 
+      "parent": "HIERARCHY.4.1.3.1", 
+      "name": "Iron deficiency anemias"
+    }, 
+    "HIERARCHY.7.4.4": {
+      "alias": "HIERARCHY744", 
+      "desc": "Other circulatory disease [117.]", 
+      "id": "HIERARCHY.7.4.4", 
+      "parent": "HIERARCHY.7.4", 
+      "name": "Other circulatory disease [117.]"
+    }, 
+    "HIERARCHY.9.8.2": {
+      "alias": "HIERARCHY982", 
+      "desc": "Other liver diseases [151.]", 
+      "id": "HIERARCHY.9.8.2", 
+      "parent": "HIERARCHY.9.8", 
+      "name": "Other liver diseases [151.]"
+    }, 
+    "7291": {
+      "desc": "Myalgia and myositis, unspecified", 
+      "id": "7291", 
+      "parent": "HIERARCHY.13.8", 
+      "name": "Myalgia and myositis, unspecified"
+    }, 
+    "4271": {
+      "desc": "Paroxysmal ventricular tachycardia", 
+      "id": "4271", 
+      "parent": "HIERARCHY.7.2.9.2", 
+      "name": "Paroxysmal ventricular tachycardia"
+    }, 
+    "4270": {
+      "desc": "Paroxysmal supraventricular tachycardia", 
+      "id": "4270", 
+      "parent": "HIERARCHY.7.2.9.1", 
+      "name": "Paroxysmal supraventricular tachycardia"
+    }, 
+    "HIERARCHY.5.8.1": {
+      "alias": "HIERARCHY581", 
+      "desc": "Bipolar disorders [6571]", 
+      "id": "HIERARCHY.5.8.1", 
+      "parent": "HIERARCHY.5.8", 
+      "name": "Bipolar disorders [6571]"
+    }, 
+    "7295": {
+      "desc": "Pain in limb", 
+      "id": "7295", 
+      "parent": "HIERARCHY.13.8", 
+      "name": "Pain in limb"
+    }, 
+    "30000": {
+      "desc": "Anxiety states", 
+      "id": "30000", 
+      "parent": "HIERARCHY.5.2", 
+      "name": "Anxiety states"
+    }, 
+    "HIERARCHY.5.8.2": {
+      "alias": "HIERARCHY582", 
+      "desc": "Depressive disorders [6572]", 
+      "id": "HIERARCHY.5.8.2", 
+      "parent": "HIERARCHY.5.8", 
+      "name": "Depressive disorders [6572]"
+    }, 
+    "4279": {
+      "desc": "Unspecified", 
+      "id": "4279", 
+      "parent": "HIERARCHY.7.2.9.7", 
+      "name": "Unspecified"
+    }, 
+    "V762": {
+      "unmapped": true, 
+      "desc": "diagnosis V762", 
+      "id": "V762", 
+      "parent": "HIERARCHY.17.2.5", 
+      "name": "V762"
+    }, 
+    "HIERARCHY.9.4.3.2": {
+      "alias": "HIERARCHY9432", 
+      "desc": "Other specified gastritis                                                                               -", 
+      "id": "HIERARCHY.9.4.3.2", 
+      "parent": "HIERARCHY.9.4.3", 
+      "name": "Other specified gastritis                                                                               -"
+    }, 
+    "HIERARCHY.7.1.2.1": {
+      "alias": "HIERARCHY7121", 
+      "desc": "Hypertensive heart and/or renal disease                                                                 -", 
+      "id": "HIERARCHY.7.1.2.1", 
+      "parent": "HIERARCHY.7.1.2", 
+      "name": "Hypertensive heart and/or renal disease                                                                 -"
+    }, 
+    "HIERARCHY.7.1.2.2": {
+      "alias": "HIERARCHY7122", 
+      "desc": "Other hypertensive complications                                                                        -", 
+      "id": "HIERARCHY.7.1.2.2", 
+      "parent": "HIERARCHY.7.1.2", 
+      "name": "Other hypertensive complications                                                                        -"
+    }, 
+    "7840": {
+      "desc": "Headache", 
+      "id": "7840", 
+      "parent": "HIERARCHY.6.5.2", 
+      "name": "Headache"
+    }, 
+    "V6546": {
+      "unmapped": true, 
+      "desc": "diagnosis V6546", 
+      "id": "V6546", 
+      "parent": "HIERARCHY.17.2.2", 
+      "name": "V6546"
+    }, 
+    "1101": {
+      "desc": "Of nail", 
+      "id": "1101", 
+      "parent": "HIERARCHY.1.2.2", 
+      "name": "Of nail"
+    }, 
+    "HIERARCHY.9.4.4": {
+      "alias": "HIERARCHY944", 
+      "desc": "Other disorders of stomach and duodenum [141.]", 
+      "id": "HIERARCHY.9.4.4", 
+      "parent": "HIERARCHY.9.4", 
+      "name": "Other disorders of stomach and duodenum [141.]"
+    }, 
+    "V1083": {
+      "unmapped": true, 
+      "desc": "diagnosis V1083", 
+      "id": "V1083", 
+      "parent": "HIERARCHY.2.4.2", 
+      "name": "V1083"
+    }, 
+    "HIERARCHY.9.4.1": {
+      "alias": "HIERARCHY941", 
+      "desc": "Esophageal disorders [138.]", 
+      "id": "HIERARCHY.9.4.1", 
+      "parent": "HIERARCHY.9.4", 
+      "name": "Esophageal disorders [138.]"
+    }, 
+    "HIERARCHY.9.4.3": {
+      "alias": "HIERARCHY943", 
+      "desc": "Gastritis and duodenitis [140.]", 
+      "id": "HIERARCHY.9.4.3", 
+      "parent": "HIERARCHY.9.4", 
+      "name": "Gastritis and duodenitis [140.]"
+    }, 
+    "HIERARCHY.1.1.2.6": {
+      "alias": "HIERARCHY1126", 
+      "desc": "Unspecified septicemia                                                                                  -", 
+      "id": "HIERARCHY.1.1.2.6", 
+      "parent": "HIERARCHY.1.1.2", 
+      "name": "Unspecified septicemia                                                                                  -"
+    }, 
+    "HIERARCHY.3.8": {
+      "alias": "HIERARCHY38", 
+      "desc": "Fluid and electrolyte disorders [55.]", 
+      "id": "HIERARCHY.3.8", 
+      "parent": "HIERARCHY.3", 
+      "name": "Fluid and electrolyte disorders [55.]"
+    }, 
+    "HIERARCHY.13.3.2": {
+      "alias": "HIERARCHY1332", 
+      "desc": "Intervertebral disc disorders                                                                           -", 
+      "id": "HIERARCHY.13.3.2", 
+      "parent": "HIERARCHY.13.3", 
+      "name": "Intervertebral disc disorders                                                                           -"
+    }, 
+    "HIERARCHY.13.3.3": {
+      "alias": "HIERARCHY1333", 
+      "desc": "Spondylosis; intervertebral disc disorders; other back problems [205.]", 
+      "id": "HIERARCHY.13.3.3", 
+      "parent": "HIERARCHY.13", 
+      "name": "Spondylosis; intervertebral disc disorders; other back problems [205.]"
+    }, 
+    "HIERARCHY.13.3.1": {
+      "alias": "HIERARCHY1331", 
+      "desc": "Spondylosis and allied disorders                                                                        -", 
+      "id": "HIERARCHY.13.3.1", 
+      "parent": "HIERARCHY.13.3", 
+      "name": "Spondylosis and allied disorders                                                                        -"
+    }, 
+    "HIERARCHY.3.3": {
+      "alias": "HIERARCHY33", 
+      "desc": "Diabetes mellitus with complications [50.]", 
+      "id": "HIERARCHY.3.3", 
+      "parent": "HIERARCHY.3", 
+      "name": "Diabetes mellitus with complications [50.]"
+    }, 
+    "HIERARCHY.3.2": {
+      "alias": "HIERARCHY32", 
+      "desc": "Diabetes mellitus without complication [49.]", 
+      "id": "HIERARCHY.3.2", 
+      "parent": "HIERARCHY.3", 
+      "name": "Diabetes mellitus without complication [49.]"
+    }, 
+    "HIERARCHY.3.1": {
+      "alias": "HIERARCHY31", 
+      "desc": "Thyroid disorders [48.]", 
+      "id": "HIERARCHY.3.1", 
+      "parent": "HIERARCHY.3", 
+      "name": "Thyroid disorders [48.]"
+    }, 
+    "HIERARCHY.16.6.1": {
+      "alias": "HIERARCHY1661", 
+      "desc": "Open wounds of head; neck; and trunk [235.]", 
+      "id": "HIERARCHY.16.6.1", 
+      "parent": "HIERARCHY.16.6", 
+      "name": "Open wounds of head; neck; and trunk [235.]"
+    }, 
+    "5119": {
+      "desc": "Unspecified pleural effusion", 
+      "id": "5119", 
+      "parent": "HIERARCHY.8.5.1", 
+      "name": "Unspecified pleural effusion"
+    }, 
+    "HIERARCHY.8.3.2": {
+      "alias": "HIERARCHY832", 
+      "desc": "Asthma [128.]", 
+      "id": "HIERARCHY.8.3.2", 
+      "parent": "HIERARCHY.8", 
+      "name": "Asthma [128.]"
+    }, 
+    "HIERARCHY.3.5": {
+      "alias": "HIERARCHY35", 
+      "desc": "Nutritional deficiencies [52.]", 
+      "id": "HIERARCHY.3.5", 
+      "parent": "HIERARCHY.3", 
+      "name": "Nutritional deficiencies [52.]"
+    }, 
+    "HIERARCHY.3.4": {
+      "alias": "HIERARCHY34", 
+      "desc": "Other endocrine disorders [51.]", 
+      "id": "HIERARCHY.3.4", 
+      "parent": "HIERARCHY.3", 
+      "name": "Other endocrine disorders [51.]"
+    }, 
+    "HIERARCHY.6.9.3": {
+      "alias": "HIERARCHY693", 
+      "desc": "Other nervous system symptoms and disorders                                                             -", 
+      "id": "HIERARCHY.6.9.3", 
+      "parent": "HIERARCHY.6.9", 
+      "name": "Other nervous system symptoms and disorders                                                             -"
+    }, 
+    "HIERARCHY.7.4.4.2": {
+      "alias": "HIERARCHY7442", 
+      "desc": "Other and unspecified circulatory disease                                                               -", 
+      "id": "HIERARCHY.7.4.4.2", 
+      "parent": "HIERARCHY.7.4.4", 
+      "name": "Other and unspecified circulatory disease                                                               -"
+    }, 
+    "HIERARCHY.13.3.3.3": {
+      "alias": "HIERARCHY13333", 
+      "desc": "Lumbago                                                                                                 -", 
+      "id": "HIERARCHY.13.3.3.3", 
+      "parent": "HIERARCHY.13.3.3", 
+      "name": "Lumbago                                                                                                 -"
+    }, 
+    "HIERARCHY.13.3.3.2": {
+      "alias": "HIERARCHY13332", 
+      "desc": "Spinal stenosis; lumbar region                                                                          -", 
+      "id": "HIERARCHY.13.3.3.2", 
+      "parent": "HIERARCHY.13.3.3", 
+      "name": "Spinal stenosis; lumbar region                                                                          -"
+    }, 
+    "HIERARCHY.13.3.3.5": {
+      "alias": "HIERARCHY13335", 
+      "desc": "\"Thoracic or lumbosacral neuritis or radiculitis; unspecif                                              -", 
+      "id": "HIERARCHY.13.3.3.5", 
+      "parent": "HIERARCHY.13.3.3", 
+      "name": "\"Thoracic or lumbosacral neuritis or radiculitis; unspecif                                              -"
+    }, 
+    "HIERARCHY.13.3.3.4": {
+      "alias": "HIERARCHY13334", 
+      "desc": "Sciatica                                                                                                -", 
+      "id": "HIERARCHY.13.3.3.4", 
+      "parent": "HIERARCHY.13.3.3", 
+      "name": "Sciatica                                                                                                -"
+    }, 
+    "HIERARCHY.13.3.3.7": {
+      "alias": "HIERARCHY13337", 
+      "desc": "Other back pain and disorders                                                                           -", 
+      "id": "HIERARCHY.13.3.3.7", 
+      "parent": "HIERARCHY.13.3.3", 
+      "name": "Other back pain and disorders                                                                           -"
+    }, 
+    "HIERARCHY.13.3.3.6": {
+      "alias": "HIERARCHY13336", 
+      "desc": "Backache; unspecified                                                                                   -", 
+      "id": "HIERARCHY.13.3.3.6", 
+      "parent": "HIERARCHY.13.3.3", 
+      "name": "Backache; unspecified                                                                                   -"
+    }, 
+    "HIERARCHY.16.2.4": {
+      "alias": "HIERARCHY1624", 
+      "desc": "Fracture of lower limb [230.]", 
+      "id": "HIERARCHY.16.2.4", 
+      "parent": "HIERARCHY.16.2", 
+      "name": "Fracture of lower limb [230.]"
+    }, 
+    "HIERARCHY.16.2.5": {
+      "alias": "HIERARCHY1625", 
+      "desc": "Other fractures [231.]", 
+      "id": "HIERARCHY.16.2.5", 
+      "parent": "HIERARCHY.16.2", 
+      "name": "Other fractures [231.]"
+    }, 
+    "HIERARCHY.10.3.9.2": {
+      "alias": "HIERARCHY10392", 
+      "desc": "Other and unspecified female genital disorders                                                          -", 
+      "id": "HIERARCHY.10.3.9.2", 
+      "parent": "HIERARCHY.10.3.9", 
+      "name": "Other and unspecified female genital disorders                                                          -"
+    }, 
+    "HIERARCHY.16.2.1": {
+      "alias": "HIERARCHY1621", 
+      "desc": "Fracture of neck of femur (hip) [226.]", 
+      "id": "HIERARCHY.16.2.1", 
+      "parent": "HIERARCHY.16.2", 
+      "name": "Fracture of neck of femur (hip) [226.]"
+    }, 
+    "HIERARCHY.7.4.1.2": {
+      "alias": "HIERARCHY7412", 
+      "desc": "Peripheral vascular disease unspecified                                                                 -", 
+      "id": "HIERARCHY.7.4.1.2", 
+      "parent": "HIERARCHY.7.4.1", 
+      "name": "Peripheral vascular disease unspecified                                                                 -"
+    }, 
+    "49390": {
+      "desc": "Asthma, unspecified", 
+      "id": "49390", 
+      "parent": "HIERARCHY.8.3.2.1", 
+      "name": "Asthma, unspecified"
+    }, 
+    "HIERARCHY.10.1.6": {
+      "alias": "HIERARCHY1016", 
+      "desc": "Other diseases of kidney and ureters [161.]", 
+      "id": "HIERARCHY.10.1.6", 
+      "parent": "HIERARCHY.10.1", 
+      "name": "Other diseases of kidney and ureters [161.]"
+    }, 
+    "2749": {
+      "desc": "Gout, unspecified", 
+      "id": "2749", 
+      "parent": "HIERARCHY.3.7", 
+      "name": "Gout, unspecified"
+    }, 
+    "71690": {
+      "desc": "Unspecified", 
+      "id": "71690", 
+      "parent": "HIERARCHY.13.2.3", 
+      "name": "Unspecified"
+    }, 
+    "HIERARCHY.10.2.1": {
+      "alias": "HIERARCHY1021", 
+      "desc": "Hyperplasia of prostate [164.]", 
+      "id": "HIERARCHY.10.2.1", 
+      "parent": "HIERARCHY.10.2", 
+      "name": "Hyperplasia of prostate [164.]"
+    }, 
+    "HIERARCHY.10.2.2": {
+      "alias": "HIERARCHY1022", 
+      "desc": "Inflammatory conditions of male genital organs [165.]", 
+      "id": "HIERARCHY.10.2.2", 
+      "parent": "HIERARCHY.10.2", 
+      "name": "Inflammatory conditions of male genital organs [165.]"
+    }, 
+    "HIERARCHY.10.2.3": {
+      "alias": "HIERARCHY1023", 
+      "desc": "Other male genital disorders [166.]", 
+      "id": "HIERARCHY.10.2.3", 
+      "parent": "HIERARCHY.10.2", 
+      "name": "Other male genital disorders [166.]"
+    }, 
+    "V431": {
+      "unmapped": true, 
+      "desc": "diagnosis V431", 
+      "id": "V431", 
+      "parent": "HIERARCHY.6.7.1", 
+      "name": "V431"
+    }, 
+    "HIERARCHY.3.5.2": {
+      "alias": "HIERARCHY352", 
+      "desc": "Other malnutrition                                                                                      -", 
+      "id": "HIERARCHY.3.5.2", 
+      "parent": "HIERARCHY.3.5", 
+      "name": "Other malnutrition                                                                                      -"
+    }, 
+    "71516": {
+      "desc": "Localized, primary", 
+      "id": "71516", 
+      "parent": "HIERARCHY.13.2.2.1", 
+      "name": "Localized, primary"
+    }, 
+    "436": {
+      "desc": "Acute but ill-defined cerebrovascular disease", 
+      "id": "436", 
+      "parent": "HIERARCHY.7.3.1.3", 
+      "name": "Acute but ill-defined cerebrovascular disease"
+    }, 
+    "HIERARCHY.1.2.2": {
+      "alias": "HIERARCHY122", 
+      "desc": "Other mycoses                                                                                           -", 
+      "id": "HIERARCHY.1.2.2", 
+      "parent": "HIERARCHY.1.2", 
+      "name": "Other mycoses                                                                                           -"
+    }, 
+    "78900": {
+      "desc": "Abdominal pain", 
+      "id": "78900", 
+      "parent": "HIERARCHY.17.1.7", 
+      "name": "Abdominal pain"
+    }, 
+    "HIERARCHY.7.5": {
+      "alias": "HIERARCHY75", 
+      "desc": "Diseases of veins and lymphatics", 
+      "id": "HIERARCHY.7.5", 
+      "parent": "HIERARCHY.7", 
+      "name": "Diseases of veins and lymphatics"
+    }, 
+    "HIERARCHY.7.4": {
+      "alias": "HIERARCHY74", 
+      "desc": "Diseases of arteries; arterioles; and capillaries", 
+      "id": "HIERARCHY.7.4", 
+      "parent": "HIERARCHY.7", 
+      "name": "Diseases of arteries; arterioles; and capillaries"
+    }, 
+    "HIERARCHY.7.3": {
+      "alias": "HIERARCHY73", 
+      "desc": "Cerebrovascular disease", 
+      "id": "HIERARCHY.7.3", 
+      "parent": "HIERARCHY.7", 
+      "name": "Cerebrovascular disease"
+    }, 
+    "HIERARCHY.7.2": {
+      "alias": "HIERARCHY72", 
+      "desc": "Diseases of the heart", 
+      "id": "HIERARCHY.7.2", 
+      "parent": "HIERARCHY.7", 
+      "name": "Diseases of the heart"
+    }, 
+    "HIERARCHY.7.1": {
+      "alias": "HIERARCHY71", 
+      "desc": "Hypertension", 
+      "id": "HIERARCHY.7.1", 
+      "parent": "HIERARCHY.7", 
+      "name": "Hypertension"
+    }, 
+    "HIERARCHY.4.1.3": {
+      "alias": "HIERARCHY413", 
+      "desc": "Deficiency and other anemia [59.]", 
+      "id": "HIERARCHY.4.1.3", 
+      "parent": "HIERARCHY.4.1", 
+      "name": "Deficiency and other anemia [59.]"
+    }, 
+    "HIERARCHY.5.4": {
+      "alias": "HIERARCHY54", 
+      "desc": "Delirium, dementia, and amnestic and other cognitive disorders [653.]", 
+      "id": "HIERARCHY.5.4", 
+      "parent": "HIERARCHY.5", 
+      "name": "Delirium, dementia, and amnestic and other cognitive disorders [653.]"
+    }, 
+    "HIERARCHY.5.2": {
+      "alias": "HIERARCHY52", 
+      "desc": "Anxiety disorders [651]", 
+      "id": "HIERARCHY.5.2", 
+      "parent": "HIERARCHY.5", 
+      "name": "Anxiety disorders [651]"
+    }, 
+    "HIERARCHY.8.1.5": {
+      "alias": "HIERARCHY815", 
+      "desc": "Other upper respiratory infections [126.]", 
+      "id": "HIERARCHY.8.1.5", 
+      "parent": "HIERARCHY.8.1", 
+      "name": "Other upper respiratory infections [126.]"
+    }, 
+    "HIERARCHY.8.1.4": {
+      "alias": "HIERARCHY814", 
+      "desc": "Acute bronchitis [125.]", 
+      "id": "HIERARCHY.8.1.4", 
+      "parent": "HIERARCHY.8.1", 
+      "name": "Acute bronchitis [125.]"
+    }, 
+    "HIERARCHY.8.1.1": {
+      "alias": "HIERARCHY811", 
+      "desc": "Pneumonia (except that caused by TB or STD) [122.]", 
+      "id": "HIERARCHY.8.1.1", 
+      "parent": "HIERARCHY.8.1", 
+      "name": "Pneumonia (except that caused by TB or STD) [122.]"
+    }, 
+    "HIERARCHY.5.8": {
+      "alias": "HIERARCHY58", 
+      "desc": "Mood disorders [657.]", 
+      "id": "HIERARCHY.5.8", 
+      "parent": "HIERARCHY.5", 
+      "name": "Mood disorders [657.]"
+    }, 
+    "HIERARCHY.7.4.2.2": {
+      "alias": "HIERARCHY7422", 
+      "desc": "Other aneurysm                                                                                          -", 
+      "id": "HIERARCHY.7.4.2.2", 
+      "parent": "HIERARCHY.7.4.2", 
+      "name": "Other aneurysm                                                                                          -"
+    }, 
+    "HIERARCHY.6.8.3": {
+      "alias": "HIERARCHY683", 
+      "desc": "Other ear and sense organ disorders [94.]", 
+      "id": "HIERARCHY.6.8.3", 
+      "parent": "HIERARCHY.6.8", 
+      "name": "Other ear and sense organ disorders [94.]"
+    }, 
+    "HIERARCHY.16.2.3": {
+      "alias": "HIERARCHY1623", 
+      "desc": "Fracture of upper limb [229.]", 
+      "id": "HIERARCHY.16.2.3", 
+      "parent": "HIERARCHY.16.2", 
+      "name": "Fracture of upper limb [229.]"
+    }, 
+    "HIERARCHY.3.1.2": {
+      "alias": "HIERARCHY312", 
+      "desc": "Other thyroid disorders                                                                                 -", 
+      "id": "HIERARCHY.3.1.2", 
+      "parent": "HIERARCHY.3.1", 
+      "name": "Other thyroid disorders                                                                                 -"
+    }, 
+    "HIERARCHY.3.1.1": {
+      "alias": "HIERARCHY311", 
+      "desc": "Thyrotoxicosis with or without goiter                                                                   -", 
+      "id": "HIERARCHY.3.1.1", 
+      "parent": "HIERARCHY.3.1", 
+      "name": "Thyrotoxicosis with or without goiter                                                                   -"
+    }, 
+    "3320": {
+      "desc": "Paralysis agitans", 
+      "id": "3320", 
+      "parent": "HIERARCHY.6.2.1", 
+      "name": "Paralysis agitans"
+    }, 
+    "HIERARCHY.7.5.1.2": {
+      "alias": "HIERARCHY7512", 
+      "desc": "Other venous embolism and thrombosis                                                                    -", 
+      "id": "HIERARCHY.7.5.1.2", 
+      "parent": "HIERARCHY.7.5.1", 
+      "name": "Other venous embolism and thrombosis                                                                    -"
+    }, 
+    "HIERARCHY.2.8.1": {
+      "alias": "HIERARCHY281", 
+      "desc": "Cancer of prostate [29.]", 
+      "id": "HIERARCHY.2.8.1", 
+      "parent": "HIERARCHY.2.8", 
+      "name": "Cancer of prostate [29.]"
+    }, 
+    "HIERARCHY.8": {
+      "alias": "HIERARCHY8", 
+      "desc": "Diseases of the respiratory system", 
+      "id": "HIERARCHY.8", 
+      "parent": "", 
+      "name": "Diseases of the respiratory system"
+    }, 
+    "HIERARCHY.9": {
+      "alias": "HIERARCHY9", 
+      "desc": "Diseases of the digestive system", 
+      "id": "HIERARCHY.9", 
+      "parent": "", 
+      "name": "Diseases of the digestive system"
+    }, 
+    "27800": {
+      "desc": "Obesity", 
+      "id": "27800", 
+      "parent": "HIERARCHY.3.11.2", 
+      "name": "Obesity"
+    }, 
+    "HIERARCHY.4": {
+      "alias": "HIERARCHY4", 
+      "desc": "Diseases of the blood and blood-forming organs", 
+      "id": "HIERARCHY.4", 
+      "parent": "", 
+      "name": "Diseases of the blood and blood-forming organs"
+    }, 
+    "HIERARCHY.5": {
+      "alias": "HIERARCHY5", 
+      "desc": "Mental illness", 
+      "id": "HIERARCHY.5", 
+      "parent": "", 
+      "name": "Mental illness"
+    }, 
+    "HIERARCHY.6": {
+      "alias": "HIERARCHY6", 
+      "desc": "Diseases of the nervous system and sense organs", 
+      "id": "HIERARCHY.6", 
+      "parent": "", 
+      "name": "Diseases of the nervous system and sense organs"
+    }, 
+    "HIERARCHY.7": {
+      "alias": "HIERARCHY7", 
+      "desc": "Diseases of the circulatory system", 
+      "id": "HIERARCHY.7", 
+      "parent": "", 
+      "name": "Diseases of the circulatory system"
+    }, 
+    "HIERARCHY.1": {
+      "alias": "HIERARCHY1", 
+      "desc": "Infectious and parasitic diseases", 
+      "id": "HIERARCHY.1", 
+      "parent": "", 
+      "name": "Infectious and parasitic diseases"
+    }, 
+    "HIERARCHY.2": {
+      "alias": "HIERARCHY2", 
+      "desc": "Neoplasms", 
+      "id": "HIERARCHY.2", 
+      "parent": "", 
+      "name": "Neoplasms"
+    }, 
+    "HIERARCHY.3": {
+      "alias": "HIERARCHY3", 
+      "desc": "Endocrine; nutritional; and metabolic diseases and immunity disorders", 
+      "id": "HIERARCHY.3", 
+      "parent": "", 
+      "name": "Endocrine; nutritional; and metabolic diseases and immunity disorders"
+    }, 
+    "79029": {
+      "desc": "Abnormal glucose tolerance test", 
+      "id": "79029", 
+      "parent": "HIERARCHY.3.2", 
+      "name": "Abnormal glucose tolerance test"
+    }, 
+    "79022": {
+      "desc": "Abnormal glucose tolerance test", 
+      "id": "79022", 
+      "parent": "HIERARCHY.3.2", 
+      "name": "Abnormal glucose tolerance test"
+    }, 
+    "79021": {
+      "desc": "Abnormal glucose tolerance test", 
+      "id": "79021", 
+      "parent": "HIERARCHY.3.2", 
+      "name": "Abnormal glucose tolerance test"
+    }, 
+    "HIERARCHY.17.1.8": {
+      "alias": "HIERARCHY1718", 
+      "desc": "Malaise and fatigue [252.]", 
+      "id": "HIERARCHY.17.1.8", 
+      "parent": "HIERARCHY.17.1", 
+      "name": "Malaise and fatigue [252.]"
+    }, 
+    "HIERARCHY.17.1.9": {
+      "alias": "HIERARCHY1719", 
+      "desc": "Allergic reactions [253.]", 
+      "id": "HIERARCHY.17.1.9", 
+      "parent": "HIERARCHY.17.1", 
+      "name": "Allergic reactions [253.]"
+    }, 
+    "HIERARCHY.17.1.1": {
+      "alias": "HIERARCHY1711", 
+      "desc": "Syncope [245.]", 
+      "id": "HIERARCHY.17.1.1", 
+      "parent": "HIERARCHY.17.1", 
+      "name": "Syncope [245.]"
+    }, 
+    "HIERARCHY.17.1.2": {
+      "alias": "HIERARCHY1712", 
+      "desc": "Fever of unknown origin [246.]", 
+      "id": "HIERARCHY.17.1.2", 
+      "parent": "HIERARCHY.17.1", 
+      "name": "Fever of unknown origin [246.]"
+    }, 
+    "HIERARCHY.17.1.6": {
+      "alias": "HIERARCHY1716", 
+      "desc": "Nausea and vomiting [250.]", 
+      "id": "HIERARCHY.17.1.6", 
+      "parent": "HIERARCHY.17.1", 
+      "name": "Nausea and vomiting [250.]"
+    }, 
+    "HIERARCHY.17.1.7": {
+      "alias": "HIERARCHY1717", 
+      "desc": "Abdominal pain [251.]", 
+      "id": "HIERARCHY.17.1.7", 
+      "parent": "HIERARCHY.17.1", 
+      "name": "Abdominal pain [251.]"
+    }, 
+    "7802": {
+      "desc": "Syncope and collapse", 
+      "id": "7802", 
+      "parent": "HIERARCHY.17.1.1", 
+      "name": "Syncope and collapse"
+    }, 
+    "7804": {
+      "desc": "Dizziness and giddiness", 
+      "id": "7804", 
+      "parent": "HIERARCHY.6.8.2", 
+      "name": "Dizziness and giddiness"
+    }, 
+    "7807": {
+      "desc": "Malaise and fatigue", 
+      "id": "7807", 
+      "parent": "HIERARCHY.17.1.8", 
+      "name": "Malaise and fatigue"
+    }, 
+    "HIERARCHY.13.2.2.1": {
+      "alias": "HIERARCHY13221", 
+      "desc": "Osteoarthritis; localized                                                                               -", 
+      "id": "HIERARCHY.13.2.2.1", 
+      "parent": "HIERARCHY.13.2.2", 
+      "name": "Osteoarthritis; localized                                                                               -"
+    }, 
+    "HIERARCHY.4.2.1": {
+      "alias": "HIERARCHY421", 
+      "desc": "Coagulation defects                                                                                     -", 
+      "id": "HIERARCHY.4.2.1", 
+      "parent": "HIERARCHY.4.2", 
+      "name": "Coagulation defects                                                                                     -"
+    }, 
+    "HIERARCHY.13.2.2.2": {
+      "alias": "HIERARCHY13222", 
+      "desc": "Osteoarthritis; generalized and unspecified                                                             -", 
+      "id": "HIERARCHY.13.2.2.2", 
+      "parent": "HIERARCHY.13.2.2", 
+      "name": "Osteoarthritis; generalized and unspecified                                                             -"
+    }, 
+    "HIERARCHY.8.5.1": {
+      "alias": "HIERARCHY851", 
+      "desc": "Pleurisy; pleural effusion                                                                              -", 
+      "id": "HIERARCHY.8.5.1", 
+      "parent": "HIERARCHY.8.5", 
+      "name": "Pleurisy; pleural effusion                                                                              -"
+    }, 
+    "HIERARCHY.8.5.2": {
+      "alias": "HIERARCHY852", 
+      "desc": "Pulmonary collapse; interstitial and compensatory emphysema                                             -", 
+      "id": "HIERARCHY.8.5.2", 
+      "parent": "HIERARCHY.8.5", 
+      "name": "Pulmonary collapse; interstitial and compensatory emphysema                                             -"
+    }, 
+    "HIERARCHY.2.4.2": {
+      "alias": "HIERARCHY242", 
+      "desc": "Other non-epithelial cancer of skin [23.]", 
+      "id": "HIERARCHY.2.4.2", 
+      "parent": "HIERARCHY.2.4", 
+      "name": "Other non-epithelial cancer of skin [23.]"
+    }, 
+    "HIERARCHY.6.4": {
+      "alias": "HIERARCHY64", 
+      "desc": "Epilepsy; convulsions [83.]", 
+      "id": "HIERARCHY.6.4", 
+      "parent": "HIERARCHY.6", 
+      "name": "Epilepsy; convulsions [83.]"
+    }, 
+    "HIERARCHY.9.8.2.4": {
+      "alias": "HIERARCHY9824", 
+      "desc": "Other and unspecified liver disorders                                                                   -", 
+      "id": "HIERARCHY.9.8.2.4", 
+      "parent": "HIERARCHY.9.8.2", 
+      "name": "Other and unspecified liver disorders                                                                   -"
+    }, 
+    "HIERARCHY.9.5": {
+      "alias": "HIERARCHY95", 
+      "desc": "Abdominal hernia [143.]", 
+      "id": "HIERARCHY.9.5", 
+      "parent": "HIERARCHY.9", 
+      "name": "Abdominal hernia [143.]"
+    }, 
+    "HIERARCHY.9.4": {
+      "alias": "HIERARCHY94", 
+      "desc": "Upper gastrointestinal disorders", 
+      "id": "HIERARCHY.9.4", 
+      "parent": "HIERARCHY.9", 
+      "name": "Upper gastrointestinal disorders"
+    }, 
+    "HIERARCHY.9.7": {
+      "alias": "HIERARCHY97", 
+      "desc": "Biliary tract disease [149.]", 
+      "id": "HIERARCHY.9.7", 
+      "parent": "HIERARCHY.9", 
+      "name": "Biliary tract disease [149.]"
+    }, 
+    "HIERARCHY.9.6": {
+      "alias": "HIERARCHY96", 
+      "desc": "Lower gastrointestinal disorders", 
+      "id": "HIERARCHY.9.6", 
+      "parent": "HIERARCHY.9", 
+      "name": "Lower gastrointestinal disorders"
+    }, 
+    "HIERARCHY.9.8": {
+      "alias": "HIERARCHY98", 
+      "desc": "Liver disease", 
+      "id": "HIERARCHY.9.8", 
+      "parent": "HIERARCHY.9", 
+      "name": "Liver disease"
+    }, 
+    "4293": {
+      "desc": "Cardiomegaly", 
+      "id": "4293", 
+      "parent": "HIERARCHY.7.2.7", 
+      "name": "Cardiomegaly"
+    }, 
+    "HIERARCHY.1.1": {
+      "alias": "HIERARCHY11", 
+      "desc": "Bacterial infection", 
+      "id": "HIERARCHY.1.1", 
+      "parent": "HIERARCHY.1", 
+      "name": "Bacterial infection"
+    }, 
+    "HIERARCHY.1.3": {
+      "alias": "HIERARCHY13", 
+      "desc": "Viral infection", 
+      "id": "HIERARCHY.1.3", 
+      "parent": "HIERARCHY.1", 
+      "name": "Viral infection"
+    }, 
+    "HIERARCHY.1.2": {
+      "alias": "HIERARCHY12", 
+      "desc": "Mycoses [4.]", 
+      "id": "HIERARCHY.1.2", 
+      "parent": "HIERARCHY.1", 
+      "name": "Mycoses [4.]"
+    }, 
+    "HIERARCHY.1.5": {
+      "alias": "HIERARCHY15", 
+      "desc": "Immunizations and screening for infectious disease [10.]", 
+      "id": "HIERARCHY.1.5", 
+      "parent": "HIERARCHY.1", 
+      "name": "Immunizations and screening for infectious disease [10.]"
+    }, 
+    "3051": {
+      "desc": "Tobacco", 
+      "id": "3051", 
+      "parent": "HIERARCHY.5.14.2", 
+      "name": "Tobacco"
+    }, 
+    "HIERARCHY.7.2.4.5": {
+      "alias": "HIERARCHY7245", 
+      "desc": "Other forms of chronic heart disease                                                                    -", 
+      "id": "HIERARCHY.7.2.4.5", 
+      "parent": "HIERARCHY.7.2.4", 
+      "name": "Other forms of chronic heart disease                                                                    -"
+    }, 
+    "HIERARCHY.7.2.4.4": {
+      "alias": "HIERARCHY7244", 
+      "desc": "Coronary atherosclerosis                                                                                -", 
+      "id": "HIERARCHY.7.2.4.4", 
+      "parent": "HIERARCHY.7.2.4", 
+      "name": "Coronary atherosclerosis                                                                                -"
+    }, 
+    "HIERARCHY.7.2.4.1": {
+      "alias": "HIERARCHY7241", 
+      "desc": "Angina pectoris                                                                                         -", 
+      "id": "HIERARCHY.7.2.4.1", 
+      "parent": "HIERARCHY.7.2.4", 
+      "name": "Angina pectoris                                                                                         -"
+    }, 
+    "HIERARCHY.7.2.4.3": {
+      "alias": "HIERARCHY7243", 
+      "desc": "Other acute and subacute forms of ischemic heart disease                                                -", 
+      "id": "HIERARCHY.7.2.4.3", 
+      "parent": "HIERARCHY.7.2.4", 
+      "name": "Other acute and subacute forms of ischemic heart disease                                                -"
+    }, 
+    "HIERARCHY.7.2.8.2": {
+      "alias": "HIERARCHY7282", 
+      "desc": "Bundle branch block                                                                                     -", 
+      "id": "HIERARCHY.7.2.8.2", 
+      "parent": "HIERARCHY.7.2.8", 
+      "name": "Bundle branch block                                                                                     -"
+    }, 
+    "HIERARCHY.7.2.8.4": {
+      "alias": "HIERARCHY7284", 
+      "desc": "Other conduction disorders                                                                              -", 
+      "id": "HIERARCHY.7.2.8.4", 
+      "parent": "HIERARCHY.7.2.8", 
+      "name": "Other conduction disorders                                                                              -"
+    }, 
+    "78071": {
+      "desc": "Malaise and fatigue", 
+      "id": "78071", 
+      "parent": "HIERARCHY.17.1.8", 
+      "name": "Malaise and fatigue"
+    }, 
+    "1749": {
+      "desc": "Breast, unspecified", 
+      "id": "1749", 
+      "parent": "HIERARCHY.2.5", 
+      "name": "Breast, unspecified"
+    }, 
+    "HIERARCHY.5.14.1": {
+      "alias": "HIERARCHY5141", 
+      "desc": "Codes related to mental health disorders [6631]", 
+      "id": "HIERARCHY.5.14.1", 
+      "parent": "HIERARCHY.5.14", 
+      "name": "Codes related to mental health disorders [6631]"
+    }, 
+    "78079": {
+      "desc": "Malaise and fatigue", 
+      "id": "78079", 
+      "parent": "HIERARCHY.17.1.8", 
+      "name": "Malaise and fatigue"
+    }, 
+    "HIERARCHY.5.14.2": {
+      "alias": "HIERARCHY5142", 
+      "desc": "Codes related to substance-related disorders [6632]", 
+      "id": "HIERARCHY.5.14.2", 
+      "parent": "HIERARCHY.5.14", 
+      "name": "Codes related to substance-related disorders [6632]"
+    }, 
+    "HIERARCHY.9.10.1": {
+      "alias": "HIERARCHY9101", 
+      "desc": "Hemorrhage from gastrointestinal ulcer                                                                  -", 
+      "id": "HIERARCHY.9.10.1", 
+      "parent": "HIERARCHY.9.10", 
+      "name": "Hemorrhage from gastrointestinal ulcer                                                                  -"
+    }, 
+    "78701": {
+      "desc": "Nausea and vomiting", 
+      "id": "78701", 
+      "parent": "HIERARCHY.17.1.6", 
+      "name": "Nausea and vomiting"
+    }, 
+    "HIERARCHY.2.10.2": {
+      "alias": "HIERARCHY2102", 
+      "desc": "Non-Hodgkins lymphoma [38.]", 
+      "id": "HIERARCHY.2.10.2", 
+      "parent": "HIERARCHY.2.10", 
+      "name": "Non-Hodgkins lymphoma [38.]"
+    }, 
+    "78702": {
+      "desc": "Nausea and vomiting", 
+      "id": "78702", 
+      "parent": "HIERARCHY.17.1.6", 
+      "name": "Nausea and vomiting"
+    }, 
+    "49121": {
+      "desc": "Obstructive chronic bronchitis", 
+      "id": "49121", 
+      "parent": "HIERARCHY.8.2.3", 
+      "name": "Obstructive chronic bronchitis"
+    }, 
+    "HIERARCHY.8.1.5.2": {
+      "alias": "HIERARCHY8152", 
+      "desc": "Chronic sinusitis                                                                                       -", 
+      "id": "HIERARCHY.8.1.5.2", 
+      "parent": "HIERARCHY.8.1.5", 
+      "name": "Chronic sinusitis                                                                                       -"
+    }, 
+    "4240": {
+      "desc": "Mitral valve disorders", 
+      "id": "4240", 
+      "parent": "HIERARCHY.7.2.1.2", 
+      "name": "Mitral valve disorders"
+    }, 
+    "4241": {
+      "desc": "Aortic valve disorders", 
+      "id": "4241", 
+      "parent": "HIERARCHY.7.2.1.3", 
+      "name": "Aortic valve disorders"
+    }, 
+    "28521": {
+      "desc": "Other and unspecified anemias", 
+      "id": "28521", 
+      "parent": "HIERARCHY.4.1.3.6", 
+      "name": "Other and unspecified anemias"
+    }, 
+    "HIERARCHY.9.4.1.1": {
+      "alias": "HIERARCHY9411", 
+      "desc": "Esophagitis                                                                                             -", 
+      "id": "HIERARCHY.9.4.1.1", 
+      "parent": "HIERARCHY.9.4.1", 
+      "name": "Esophagitis                                                                                             -"
+    }, 
+    "HIERARCHY.9.4.1.2": {
+      "alias": "HIERARCHY9412", 
+      "desc": "Other esophageal disorders                                                                              -", 
+      "id": "HIERARCHY.9.4.1.2", 
+      "parent": "HIERARCHY.9.4.1", 
+      "name": "Other esophageal disorders                                                                              -"
+    }, 
+    "4928": {
+      "desc": "Emphysema", 
+      "id": "4928", 
+      "parent": "HIERARCHY.8.2.1", 
+      "name": "Emphysema"
+    }, 
+    "HIERARCHY.6.8.2": {
+      "alias": "HIERARCHY682", 
+      "desc": "Conditions associated with dizziness or vertigo [93.]", 
+      "id": "HIERARCHY.6.8.2", 
+      "parent": "HIERARCHY.6.8", 
+      "name": "Conditions associated with dizziness or vertigo [93.]"
+    }, 
+    "HIERARCHY.16.2.3.3": {
+      "alias": "HIERARCHY16233", 
+      "desc": "Other fracture of upper limb                                                                            -", 
+      "id": "HIERARCHY.16.2.3.3", 
+      "parent": "HIERARCHY.16.2.3", 
+      "name": "Other fracture of upper limb                                                                            -"
+    }, 
+    "HIERARCHY.13.9": {
+      "alias": "HIERARCHY139", 
+      "desc": "Other bone disease and musculoskeletal deformities [212.]", 
+      "id": "HIERARCHY.13.9", 
+      "parent": "HIERARCHY.13", 
+      "name": "Other bone disease and musculoskeletal deformities [212.]"
+    }, 
+    "HIERARCHY.13.8": {
+      "alias": "HIERARCHY138", 
+      "desc": "Other connective tissue disease [211.]", 
+      "id": "HIERARCHY.13.8", 
+      "parent": "HIERARCHY.13", 
+      "name": "Other connective tissue disease [211.]"
+    }, 
+    "2724": {
+      "desc": "Other and unspecified hyperlipidemia", 
+      "id": "2724", 
+      "parent": "HIERARCHY.3.6", 
+      "name": "Other and unspecified hyperlipidemia"
+    }, 
+    "2723": {
+      "desc": "Hyperchylomicronemia", 
+      "id": "2723", 
+      "parent": "HIERARCHY.3.6", 
+      "name": "Hyperchylomicronemia"
+    }, 
+    "2722": {
+      "desc": "Mixed hyperlipidemia", 
+      "id": "2722", 
+      "parent": "HIERARCHY.3.6", 
+      "name": "Mixed hyperlipidemia"
+    }, 
+    "2721": {
+      "desc": "Pure hyperglyceridemia", 
+      "id": "2721", 
+      "parent": "HIERARCHY.3.6", 
+      "name": "Pure hyperglyceridemia"
+    }, 
+    "2720": {
+      "desc": "Pure hypercholesterolemia", 
+      "id": "2720", 
+      "parent": "HIERARCHY.3.6", 
+      "name": "Pure hypercholesterolemia"
+    }, 
+    "HIERARCHY.13.3": {
+      "alias": "HIERARCHY133", 
+      "desc": "Spondylosis; intervertebral disc disorders; other back problems [205.]", 
+      "id": "HIERARCHY.13.3", 
+      "parent": "HIERARCHY.13", 
+      "name": "Spondylosis; intervertebral disc disorders; other back problems [205.]"
+    }, 
+    "HIERARCHY.13.2": {
+      "alias": "HIERARCHY132", 
+      "desc": "Non-traumatic joint disorders", 
+      "id": "HIERARCHY.13.2", 
+      "parent": "HIERARCHY.13", 
+      "name": "Non-traumatic joint disorders"
+    }, 
+    "V103": {
+      "unmapped": true, 
+      "desc": "diagnosis V103", 
+      "id": "V103", 
+      "parent": "HIERARCHY.2.5", 
+      "name": "V103"
+    }, 
+    "HIERARCHY.13.4": {
+      "alias": "HIERARCHY134", 
+      "desc": "Osteoporosis [206.]", 
+      "id": "HIERARCHY.13.4", 
+      "parent": "HIERARCHY.13", 
+      "name": "Osteoporosis [206.]"
+    }, 
+    "HIERARCHY.13.6": {
+      "alias": "HIERARCHY136", 
+      "desc": "Acquired deformities", 
+      "id": "HIERARCHY.13.6", 
+      "parent": "HIERARCHY.13", 
+      "name": "Acquired deformities"
+    }, 
+    "7234": {
+      "desc": "Brachia neuritis or radiculitis NOS", 
+      "id": "7234", 
+      "parent": "HIERARCHY.13.3.3.1", 
+      "name": "Brachia neuritis or radiculitis NOS"
+    }, 
+    "7231": {
+      "desc": "Cervicalgia", 
+      "id": "7231", 
+      "parent": "HIERARCHY.13.3.3.7", 
+      "name": "Cervicalgia"
+    }, 
+    "486": {
+      "desc": "Pneumonia, organism unspecified", 
+      "id": "486", 
+      "parent": "HIERARCHY.8.1.1.3", 
+      "name": "Pneumonia, organism unspecified"
+    }, 
+    "HIERARCHY.7.2.2.1": {
+      "alias": "HIERARCHY7221", 
+      "desc": "Cardiomyopathy                                                                                          -", 
+      "id": "HIERARCHY.7.2.2.1", 
+      "parent": "HIERARCHY.7.2.2", 
+      "name": "Cardiomyopathy                                                                                          -"
+    }, 
+    "HIERARCHY.12.1.2": {
+      "alias": "HIERARCHY1212", 
+      "desc": "Other skin and subcutaneous infections                                                                  -", 
+      "id": "HIERARCHY.12.1.2", 
+      "parent": "HIERARCHY.12.1", 
+      "name": "Other skin and subcutaneous infections                                                                  -"
+    }, 
+    "HIERARCHY.7.2.1.4": {
+      "alias": "HIERARCHY7214", 
+      "desc": "Other heart valve disorders                                                                             -", 
+      "id": "HIERARCHY.7.2.1.4", 
+      "parent": "HIERARCHY.7.2.1", 
+      "name": "Other heart valve disorders                                                                             -"
+    }, 
+    "HIERARCHY.17.1": {
+      "alias": "HIERARCHY171", 
+      "desc": "Symptoms; signs; and ill-defined conditions", 
+      "id": "HIERARCHY.17.1", 
+      "parent": "HIERARCHY.17", 
+      "name": "Symptoms; signs; and ill-defined conditions"
+    }, 
+    "HIERARCHY.17.2": {
+      "alias": "HIERARCHY172", 
+      "desc": "Factors influencing health care", 
+      "id": "HIERARCHY.17.2", 
+      "parent": "HIERARCHY.17", 
+      "name": "Factors influencing health care"
+    }, 
+    "5939": {
+      "desc": "Unspecified", 
+      "id": "5939", 
+      "parent": "HIERARCHY.10.1.6.2", 
+      "name": "Unspecified"
+    }
+  }
+}
