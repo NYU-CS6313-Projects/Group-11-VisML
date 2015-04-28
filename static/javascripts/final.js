@@ -183,13 +183,13 @@ if (brush.empty()) {
 
     svg_pca[svg_name].selectAll(".hidden").classed("hidden", false);
     if (ps.length > 0) {bar_plot(bar_data2(ps));}
-    else {bar_plot(bar_data());};
+    else {complete = 0; bar_plot(gen_empty_data());};
     ps = [];
 }
 }
 
 
-function bar_data(argument) {
+function gen_empty_data(argument) {
     var b_data = [];
     var feat = {};
     feat['key'] = 'empty0';
@@ -263,12 +263,6 @@ for (var i = 0; i < arg.length; i++) {
 
     };
 
-    if (start) {
-        start = false;
-        loop = !loop;
-        return bar_data();
-    };
-
 if (complete == 2) {
     complete = 0;
     b_data[0] = feat;
@@ -277,10 +271,8 @@ if (complete == 2) {
     return b_data;
 } else{
     loop = !loop;
-    return bar_data();
+    return gen_empty_data();
 };
-
-
 }
 
 
@@ -328,7 +320,7 @@ nv.addGraph({
 
 }
 
-bar_plot(bar_data());
+bar_plot(gen_empty_data());
 
         }
     };
