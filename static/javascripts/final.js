@@ -10,7 +10,7 @@ var MYLIBRARY = MYLIBRARY || (function(){
         },
         helloWorld : function(Args) {
 
-var data = Args;
+data = Args;
 var padding = 30;
 
 var width = (nv.utils.windowSize().width / 2) -30,
@@ -194,13 +194,13 @@ function gen_empty_data(argument) {
     var feat = {};
     feat['key'] = 'empty0';
     feat['values'] = [];
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 50; i++) {
         feat['values'].push({'x':i, 'y': 0 });
     };
     var feat2 = {};
     feat2['key'] = 'empty2';
     feat2['values'] = [];
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 50; i++) {
         feat2['values'].push({'x':i, 'y': 0 });
     };
     b_data[0] = feat;
@@ -221,45 +221,15 @@ complete = complete + 1
 
     if (loop) {
 
-feat['key'] = arg[0].features[0].name;
+feat['key'] = 'Selection 1';
 feat['values'] = [];
-
-for (var i = 0; i < 4; i++) {
-    feat['values'].push({'x':i, 'y': 0});
-};
-
-for (var i = 0; i < arg.length; i++) {
-    feat['values'][0]['y'] = feat['values'][0]['y'] +
-        arg[i].features[0].value[0];
-    feat['values'][1]['y'] = feat['values'][1]['y'] +
-        arg[i].features[0].value[1];
-    feat['values'][2]['y'] = feat['values'][2]['y'] +
-        arg[i].features[0].value[2];
-    feat['values'][3]['y'] = feat['values'][3]['y'] +
-        arg[i].features[0].value[3];
-};
+update_feat(arg, feat)
 
     } else{
 
-feat2['key'] = arg[0].features[0].name;
+feat2['key'] = 'Selection 2';
 feat2['values'] = [];
-
-for (var i = 0; i < 4; i++) {
-    feat2['values'].push({'x':i, 'y': 0});
-};
-
-
-for (var i = 0; i < arg.length; i++) {
-    feat2['values'][0]['y'] = feat2['values'][0]['y'] +
-        arg[i].features[0].value[0];
-    feat2['values'][1]['y'] = feat2['values'][1]['y'] +
-        arg[i].features[0].value[1];
-    feat2['values'][2]['y'] = feat2['values'][2]['y'] +
-        arg[i].features[0].value[2];
-    feat2['values'][3]['y'] = feat2['values'][3]['y'] +
-        arg[i].features[0].value[3];
-};
-
+update_feat(arg, feat2)
 
     };
 
@@ -273,6 +243,25 @@ if (complete == 2) {
     loop = !loop;
     return gen_empty_data();
 };
+}
+
+
+function update_feat (arg, F) {
+
+for (var i = 0; i < arg[0].features.length; i++) {
+    F['values'].push({'x':i, 'y': 0});
+};
+
+for (var i = 0; i < arg.length; i++) {
+    for (var j = 0; j < F['values'].length; j++) {
+        F['values'][j]['y'] = F['values'][j]['y'] + arg[i].features[j]['value'];
+            if (i == arg.length - 1) {
+                F['values'][j]['y'] = F['values'][j]['y'] / arg.length;
+            };
+    };
+
+};
+
 }
 
 

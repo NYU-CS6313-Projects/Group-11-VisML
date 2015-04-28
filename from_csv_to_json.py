@@ -12,21 +12,12 @@ for ix in df.index:
     d['PC2'] = "%0.3f" % df.loc[ix]['PC2']
     d['Prediction'] = "%s" % df.loc[ix]['Prediction']
     d['features'] = []
-    for i in df.columns[4:14]:
+    print ix
+    for i in df.columns[4:54]:
         y = df.loc[ix][i]
         f = {}
-        if y == d['Prediction'] and y == 1:
-            f['name'] = u"%s" % i
-            f['value'] = [1, 0, 0, 0]
-        elif y == d['Prediction'] and y == 0:
-            f['name'] = u"%s" % i
-            f['value'] = [0, 0, 1, 0]
-        elif y != d['Prediction'] and y == 1:
-            f['name'] = u"%s" % i
-            f['value'] = [0, 0, 0, 1]
-        elif y != d['Prediction'] and y == 0:
-            f['name'] = u"%s" % i
-            f['value'] = [0, 1, 0, 0]
+        f['name'] = u"%s" % i
+        f['value'] = y
         d['features'].append(f)
     l.append(d)
 
