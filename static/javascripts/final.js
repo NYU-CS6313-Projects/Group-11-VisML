@@ -13,9 +13,12 @@ var MYLIBRARY = MYLIBRARY || (function(){
 var data = Args;
 var padding = 30;
 
+var width = nv.utils.windowSize().width / 2,
+    height = nv.utils.windowSize().height / 1.3;
+
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
-     width = 250 - margin.left - margin.right,
-     height = 250 - margin.top - margin.bottom;
+     width = width - margin.left - margin.right,
+     height = height - margin.top - margin.bottom;
 var svg_name = "#pca"
 
 // Resize pca_chart
@@ -67,13 +70,9 @@ svg_pca[svg_name] = d3.select(svg_name)
 // don't want dots overlapping axis, so add in buffer to data domain
 // xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
 // yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
-console.log(d3.min(data, xValue))
-console.log(d3.max(data, xValue))
-console.log(d3.min(data, yValue))
-console.log(d3.max(data, yValue))
 
-xScale.domain([-2.471607621155838, 8.0506795710372625]);
-yScale.domain([-3.1572950457717712, 3.1379183478055239]);
+xScale.domain([-2.471607621155838 - 0.5, 8.0506795710372625 + 0.5]);
+yScale.domain([-3.1572950457717712 - 0.5, 3.1379183478055239 + 0.5]);
 
 // xScale.domain([d3.min(data, xValue), d3.max(data, xValue)]);
 // yScale.domain([d3.min(data, yValue), d3.max(data, yValue)]);
@@ -157,10 +156,21 @@ if (brushCell !== this) {
 }
 }
 
+ps = [];
+
 // Highlight the selected circles.
 function brushmove(p) {
 var e = brush.extent();
-var ps = []
+svg_pca[svg_name].selectAll(".dot").classed("hidden", function(d) {
+    var a = e[0][0] > d.PC1 || d.PC1 > e[1][0] || e[0][1] > d.PC2 || d.PC2 > e[1][1];
+    return a
+});
+}
+
+// If the brush is empty, select all circles.
+function brushend() {
+
+var e = brush.extent();
 svg_pca[svg_name].selectAll(".dot").classed("hidden", function(d) {
     var a = e[0][0] > d.PC1 || d.PC1 > e[1][0] || e[0][1] > d.PC2 || d.PC2 > e[1][1];
     if (a == false) {
@@ -168,13 +178,13 @@ svg_pca[svg_name].selectAll(".dot").classed("hidden", function(d) {
     }
     return a
 });
+
+if (brush.empty()) svg_pca[svg_name].selectAll(".hidden").classed("hidden", false);
+bar_plot(bar_data2(ps));
+ps = [];
 }
 
-// If the brush is empty, select all circles.
-function brushend() {
-if (brush.empty()) svg_pca[svg_name].selectAll(".hidden").classed("hidden", false);
-bar_plot(bar_data());
-}
+
 
 function bar_data(argument) {
     var b_data = [];
@@ -195,6 +205,76 @@ function bar_data(argument) {
     return b_data;
 }
 
+loop = true;
+start = true;
+feat = {};
+feat2 = {};
+
+function bar_data2(arg) {
+
+console.log(loop)
+var b_data = [];
+console.log(arg.length)
+
+
+    if (loop) {
+
+feat['key'] = arg[0].features[0].name;
+feat['values'] = [];
+
+for (var i = 0; i < 4; i++) {
+    feat['values'].push({'x':i, 'y': 0});
+};
+
+for (var i = 0; i < arg.length; i++) {
+    feat['values'][0]['y'] = feat['values'][0]['y'] +
+        arg[i].features[0].value[0];
+    feat['values'][1]['y'] = feat['values'][1]['y'] +
+        arg[i].features[0].value[1];
+    feat['values'][2]['y'] = feat['values'][2]['y'] +
+        arg[i].features[0].value[2];
+    feat['values'][3]['y'] = feat['values'][3]['y'] +
+        arg[i].features[0].value[3];
+};
+
+    } else{
+
+feat2['key'] = arg[0].features[0].name;
+feat2['values'] = [];
+
+for (var i = 0; i < 4; i++) {
+    feat2['values'].push({'x':i, 'y': 0});
+};
+
+
+for (var i = 0; i < arg.length; i++) {
+    feat2['values'][0]['y'] = feat2['values'][0]['y'] +
+        arg[i].features[0].value[0];
+    feat2['values'][1]['y'] = feat2['values'][1]['y'] +
+        arg[i].features[0].value[1];
+    feat2['values'][2]['y'] = feat2['values'][2]['y'] +
+        arg[i].features[0].value[2];
+    feat2['values'][3]['y'] = feat2['values'][3]['y'] +
+        arg[i].features[0].value[3];
+};
+
+
+    };
+
+    if (start) {
+        start = false;
+        b_data[0] = feat;
+        loop = !loop;
+        return b_data;};
+
+    b_data[0] = feat;
+    b_data[1] = feat2;
+    console.log(b_data)
+    loop = !loop;
+    return b_data;
+
+}
+
 
 var t_data = stream_layers(2,4,.1).map(function(data, i) {
     return {
@@ -210,7 +290,7 @@ test_data = argument;
 nv.addGraph({
     generate: function() {
         var width = nv.utils.windowSize().width / 2,
-            height = nv.utils.windowSize().height / 2;
+            height = nv.utils.windowSize().height / 1.3;
         var chart = nv.models.multiBarChart()
             .width(width)
             .height(height)
@@ -226,8 +306,8 @@ nv.addGraph({
     },
     callback: function(graph) {
         nv.utils.windowResize(function() {
-            var width = nv.utils.windowSize().width;
-            var height = nv.utils.windowSize().height;
+            var width = nv.utils.windowSize().width / 2;
+            var height = nv.utils.windowSize().height / 1.3;
             graph.width(width).height(height);
             d3.select('#left svg')
                 .attr('width', width)
@@ -239,7 +319,6 @@ nv.addGraph({
 });
 
 }
-
 
 bar_plot(t_data);
 
