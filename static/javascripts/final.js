@@ -13,7 +13,7 @@ var MYLIBRARY = MYLIBRARY || (function(){
 var data = Args;
 var padding = 30;
 
-var width = nv.utils.windowSize().width / 2,
+var width = (nv.utils.windowSize().width / 2) -30,
     height = nv.utils.windowSize().height / 1.3;
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
