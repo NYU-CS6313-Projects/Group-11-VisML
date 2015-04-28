@@ -11,6 +11,7 @@ var MYLIBRARY = MYLIBRARY || (function(){
         helloWorld : function(Args) {
 
 data = Args;
+tot_feat = 100;
 var padding = 30;
 
 var width = (nv.utils.windowSize().width / 2) -30,
@@ -194,13 +195,13 @@ function gen_empty_data(argument) {
     var feat = {};
     feat['key'] = 'empty0';
     feat['values'] = [];
-    for (var i = 0; i < 50; i++) {
+    for (var i = 0; i < tot_feat; i++) {
         feat['values'].push({'x':i, 'y': 0 });
     };
     var feat2 = {};
     feat2['key'] = 'empty2';
     feat2['values'] = [];
-    for (var i = 0; i < 50; i++) {
+    for (var i = 0; i < tot_feat; i++) {
         feat2['values'].push({'x':i, 'y': 0 });
     };
     b_data[0] = feat;

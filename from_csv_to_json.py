@@ -4,7 +4,7 @@ import json
 df = pd.read_csv('data/Sample02_n1000_ProcessedData.csv')
 out = {}
 l = []
-
+tot_feat = 100
 
 for ix in df.index:
     d = {}
@@ -13,7 +13,7 @@ for ix in df.index:
     d['Prediction'] = "%s" % df.loc[ix]['Prediction']
     d['features'] = []
     print ix
-    for i in df.columns[4:54]:
+    for i in df.columns[4:tot_feat+4]:
         y = df.loc[ix][i]
         f = {}
         f['name'] = u"%s" % i
