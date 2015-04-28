@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-df = pd.read_csv('data/Sample02_n1000_ProcessedData.csv')
+df = pd.read_csv('data/Sample02_n1000_TSNEProcessedData.csv')
 out = {}
 l = []
 tot_feat = 100
