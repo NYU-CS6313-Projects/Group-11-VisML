@@ -34,24 +34,22 @@ $(window).on("resize", function() {
 
 
 // setup x
-var xValue = function(d) { return d.PC1;}, // data -> value
-    xScale = d3.scale.linear().range([0, width]), // value -> display
-    xMap = function(d) { return xScale(xValue(d));}, // data -> display
-    xAxis = d3.svg.axis()
+var xValue = function(d) { return d.PC1;}; // data -> value
+var xScale = d3.scale.linear().range([0, width]); // value -> display
+var xMap = function(d) { return xScale(xValue(d));}; // data -> display
+var xAxis = d3.svg.axis()
                 .scale(xScale)
                 .orient("bottom")
                 .ticks(5);
 
-
 // setup y
-var yValue = function(d) { return d.PC2;}, // data -> value
-    yScale = d3.scale.linear().range([height, 0]), // value -> display
-    yMap = function(d) { return yScale(yValue(d));}, // data -> display
-    yAxis = d3.svg.axis()
+var yValue = function(d) { return d.PC2;}; // data -> value
+var yScale = d3.scale.linear().range([height, 0]); // value -> display
+var yMap = function(d) { return yScale(yValue(d));}; // data -> display
+var yAxis = d3.svg.axis()
                     .scale(yScale)
                     .orient("left")
                     .ticks(4);
-
 
 // setup fill color
 var cValue = function(d) { return d.Prediction;},
@@ -69,10 +67,19 @@ svg_pca[svg_name] = d3.select(svg_name)
 // don't want dots overlapping axis, so add in buffer to data domain
 // xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
 // yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
+console.log(d3.min(data, xValue))
+console.log(d3.max(data, xValue))
+console.log(d3.min(data, yValue))
+console.log(d3.max(data, yValue))
 
-xScale.domain([d3.min(data, xValue), d3.max(data, xValue)]);
-yScale.domain([d3.min(data, yValue), d3.max(data, yValue)]);
+xScale.domain([-2.471607621155838, 8.0506795710372625]);
+yScale.domain([-3.1572950457717712, 3.1379183478055239]);
 
+// xScale.domain([d3.min(data, xValue), d3.max(data, xValue)]);
+// yScale.domain([d3.min(data, yValue), d3.max(data, yValue)]);
+
+
+// console.log(d3.min(data, xValue))
 
 // x-axis
 svg_pca[svg_name].append("g")
