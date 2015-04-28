@@ -179,26 +179,29 @@ svg_pca[svg_name].selectAll(".dot").classed("hidden", function(d) {
     return a
 });
 
-if (brush.empty()) svg_pca[svg_name].selectAll(".hidden").classed("hidden", false);
-bar_plot(bar_data2(ps));
-ps = [];
-}
+if (brush.empty()) {
 
+    svg_pca[svg_name].selectAll(".hidden").classed("hidden", false);
+    if (ps.length > 0) {bar_plot(bar_data2(ps));}
+    else {bar_plot(bar_data());};
+    ps = [];
+}
+}
 
 
 function bar_data(argument) {
     var b_data = [];
     var feat = {};
-    feat['key'] = 'juan';
+    feat['key'] = 'empty0';
     feat['values'] = [];
     for (var i = 0; i < 4; i++) {
-        feat['values'].push({'x':i, 'y':Math.random() });
+        feat['values'].push({'x':i, 'y': 0 });
     };
     var feat2 = {};
-    feat2['key'] = 'san';
+    feat2['key'] = 'empty2';
     feat2['values'] = [];
     for (var i = 0; i < 4; i++) {
-        feat2['values'].push({'x':i, 'y':Math.random() });
+        feat2['values'].push({'x':i, 'y': 0 });
     };
     b_data[0] = feat;
     b_data[1] = feat2;
@@ -207,15 +210,14 @@ function bar_data(argument) {
 
 loop = true;
 start = true;
+complete = 0;
 feat = {};
 feat2 = {};
 
 function bar_data2(arg) {
 
-console.log(loop)
 var b_data = [];
-console.log(arg.length)
-
+complete = complete + 1
 
     if (loop) {
 
@@ -263,15 +265,21 @@ for (var i = 0; i < arg.length; i++) {
 
     if (start) {
         start = false;
-        b_data[0] = feat;
         loop = !loop;
-        return b_data;};
+        return bar_data();
+    };
 
+if (complete == 2) {
+    complete = 0;
     b_data[0] = feat;
     b_data[1] = feat2;
-    console.log(b_data)
     loop = !loop;
     return b_data;
+} else{
+    loop = !loop;
+    return bar_data();
+};
+
 
 }
 
@@ -320,7 +328,7 @@ nv.addGraph({
 
 }
 
-bar_plot(t_data);
+bar_plot(bar_data());
 
         }
     };
