@@ -72,8 +72,8 @@ svg_pca[svg_name] = d3.select(svg_name)
 // xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
 // yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
 
-xScale.domain([-2.471607621155838 - 0.5, 8.0506795710372625 + 0.5]);
-yScale.domain([-3.1572950457717712 - 0.5, 3.1379183478055239 + 0.5]);
+xScale.domain([-18.8476040574858 - 0.5, 19.073547077435 + 0.5]);
+yScale.domain([-17.3624691781651 - 0.5, 17.8486509759782 + 0.5]);
 
 // xScale.domain([d3.min(data, xValue), d3.max(data, xValue)]);
 // yScale.domain([d3.min(data, yValue), d3.max(data, yValue)]);
