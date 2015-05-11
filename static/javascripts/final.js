@@ -194,13 +194,13 @@ if (brush.empty()) {
 function gen_empty_data(argument) {
     var b_data = [];
     var feat = {};
-    feat['key'] = 'empty0';
+    feat['key'] = 'empty';
     feat['values'] = [];
     for (var i = 0; i < tot_feat; i++) {
         feat['values'].push({'x':i, 'y': 0 });
     };
     var feat2 = {};
-    feat2['key'] = 'empty2';
+    feat2['key'] = 'empty';
     feat2['values'] = [];
     for (var i = 0; i < tot_feat; i++) {
         feat2['values'].push({'x':i, 'y': 0 });
