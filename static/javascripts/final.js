@@ -91,8 +91,8 @@ svg_pca[svg_name].append("g")
   .attr("class", "label")
   .attr("x", width)
   .attr("y", -6)
-  .style("text-anchor", "end")
-  .text("PC1");
+  // .style("text-anchor", "end")
+  // .text("PC1");
 
 // y-axis
 svg_pca[svg_name].append("g")
@@ -103,8 +103,9 @@ svg_pca[svg_name].append("g")
     .attr("transform", "rotate(-90)")
     .attr("y", 6)
     .attr("dy", ".71em")
-    .style("text-anchor", "end")
-    .text("PC2");
+    // .style("text-anchor", "end")
+    // .text("PC2");
+
 
 // draw dots
 svg_pca[svg_name].selectAll(".dot")
@@ -128,7 +129,7 @@ gravity: 'w',
 html: true,
 title: function() {
   var d = this.__data__;
-  return 'Prediction <span style="color: "white">' + d["Prediction"] + '</span>';
+  return 'Outcome <span style="color: "white">' + d["Prediction"] + '</span>';
 }
 });
 
