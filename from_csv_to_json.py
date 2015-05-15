@@ -4,7 +4,7 @@ import json
 df = pd.read_csv('data/Sample02_n1000_TSNEProcessedData_v2.csv')
 out = {}
 l = []
-tot_feat = 100
+tot_feat = 50
 
 for ix in df.index:
     d = {}

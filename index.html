@@ -20,12 +20,40 @@
         <script src="static/javascripts/stream_layers.js"></script>
         <style type="text/css">
 
+
+*{
+margin:0;
+padding:0;
+}
+
+#wrapper{
+display:-webkit-flex;
+-webkit-justify-content:center;
+
+display:flex;
+justify-content:center;
+
+}
+
+#wrapper div{
+-webkit-flex:1;
+flex:1;
+
+}
+
+
+.legend rect {
+  fill:white;
+  stroke:black;
+  opacity:0.8;}
+
         /*.bar {
           fill: 'green';
         }
         */
         .axis {
           font: 10px sans-serif;
+          color: "white";
         }
 
         /*.axis path,
@@ -39,13 +67,21 @@
           height: 1000px;
         }
 
+        #right svg {
+          height: 1000px;
+        }
+
+        #center svg {
+          height: 1000px;
+        }
 
         circle {
           fill-opacity: .7;
-        }
+            }
 
         circle.hidden {
           fill: #ccc !important;
+          r: "100";
         }
 
         .extent {
@@ -69,14 +105,43 @@
                 <a href="https://github.com/NYU-CS6313-Projects/sp2015-group11" class="button"><small>View project on</small> GitHub</a>
             </div>
         </header>
-        <div id="container" style="width:100%;">
+
+<!-- <div id="container">
+  <div class="leftContent">
+  </div>
+  <div class="mainContent"></div>
+      <div id="pca">
+      </div>
+  <div class="rightContent"></div>
+</div> -->
+
+
+<div id="wrapper">
+    <div id="c1">
+        <div id="left">
+            <svg></svg>
+        </div>
+    </div>
+    <div id="c2">
+        <div id="center">
+            <svg id="pca"></svg>
+        </div>
+    </div>
+    <div id="c3">
+        <div id="right">
+            <svg></svg>
+        </div>
+    </div>
+</div>
+
+<!--         <div id="container" style="width:100%;">
           <div id="left" style="float:left; width:50%;">
                 <svg></svg>
           </div>
           <div id="pca" style="float:right; width:50%;">
           </div>
         </div>
-        <script src="static/javascripts/final.js" ></script>
+ -->        <script src="static/javascripts/final.js" ></script>
         <script type="text/javascript">
             // d3.csv("data/PCA_Transformed_Data.csv", function(error, data) {
             //   // change string (from CSV) into number format

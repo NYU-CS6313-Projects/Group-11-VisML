@@ -11,10 +11,11 @@ var MYLIBRARY = MYLIBRARY || (function(){
         helloWorld : function(Args) {
 
 data = Args;
-tot_feat = 100;
+tot_feat = 50;
+labels = ['TP', 'FP', 'TN', 'FN']
 var padding = 30;
 
-var width = (nv.utils.windowSize().width / 2) -30,
+var width = (nv.utils.windowSize().width / 3) -30,
     height = nv.utils.windowSize().height / 1.3;
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -79,40 +80,39 @@ yScale.domain([-17.3624691781651 - 0.5, 17.8486509759782 + 0.5]);
 // yScale.domain([d3.min(data, yValue), d3.max(data, yValue)]);
 
 
-// console.log(d3.min(data, xValue))
+// // console.log(d3.min(data, xValue))
 
-// x-axis
-svg_pca[svg_name].append("g")
-  .attr("class", "x axis")
-  .attr("transform", "translate(0," + (height + 0) + ")")
-  .call(xAxis)
+// // x-axis
+// svg_pca[svg_name].append("g")
+//   .attr("class", "x axis")
+//   .attr("transform", "translate(0," + (height + 0) + ")")
+//   .call(xAxis)
 
-.append("text")
-  .attr("class", "label")
-  .attr("x", width)
-  .attr("y", -6)
-  // .style("text-anchor", "end")
-  // .text("PC1");
+// .append("text")
+//   .attr("class", "label")
+//   .attr("x", width)
+//   .attr("y", -6)
+//   // .style("text-anchor", "end")
+//   // .text("PC1");
 
-// y-axis
-svg_pca[svg_name].append("g")
-    .attr("class", "y axis")
-    .call(yAxis)
-    .append("text")
-    .attr("class", "label")
-    .attr("transform", "rotate(-90)")
-    .attr("y", 6)
-    .attr("dy", ".71em")
-    // .style("text-anchor", "end")
-    // .text("PC2");
-
+// // y-axis
+// svg_pca[svg_name].append("g")
+//     .attr("class", "y axis")
+//     .call(yAxis)
+//     .append("text")
+//     .attr("class", "label")
+//     .attr("transform", "rotate(-90)")
+//     .attr("y", 6)
+//     .attr("dy", ".71em")
+//     // .style("text-anchor", "end")
+//     // .text("PC2");
 
 // draw dots
 svg_pca[svg_name].selectAll(".dot")
     .data(data)
     .enter().append("circle")
     .attr("class", "dot")
-    .attr("r", 1.5)
+    .attr("r", 3.5)
     .attr("cx", xMap)
     .attr("cy", yMap)
     .style("fill", function(d) { return color(cValue(d));});
@@ -184,12 +184,19 @@ svg_pca[svg_name].selectAll(".dot").classed("hidden", function(d) {
 if (brush.empty()) {
 
     svg_pca[svg_name].selectAll(".hidden").classed("hidden", false);
-    if (ps.length > 0) {bar_plot(bar_data2(ps));}
-    else {complete = 0; bar_plot(gen_empty_data());};
+    if (ps.length > 0) {
+        var plot_data = bar_data2(ps);
+        bar_plot(plot_data.slice(0,2));
+        bar_plot2(plot_data.slice(2,4));
+    }
+    else {
+        complete = 0;
+        bar_plot(gen_empty_data());
+        bar_plot2(gen_empty_data2());
+        };
     ps = [];
 }
 }
-
 
 function gen_empty_data(argument) {
     var b_data = [];
@@ -210,11 +217,33 @@ function gen_empty_data(argument) {
     return b_data;
 }
 
+function gen_empty_data2(argument) {
+    var b_data = [];
+    var feat = {};
+    feat['key'] = 'empty';
+    feat['values'] = [];
+    for (var i = 0; i < 4; i++) {
+        feat['values'].push({'x':labels[i], 'y': 0 });
+    };
+    var feat2 = {};
+    feat2['key'] = 'empty';
+    feat2['values'] = [];
+    for (var i = 0; i < 4; i++) {
+        feat2['values'].push({'x':labels[i], 'y': 0 });
+    };
+    b_data[0] = feat;
+    b_data[1] = feat2;
+    return b_data;
+}
+
+
 loop = true;
 start = true;
 complete = 0;
 feat = {};
 feat2 = {};
+tpdis = {};
+tpdis2 = {};
 
 function bar_data2(arg) {
 
@@ -225,13 +254,17 @@ complete = complete + 1
 
 feat['key'] = 'Selection 1';
 feat['values'] = [];
-update_feat(arg, feat)
+tpdis['key'] = 'Selection 1';
+tpdis['values'] = [];
+update_feat(arg, [feat, tpdis])
 
     } else{
 
 feat2['key'] = 'Selection 2';
 feat2['values'] = [];
-update_feat(arg, feat2)
+tpdis2['key'] = 'Selection 2';
+tpdis2['values'] = [];
+update_feat(arg, [feat2, tpdis2])
 
     };
 
@@ -239,6 +272,8 @@ if (complete == 2) {
     complete = 0;
     b_data[0] = feat;
     b_data[1] = feat2;
+    b_data[2] = tpdis;
+    b_data[3] = tpdis2;
     loop = !loop;
     return b_data;
 } else{
@@ -248,22 +283,37 @@ if (complete == 2) {
 }
 
 
-function update_feat (arg, F) {
+function update_feat (arg, FD) {
+F = FD[0]
+D = FD[1]
+ddict = {
+    "1.0":0,
+    "2.0":0,
+    "3.0":0,
+    "4.0":0,
+}
+
 
 for (var i = 0; i < arg[0].features.length; i++) {
     F['values'].push({'x':i, 'y': 0});
 };
 
 for (var i = 0; i < arg.length; i++) {
+    ddict[arg[i].Prediction] = ddict[arg[i].Prediction] + 1
     for (var j = 0; j < F['values'].length; j++) {
         F['values'][j]['y'] = F['values'][j]['y'] + arg[i].features[j]['value'];
             if (i == arg.length - 1) {
                 F['values'][j]['y'] = F['values'][j]['y'] / arg.length;
             };
+    }};
+
+for (var i = 0; i < 4; i++) {
+        D['values'].push(
+            {
+                'x': labels[i],
+                'y': ddict[Object.keys(ddict)[i]] / arg.length
+            });
     };
-
-};
-
 }
 
 
@@ -274,19 +324,31 @@ var t_data = stream_layers(2,4,.1).map(function(data, i) {
     };
 });
 
-function bar_plot (argument) {
+feat_names = []
+for (var i = 0; i < data[0].features.length; i++) {
+    feat_names.push(data[0].features[i]["name"])
+};
 
-test_data = argument;
-
+function bar_plot(argument) {
+var test_data = argument;
 nv.addGraph({
     generate: function() {
-        var width = nv.utils.windowSize().width / 2,
+        var width = nv.utils.windowSize().width / 3,
             height = nv.utils.windowSize().height / 1.3;
         var chart = nv.models.multiBarChart()
             .width(width)
             .height(height)
+            .tooltips(true)
+            .tooltipContent(function(key, y, e, graph) {
+            var data =graph.series.values[y-1];
+            return  '<p>' +  feat_names[y] + '</p>'
+                 + '<p> ratio: ' +  e + '</p>'
+                 + '<p>' +  key + '</p>'
+            });
             // .stacked(true)
-            ;
+        chart.showXAxis(false)
+        // chart.color(["#af8dc3","#00FF00","#7fbf7b"])
+        // chart.xRange(feat_names)
         chart.dispatch.on('renderEnd', function(){
             console.log('Render Complete');
         });
@@ -297,7 +359,7 @@ nv.addGraph({
     },
     callback: function(graph) {
         nv.utils.windowResize(function() {
-            var width = nv.utils.windowSize().width / 2;
+            var width = nv.utils.windowSize().width / 3;
             var height = nv.utils.windowSize().height / 1.3;
             graph.width(width).height(height);
             d3.select('#left svg')
@@ -308,10 +370,74 @@ nv.addGraph({
         });
     }
 });
+};
 
-}
+
+
+function bar_plot2 (argument) {
+var test_data = argument;
+nv.addGraph({
+    generate: function() {
+        var width = nv.utils.windowSize().width / 3,
+            height = nv.utils.windowSize().height / 1.3;
+        var chart = nv.models.multiBarChart()
+            .width(width)
+            .height(height)
+            .tooltips(true)
+            .tooltipContent(function(key, y, e, graph) {
+            var data =graph.series.values[y-1];
+            return  '<p>' +  y + '</p>'
+                 + '<p> ratio: ' +  e + '</p>'
+                 + '<p>' +  key + '</p>'
+            });
+            // .stacked(true)
+        chart.barColor(function (d, i) {
+            var colors = ["#a2d10c", "#93131e", "#3279d3", "#eca73b"]
+            return colors[i]
+        })
+        // chart.showXAxis(false)
+        // chart.color(["#FF0000","#00FF00","#0000FF"])
+        // chart.xRange(feat_names)
+        chart.dispatch.on('renderEnd', function(){
+            console.log('Render Complete');
+        });
+        var svg = d3.select('#right svg').datum(test_data);
+        console.log('calling chart');
+        svg.transition().duration(0).call(chart);
+        return chart;
+    },
+    callback: function(graph) {
+        nv.utils.windowResize(function() {
+            var width = nv.utils.windowSize().width / 3;
+            var height = nv.utils.windowSize().height / 1.3;
+            graph.width(width).height(height);
+            d3.select('#right svg')
+                .attr('width', width)
+                .attr('height', height)
+                .transition().duration(0)
+                .call(graph);
+        });
+    }
+});
+};
+
+
+
+
+
+
 
 bar_plot(gen_empty_data());
+bar_plot2(gen_empty_data2());
+
+
+
+
+
+
+
+
+
 
         }
     };
