@@ -1,8 +1,6 @@
-# Project X
+# VisML
 
-TODO describe project here
+Though not often explored, interactive visualization techniques can be helpful for machine learning researchers to explore their models after training. By visually exploring the output, developers can more easily identify patterns in the data, detect anomolies, and explore high-dimensional data to understand where and how the model can be improved.  In this paper, we describe our preliminary work exploring the use of interactive visualization for model evaluation. 
 
 A live demo can be found [here](http://NYU-CS6313-Projects.github.io/sp2015-group11/).
 
-You can use the `deploy.sh` script to keep the `gh-pages` branch up-to-date.
-When forking this project be sure to update the link to the demo page in this file.
