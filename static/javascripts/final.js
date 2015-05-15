@@ -346,8 +346,13 @@ nv.addGraph({
                  + '<p>' +  key + '</p>'
             });
             // .stacked(true)
-        chart.showXAxis(false)
-        // chart.color(["#af8dc3","#00FF00","#7fbf7b"])
+        // chart.barColor(function (d, i) {
+        //     var colors = ["#a2d10c", "#93131e"]
+        //     return colors[i]
+        // })
+
+        // chart.showXAxis(false)
+        chart.color(["#7f7f7f","#e7ba52"])
         // chart.xRange(feat_names)
         chart.dispatch.on('renderEnd', function(){
             console.log('Render Complete');
@@ -392,7 +397,7 @@ nv.addGraph({
             });
             // .stacked(true)
         chart.barColor(function (d, i) {
-            var colors = ["#a2d10c", "#93131e", "#3279d3", "#eca73b"]
+            var colors = ["#2ca02c", "#93131e", "#3279d3", "#ff7f0e"]
             return colors[i]
         })
         // chart.showXAxis(false)
