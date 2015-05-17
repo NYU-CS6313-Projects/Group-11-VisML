@@ -186,8 +186,11 @@ if (brush.empty()) {
     svg_pca[svg_name].selectAll(".hidden").classed("hidden", false);
     if (ps.length > 0) {
         var plot_data = bar_data2(ps);
+        console.log(plot_data)
+        if (complete == 0) {
         bar_plot(plot_data.slice(0,2));
         bar_plot2(plot_data.slice(2,4));
+        };
     }
     else {
         complete = 0;
@@ -279,6 +282,7 @@ if (complete == 2) {
 } else{
     loop = !loop;
     return gen_empty_data();
+    return gen_empty_data2();
 };
 }
 
