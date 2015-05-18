@@ -483,6 +483,7 @@ header h2 {
   position: relative;
   width: 940px;
   margin: 0 auto;
+  left:-200px;
   
 }
 
