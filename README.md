@@ -4,5 +4,5 @@ Though not often explored, interactive visualization techniques can be helpful f
 
 ![the tool in action](Demo.png)
 
-A live demo can be found [here](https://NYU-CS6313-Projects.github.io/Group-11-Evaluating-Machine-Learning-Models-with-Information-Visualization/).
+A live demo can be found [here](https://NYU-CS6313-Projects.github.io/Group-11-VisML/).
 
