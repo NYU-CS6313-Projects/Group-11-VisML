@@ -342,6 +342,7 @@ nv.addGraph({
         var chart = nv.models.multiBarChart()
             .width(width)
             .height(height)
+            .showXAxis(true)
             .tooltips(true)
             .tooltipContent(function(key, y, e, graph) {
             var data =graph.series.values[y-1];
@@ -354,7 +355,12 @@ nv.addGraph({
         //     var colors = ["#a2d10c", "#93131e"]
         //     return colors[i]
         // })
-
+        chart.xAxis.axisLabel('Features (ranked)');
+        chart.forceY([0,1]);
+        chart.yAxis
+            .tickValues([0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0])
+            .axisLabel('Proportion of Subjects');
+        chart.margin({left:80});
         // chart.showXAxis(false)
         chart.color(["#7f7f7f","#e7ba52"])
         // chart.xRange(feat_names)
@@ -400,8 +406,11 @@ nv.addGraph({
                  + '<p>' +  key + '</p>'
             });
             // .stacked(true)
+        chart.xAxis.axisLabel('Outcome');
+        chart.forceY([0,1]);
+        chart.yAxis.tickValues([0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]);
         chart.barColor(function (d, i) {
-            var colors = ["#2ca02c", "#93131e", "#3279d3", "#ff7f0e"]
+            var colors = ["#2ca02c", "#d62728", "#1f77b4", "#ff7f0e"]
             return colors[i]
         })
         // chart.showXAxis(false)

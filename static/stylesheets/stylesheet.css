@@ -483,7 +483,7 @@ header h2 {
   position: relative;
   width: 940px;
   margin: 0 auto;
-  left:-100px;
+  
 }
 
 #content-wrapper {
@@ -772,6 +772,7 @@ footer a:hover {
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
+
 
 /* #Media Queries
 ================================================== */
