@@ -398,6 +398,7 @@ nv.addGraph({
         var chart = nv.models.multiBarChart()
             .width(width)
             .height(height)
+            .showXAxis(true)
             .tooltips(true)
             .tooltipContent(function(key, y, e, graph) {
             var data =graph.series.values[y-1];
@@ -407,6 +408,7 @@ nv.addGraph({
             });
             // .stacked(true)
         chart.xAxis.axisLabel('Outcome');
+        chart.xAxis.tickValues(["TP","FP","TN","FN"]);
         chart.forceY([0,1]);
         chart.yAxis.tickValues([0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]);
         chart.barColor(function (d, i) {
