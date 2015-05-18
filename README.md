@@ -4,5 +4,6 @@ Though not often explored, interactive visualization techniques can be helpful f
 
 ![the tool in action](Demo.png)
 
-A live demo can be found [here](https://NYU-CS6313-Projects.github.io/Group-11-VisML/).
+A working demo can be found [here](https://NYU-CS6313-Projects.github.io/Group-11-VisML/).
 
+A video of the tool can be found [here](http://youtu.be/X_dbzbjDMGI).
